@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { CardData } from "./Card";
+import { CiStar } from "react-icons/ci";
+
 type ContentProps = {
   key: number;
   card: CardData;
@@ -9,22 +11,28 @@ const Content: React.FC<ContentProps> = ({ card }) => {
   const { grammar, meaning, english, structure, level, sentences } = card;
   console.log({ english });
   return (
-    <div className="flex flex-col w-full mb-6 bg-white">
-      <div className="inline-block  text-center bg-blue-100">{grammar}</div>
-      <div className="p-4">
+    <div className="flex flex-col w-full mb-8 bg-white relative ">
+      {/* Heading */}
+      <div className="inline-block  text-center bg-blue-100 font-bold py-1">
+        {grammar}
+      </div>
+
+      {/* Main Content */}
+      <div className="p-4 relative">
+      <CiStar className="absolute top-2 right-4 h-7 w-7" />
         {structure ? (
           <>
-            <p className="">Structure:</p>
+            <p className="font-bold">Structure:</p>
             <p className="ml-2">・{structure}</p>
           </>
         ) : null}
 
-        <p className="">Meaning:</p>
+        <p className="font-bold">Meaning:</p>
         <p className="ml-2">・{meaning}</p>
 
         {english.length !== 0 ? (
           <>
-            <p className="">English:</p>
+            <p className="font-bold">English:</p>
             <p className="ml-2">・{english}</p>
           </>
         ) : null}
@@ -32,16 +40,16 @@ const Content: React.FC<ContentProps> = ({ card }) => {
         {/* Footer */}
         <div className="flex flex-row justify-between mt-4">
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white px-4 rounded"
+            className="bg-blue-200 hover:bg-blue-500 text-black px-4 rounded"
             onClick={() => {
               setVisible((visible) => !visible);
               console.log(visible);
             }}
           >
-            Reveal Sentences
+            {`${visible ? "Hide " : "Reveal Sentences"}`}
           </button>
-          <button className=""> Generate Sentences</button>
-          <div className=""> JLPT: {level}</div>
+          {/* <button className=""> Generate Sentences</button> */}
+          <div className="border px-4 rounded"> JLPT: {level}</div>
         </div>
 
         <div id="sentence-container" className={`${!visible ? "hidden" : ""}`}>
