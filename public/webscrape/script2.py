@@ -77,30 +77,34 @@ def scrape_website(url):
             f"Failed to retrieve webpage. Status code: {response.status_code}")
 
 
-URLS = ["https://nihongokyoshi-net.com/2019/11/11/jlptn3-grammar-au/",
-        "https://nihongokyoshi-net.com/2020/01/27/jlptn3-grammar-ikura-temo/",
-        "https://nihongokyoshi-net.com/2019/05/06/jlptn3-grammar-ippooda/",
-        "https://nihongokyoshi-net.com/2019/02/25/jlptn3-grammar-ueni/",
-        "https://nihongokyoshi-net.com/2018/08/30/jlptn3-grammar-okagede/",
-        "https://nihongokyoshi-net.com/2020/01/22/jlptn3-grammar-okini/",
-        "https://nihongokyoshi-net.com/2019/07/23/jlptn1-grammar-mamire/",
-        "https://nihongokyoshi-net.com/2019/04/23/jlptn1-grammar-meku/",
-        "https://nihongokyoshi-net.com/2019/06/28/jlptn1-grammar-mosarukotonagara/",
-        "https://nihongokyoshi-net.com/2019/11/19/jlptn1-grammar-mosokosokoni/",]
+def run_scrape():
+    with open("/home/vboxuser/repos/nihongokyoshi-webscrape-py/public/webscrape/target_links.json", 'r') as file:
+        urls_dict = json.load(file)
+    
+    grammar_list = []
+    total = len(urls_dict.items())
+    count = 0
+    
+    for key, urls in urls_dict.items():
+        # Loop through each URL in the list of URLs
+        for url in urls:
+            count += 1
+            if key == "jlptn1" or key == "jlptn3":
+                try:
+                    grammar_list.append(scrape_website(url))
+                    print(f"scraped {url} {count}/{total}")
+                except Exception as error:
+                    print("Exception", error)
 
-grammar_list = []
+    print(f"Finished Scraping ")
 
-total = len(URLS)
-count = 0
-for url in URLS:
-    count += 1
-    try:
-        grammar_list.append(scrape_website(url))
-        print(f"scraped {url} {count}/{total}")
-    except Exception as error:
-        print("Exception", error)
+    with open('./word.json', 'w', encoding='utf-8') as json_file:
+        json.dump(grammar_list, json_file, ensure_ascii=False)
 
-print(f"Finished Scraping ")
 
-with open('./word.json', 'w', encoding='utf-8') as json_file:
-    json.dump(grammar_list, json_file, ensure_ascii=False)
+run_scrape()
+# import os
+
+# # Print the current working directory to verify
+# print("Current Working Directory:", os.getcwd())
+
