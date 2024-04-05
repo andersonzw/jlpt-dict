@@ -1,6 +1,6 @@
 [
   {
-    "grammar": "文型：〜あげく",
+    "grammar": "〜あげく",
     "meaning": "\"色々〜したけど、最終的に・・・。\" 色々努力したが、結局ダメだったという残念な気持ちが含まれる。",
     "english": "\"ended up\" It includes a sense of disappointment/regret that after all the efforts, it was not possible.",
     "structure": "V（タ形） + あげく Nの + あげく　※Nはする動詞のN",
@@ -21,7 +21,7 @@
     "link": "https://nihongokyoshi-net.com/2019/04/19/jlptn2-grammar-ageku/"
   },
   {
-    "grammar": "文型：〜あまり（に）",
+    "grammar": "〜あまり（に）",
     "meaning": "〜すぎて",
     "english": [],
     "structure": "V（普通形 - 肯定形）  + あまり イA（普通形 - 肯定形） + あまり ナAな +  あまり Nの + あまり",
@@ -43,7 +43,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/20/jlptn2-grammar-amari/"
   },
   {
-    "grammar": "文型：あまりの〜に / あまりの〜で",
+    "grammar": "あまりの〜に / あまりの〜で",
     "meaning": "とても〜すぎるので",
     "english": "\"because the degree is too hight\"",
     "structure": "あまりの + Nに あまりの + Nで",
@@ -64,7 +64,7 @@
     "note": "形容詞が名詞化して接続することが多い"
   },
   {
-    "grammar": "文型：〜以上は",
+    "grammar": "〜以上は",
     "meaning": "〜なのだから、当然・・・。",
     "english": [],
     "structure": "V（普通形） + 以上（は） ナAである + 以上（は） Nである + 以上（は）",
@@ -86,7 +86,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/15/jlptn2-grammar-ijoowa/"
   },
   {
-    "grammar": "文型：〜一方で",
+    "grammar": "〜一方で",
     "meaning": "①Xは〜だが、Yは〜（対比） ②ある面では〜だが、別の面では〜（並列）",
     "english": [],
     "structure": "普通形 + 一方で",
@@ -105,7 +105,7 @@
     "link": "https://nihongokyoshi-net.com/2019/06/01/jlptn2-grammar-ippode/"
   },
   {
-    "grammar": "文型：〜以来",
+    "grammar": "〜以来",
     "meaning": "〜してから、今までずっと。",
     "english": "All the time since ~ / ever since",
     "structure": "V（て形） + 以来 N + 以来",
@@ -133,7 +133,7 @@
     "note": "・「〜てから 」とだいたい同じ意味だが、「〜て以来 」は過去からずっと続いていることを表すので、後の行動が１回だけのことには使わない。 ・近い過去から現在までのことを話す場合は使えない。 ・未来のことを表すことができない。"
   },
   {
-    "grammar": "文型：〜上で",
+    "grammar": "〜上で",
     "meaning": "まず〜してから。",
     "english": [],
     "structure": "V（タ形） + 上で N + の上で",
@@ -158,7 +158,7 @@
     "note": "接続する動詞は意志動詞のみ"
   },
   {
-    "grammar": "文型：〜上で",
+    "grammar": "〜上で",
     "meaning": "〜ために / 〜のに",
     "english": "in order to / for",
     "structure": [],
@@ -176,7 +176,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/15/jlptn2-grammar-uede-2/"
   },
   {
-    "grammar": "文型：〜上は",
+    "grammar": "〜上は",
     "meaning": "〜なのだから、当然・・・。",
     "english": [],
     "structure": "V（辞書形 / タ形） + 上は",
@@ -194,7 +194,7 @@
     "note": "①かなり硬い表現 ②追い詰められた状況、決意・覚悟を言う時に使われる。"
   },
   {
-    "grammar": "文型：〜得る / 〜得ない",
+    "grammar": "〜得る / 〜得ない",
     "meaning": "〜できる / 〜できない",
     "english": "can / cannot",
     "structure": "V（ます形）ます + 得る / 得ない",
@@ -221,7 +221,7 @@
     "note": "①「能力的にできる・できない」の意味では使えない。 ❌トムさんは少しだけ漢字を読み得る。"
   },
   {
-    "grammar": "文型：〜折に",
+    "grammar": "〜折に",
     "meaning": "〜ときに / 〜の機会に",
     "english": [],
     "structure": "V（辞書形 / タ形）+ 折りに Nの + 折りに",
@@ -244,7 +244,7 @@
     "link": "https://nihongokyoshi-net.com/2019/06/05/jlptn2-grammar-orini/"
   },
   {
-    "grammar": "文型：〜かいあって / 〜かいもなく",
+    "grammar": "〜かいあって / 〜かいもなく",
     "meaning": "①〜の効果があって / 〜のおかげで ②〜の価値があって",
     "english": [],
     "structure": "V（辞書形 / タ形） + かいがあって V（ます形）ます + がいがある Nの + あげく　※Nはする動詞のN",
@@ -271,7 +271,7 @@
     "note": "①話す時は「〜かいがあって」の「が」が脱落することが多い。 ②否定の形は「〜かいがなく」でもいいが「〜かいもなく」を使うことが多い。"
   },
   {
-    "grammar": "文型：〜限り（限界）",
+    "grammar": "〜限り（限界）",
     "meaning": "〜の限界まで / できるところのギリギリまで",
     "english": "as much as possible",
     "structure": "V（辞書形） + かぎり Nの + かぎり",
@@ -287,7 +287,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/16/jlptn2-grammar-kagiri-2/"
   },
   {
-    "grammar": "文型：〜限り（条件の範囲）",
+    "grammar": "〜限り（条件の範囲）",
     "meaning": "～する間はずっと / ～の状態が続く間はずっと",
     "english": [],
     "structure": "普通形の現在形 + 限り",
@@ -302,7 +302,7 @@
     "link": "https://nihongokyoshi-net.com/2019/01/23/jlptn2-grammar-kagiri/"
   },
   {
-    "grammar": "文型：〜がたい",
+    "grammar": "〜がたい",
     "meaning": "〜するのが難しい。 「能力的にできない」ということには使わない。",
     "english": "\"difficult to do\" ＊Not used to mean something can't be done because of lack of ability.",
     "structure": "Vます+ がたい",
@@ -320,7 +320,7 @@
     "link": "https://nihongokyoshi-net.com/2018/06/27/jlptn2-grammar-gatai/"
   },
   {
-    "grammar": "文型：〜かと思うと / 〜かと思ったら",
+    "grammar": "〜かと思うと / 〜かと思ったら",
     "meaning": "〜すると、すぐに 前の事象が起こった直後に、後の事象が起こる。",
     "english": "no sooner than",
     "structure": "V（タ形） + かと思うと",
@@ -340,7 +340,7 @@
     "note": "①話し手の驚きや意外だという気持ちが含まれる。 ②自分の行動には使えない。 ③意志文、命令文、否定文などは後ろに来ない。"
   },
   {
-    "grammar": "文型：〜か〜ないかのうちに",
+    "grammar": "〜か〜ないかのうちに",
     "meaning": "\"～するのとほぼ同時に\" 前の事象が起こる直前で、後ろの事象が起こることを表す。",
     "english": [],
     "structure": "V（辞書形 / タ形） + か + V（ナイ形） + かのうちに ※Vは同じ動詞",
@@ -357,7 +357,7 @@
     "note": "実際に起こったことに対して使うため、意志や依頼の文、否定文や命令文は後ろに来ない。"
   },
   {
-    "grammar": "文型：〜かねない",
+    "grammar": "〜かねない",
     "meaning": "〜してしまうかもしれない / 〜という悪い結果になる可能性がある",
     "english": "Indicates the possibility of a certain cause leading to an unfavorable effect.",
     "structure": "V（ます形）ます + かねない",
@@ -382,7 +382,7 @@
     "link": "https://nihongokyoshi-net.com/2018/04/05/jlptn2-grammar-kanenai/"
   },
   {
-    "grammar": "文型：〜かねる",
+    "grammar": "〜かねる",
     "meaning": [],
     "english": "cannot",
     "structure": "V（ます形）ます + かねる",
@@ -402,7 +402,7 @@
     "link": "https://nihongokyoshi-net.com/2018/07/23/jlptn2-grammar-kaneru/"
   },
   {
-    "grammar": "文型：〜かのようだ / 〜かのように",
+    "grammar": "〜かのようだ / 〜かのように",
     "meaning": "〜ように見える / 〜ように感じる",
     "english": [],
     "structure": "V（普通形）+ かのようだ イA（普通形）+ かのようだ ナA（普通形）+ かのようだ N（普通形）+ かのようだ",
@@ -424,7 +424,7 @@
     "note": "後ろに名詞が来る場合は「〜かのようなN」となる"
   },
   {
-    "grammar": "文型：〜からいうと / 〜からいって / 〜からいえば",
+    "grammar": "〜からいうと / 〜からいって / 〜からいえば",
     "meaning": "〜を考えると / 〜から判断すると",
     "english": "judging from",
     "structure": "N + からいうと",
@@ -441,7 +441,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/27/jlptn2-grammar-karaiuto/"
   },
   {
-    "grammar": "文型：〜からして",
+    "grammar": "〜からして",
     "meaning": "①１つの例を出して、その例が～なのだから、他も～であると言いたい時に使う。 ②〜から判断して",
     "english": [],
     "structure": "N +　からして",
@@ -458,7 +458,7 @@
     "note": "マイナスの評価をすることが多い。"
   },
   {
-    "grammar": "文型：〜からすると / 〜からすれば",
+    "grammar": "〜からすると / 〜からすれば",
     "meaning": "〜の立場で考えると",
     "english": "from the standpoint of 〜 / Judging form 〜",
     "structure": "N + からすると",
@@ -476,7 +476,7 @@
     "link": "https://nihongokyoshi-net.com/2019/04/16/jlptn2-grammar-karasuruto/"
   },
   {
-    "grammar": "文型：〜からといって",
+    "grammar": "〜からといって",
     "meaning": "たとえ〜という理由があっても",
     "english": "just because",
     "structure": "普通形 + からといって",
@@ -504,7 +504,7 @@
     "note": "文末には「〜とは限らない」や「〜わけではない」、「〜とはいえない」などの部分否定の表現使われることが多い。"
   },
   {
-    "grammar": "文型：〜気味",
+    "grammar": "〜気味",
     "meaning": "いつもと違って、少し〜の感じがする ネガティブな言葉として使われる。",
     "english": "be a little / have a touch of",
     "structure": "V（ます形）ます + 気味 N + 気味",
@@ -524,7 +524,7 @@
     "link": "https://nihongokyoshi-net.com/2018/10/14/jlptn2-grammar-gimi/"
   },
   {
-    "grammar": "文型１：〜きり",
+    "grammar": "〜きり",
     "meaning": "\"〜してから、そのままずっと\" ある行為が行われてから、その後繰り返されていないことを表す。",
     "english": [],
     "structure": "V（た形） + きり",
@@ -550,7 +550,7 @@
     "link": "https://nihongokyoshi-net.com/2019/03/20/jlptn2-grammar-kiri/"
   },
   {
-    "grammar": "文型：くせに / くせして",
+    "grammar": "くせに / くせして",
     "meaning": "〜という立場・身分なのに",
     "english": "despite the fact that",
     "structure": "V\u001c（辞書形） + くせに ナAな + くせに Nの + くせに",
@@ -576,7 +576,7 @@
     "note": "・自分のことには使えない。（主語は自分以外） ・マイナスのことに使う。 ・人以外には使えない。"
   },
   {
-    "grammar": "文型：〜くらいなら",
+    "grammar": "〜くらいなら",
     "meaning": "〜よりも、むしろ・・・のほうがいい。",
     "english": [],
     "structure": "V（辞書形） + くらいなら",
@@ -594,7 +594,7 @@
     "link": "https://nihongokyoshi-net.com/2019/06/07/jlptn2-grammar-kurainara/"
   },
   {
-    "grammar": "文型：〜げ",
+    "grammar": "〜げ",
     "meaning": "〜そうだ / 〜そうな様子だ",
     "english": "seems like",
     "structure": "イAい + げ ナAだ + げ",
@@ -616,7 +616,7 @@
     "link": "https://nihongokyoshi-net.com/2018/03/30/jlptn2-grammar-ge/"
   },
   {
-    "grammar": "文型：〜ことだ",
+    "grammar": "〜ことだ",
     "meaning": "〜しなさい / 〜したほうがいい 〜するな / 〜しないほうがいい",
     "english": [],
     "structure": "V（辞書形 / ナイ形） + ことだ",
@@ -634,7 +634,7 @@
     "note": "目上の人に対しては使わない"
   },
   {
-    "grammar": "文型：〜ことだし",
+    "grammar": "〜ことだし",
     "meaning": "ので / から",
     "english": "since / because",
     "structure": "V（普通形）＋ことだし ナA（普通形）＋ことだし Nの＋ことだし",
@@ -650,7 +650,7 @@
     "link": "https://nihongokyoshi-net.com/2019/01/16/jlptn2-grammar-kotodashi/"
   },
   {
-    "grammar": "文型：〜ことなく",
+    "grammar": "〜ことなく",
     "meaning": "〜ないで",
     "english": "without",
     "structure": "V（辞書形）+ことなく",
@@ -672,7 +672,7 @@
     "link": "https://nihongokyoshi-net.com/2019/02/14/jlptn2-grammar-kotonaku/"
   },
   {
-    "grammar": "文型：〜ことだろう / 〜ことか",
+    "grammar": "〜ことだろう / 〜ことか",
     "meaning": "非常に〜だと感じる。",
     "english": [],
     "structure": "普通形 + ことだろう",
@@ -691,7 +691,7 @@
     "note": "①「なんと」、「なんて」、「どれほど」、「どんなに」などと一緒によく使われる。 ②書き言葉は「～ことか」、話し言葉は「～ことだろう」、「～ことでしょう」が使われる。"
   },
   {
-    "grammar": "文型：〜ことになると / 〜こととなると",
+    "grammar": "〜ことになると / 〜こととなると",
     "meaning": "～の話題になると / ～の話になると",
     "english": "when it comes to",
     "structure": "N + のことになると V（辞）+ことになると",
@@ -702,7 +702,7 @@
     "link": "https://nihongokyoshi-net.com/2019/01/15/jlptn2-grammar-kotoninaruto/"
   },
   {
-    "grammar": "文型：〜ことに（は）",
+    "grammar": "〜ことに（は）",
     "meaning": "とても〜で",
     "english": [],
     "structure": "V（タ形）＋ことに イAい + ことに ナAな ＋ ことに",
@@ -722,7 +722,7 @@
     "note": "①話し手が感じたことを強調して言う時に使う。 ②この文型と一緒に使われる言葉は限定される。 ③後ろに意志を表す文はこない。現実のことや終わったことなどが来る。"
   },
   {
-    "grammar": "文型：〜ざるを得ない",
+    "grammar": "〜ざるを得ない",
     "meaning": "～しなければならない / どうしても〜する必要がある。",
     "english": [],
     "structure": "V（ナイ形） + ざるを得ない ※「する」、「来る」は例外で「せざるを得ない」、「来ざるを得ない」となる。",
@@ -746,7 +746,7 @@
     "link": "https://nihongokyoshi-net.com/2019/02/21/jlptn2-grammar-zaruoenai/"
   },
   {
-    "grammar": "文型：次第",
+    "grammar": "次第",
     "meaning": "〜したらすぐに / 〜が終わったらすぐに",
     "english": "as soon as",
     "structure": "Vます + 次第",
@@ -768,7 +768,7 @@
     "link": "https://nihongokyoshi-net.com/2018/07/08/jlptn2-grammar-shidai/"
   },
   {
-    "grammar": "文型１：〜次第だ / 〜次第で",
+    "grammar": "〜次第だ / 〜次第で",
     "meaning": "〜によって決まる",
     "english": "depends on",
     "structure": "N + 次第だ / 次第で",
@@ -794,7 +794,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/16/jlptn2-grammar-shidaida/"
   },
   {
-    "grammar": "文型：〜末に",
+    "grammar": "〜末に",
     "meaning": "色々〜したけど、最終的に。",
     "english": [],
     "structure": "V（タ形） + 末に Nの + 末に　※Nはする動詞のN",
@@ -816,7 +816,7 @@
     "note": "末にの「に」は省略可能。"
   },
   {
-    "grammar": "文型：〜ずじまい",
+    "grammar": "〜ずじまい",
     "meaning": "〜しないで終わる",
     "english": "ended up not",
     "structure": "V（ナイ形）ない + ずじまい ※しない → せずじまい",
@@ -842,7 +842,7 @@
     "note": "①「ずじまい」の「ず」は否定を表し「じまい」は「終わり」を表す。 ②残念な気持ち、後悔の気持ちが含まれることが多い。"
   },
   {
-    "grammar": "文型：〜ずにはいられない / 〜ないではいられない",
+    "grammar": "〜ずにはいられない / 〜ないではいられない",
     "meaning": "どうしても〜しないでいることはできない。/ どうしても〜してしまう。",
     "english": "These expression indicate that a certain feeling could not be contained, or that a feeling naturally resulted from a certain condition.",
     "structure": "Vない + ずにはいられない（*しない→せずにはいられない）",
@@ -866,7 +866,7 @@
     "link": "https://nihongokyoshi-net.com/2018/04/01/jlptn2-grammar-zuniwa-irarenai/"
   },
   {
-    "grammar": "文型：～にしては",
+    "grammar": "～にしては",
     "meaning": "～にふさわしくない / ～から予想される結果と違って・・・",
     "english": "for considering",
     "structure": "V(普) + にしては N + にしては",
@@ -879,7 +879,7 @@
     "link": "https://nihongokyoshi-net.com/2018/11/23/jlptn2-grammar-nishitewa/"
   },
   {
-    "grammar": "文型：〜そうにない / 〜そうもない",
+    "grammar": "〜そうにない / 〜そうもない",
     "meaning": "できる可能性が低いことを表す。",
     "english": [],
     "structure": "V (ます形)ます + そうにない V (可能形)られる + そうにない",
@@ -897,7 +897,7 @@
     "link": "https://nihongokyoshi-net.com/2019/01/15/jlptn2-grammar-sooninai/"
   },
   {
-    "grammar": "文型：〜だけあって / 〜だけのことはあって",
+    "grammar": "〜だけあって / 〜だけのことはあって",
     "meaning": "〜ので、当然・・・だ。",
     "english": [],
     "structure": "V（普通形） + だけあって イA（普通形） + だけあって ナA（普通形） + だけあって N + だけあって",
@@ -924,7 +924,7 @@
     "note": "① 後ろには評価する言葉が来る。 ② 未来文、意向文、命令文、推量文では使えない。 ③ 感心したり、褒めたりする時に使われる傾向にある。"
   },
   {
-    "grammar": "文型：〜だけに",
+    "grammar": "〜だけに",
     "meaning": "〜ので、もっと・・・だ。 / 〜ので、なおさら・・・だ。",
     "english": [],
     "structure": "V（普通形） + だけに イA（普通形） + だけに ナAな/である/ だった + だけに N（な / である）/ だった + だけに",
@@ -946,7 +946,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/24/jlptn2-grammar-dakeni/"
   },
   {
-    "grammar": "文型：〜だけまし",
+    "grammar": "〜だけまし",
     "meaning": "良いとは言えないが、他の状況よりかまだいい",
     "english": [],
     "structure": "V（普通形）+ だけまし イA（普通形）+ だけまし ナA\u001c（普通形）+ だけまし Nである + だけまし",
@@ -963,7 +963,7 @@
     "link": "https://nihongokyoshi-net.com/2019/06/04/jlptn2-grammar-dakemashi/"
   },
   {
-    "grammar": "文型：〜たて",
+    "grammar": "〜たて",
     "meaning": "〜したばかりで",
     "english": [],
     "structure": "V（ます形）ます + たて",
@@ -987,7 +987,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/20/jlptn2-grammar-tate/"
   },
   {
-    "grammar": "文型：〜たものではない",
+    "grammar": "〜たものではない",
     "meaning": "とても〜できない",
     "english": [],
     "structure": "V（タ形） + ものではない",
@@ -1004,7 +1004,7 @@
     "note": "「カジュアル」な言い方は「〜たもんじゃない」"
   },
   {
-    "grammar": "文型：〜っこない",
+    "grammar": "〜っこない",
     "meaning": "絶対に～ない / 〜はずがない",
     "english": "\"there is no chance / no way\"",
     "structure": "V（ます形）ます + っこない",
@@ -1031,7 +1031,7 @@
     "link": "https://nihongokyoshi-net.com/2019/01/23/jlptn2-grammar-kkonai/"
   },
   {
-    "grammar": "文型１：〜つつ（逆接）",
+    "grammar": "〜つつ（逆接）",
     "meaning": "けれども",
     "english": "even though",
     "structure": "V（ます形）ます + つつ",
@@ -1055,7 +1055,7 @@
     "link": "https://nihongokyoshi-net.com/2019/04/23/jlptn2-grammar-tsutsu/"
   },
   {
-    "grammar": "文型：〜つつある",
+    "grammar": "〜つつある",
     "meaning": "だんだん〜ている。 書き言葉で使われる。動作や作用がある方向に変化していることを表す。",
     "english": "Used in written language. Indicates a movement or an operation is changing towards a certain direction.",
     "structure": "V（ます形）ます +つつある",
@@ -1082,7 +1082,7 @@
     "link": "https://nihongokyoshi-net.com/2018/03/28/jlptn2-grammar-tsutsuaru/"
   },
   {
-    "grammar": "文型：〜っぽい",
+    "grammar": "〜っぽい",
     "meaning": "①名詞 / い形容詞 + っぽい：～のように感じる / ～のように見える ②名詞 + っぽい：〜が多いと感じる ③動詞 + っぽい：〜しやすい / よく〜する",
     "english": "seems like / somewhat",
     "structure": "N + っぽい いAい + っぽい （例：やすい + っぽい →　やすっぽい） Vます + っぽい",
@@ -1104,7 +1104,7 @@
     "link": "https://nihongokyoshi-net.com/2018/05/29/jlptn2-grammar-ppoi/"
   },
   {
-    "grammar": "文型：〜てこのかた",
+    "grammar": "〜てこのかた",
     "meaning": "〜してから、今までずっと。 / 〜以来",
     "english": "All the time since ~",
     "structure": "V（て形） + このかた N + このかた",
@@ -1127,7 +1127,7 @@
     "note": "・近い過去から現在までのことを話す場合は使えない。 ・未来のことを表すことができない。 ・「〜以来」と意味は同じだが、「〜てこのかた」の方が硬く、日常会話ではほとんど使わない。 ・「〜年このかた」のような慣用句的な表現もある。"
   },
   {
-    "grammar": "文型：〜てでも",
+    "grammar": "〜てでも",
     "meaning": "〜という手段をとってでも",
     "english": [],
     "structure": "V（テ形） + でも",
@@ -1148,7 +1148,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/09/jlptn2-grammar-tedemo/"
   },
   {
-    "grammar": "文型：〜てならない",
+    "grammar": "〜てならない",
     "meaning": "\"気持ちが抑えられないほど〜だ / ひどく〜だ\" 感情や感覚を表す言葉と接続することが多い。",
     "english": "cannot help",
     "structure": "V（て形）+ ならない イAくて +  ならない ナAで + ならない",
@@ -1166,7 +1166,7 @@
     "link": "https://nihongokyoshi-net.com/2019/02/20/jlptn2-grammar-tenaranai/"
   },
   {
-    "grammar": "文型：〜てはいられない",
+    "grammar": "〜てはいられない",
     "meaning": "このままの状態を維持し続けることはできない",
     "english": [],
     "structure": "V（テ形）+ はいられない",
@@ -1191,7 +1191,7 @@
     "note": "・カジュアルな言い方は「〜てちゃいられない」 ・話す時は「〜ていられない」のように「は」を省略したり、「〜てられない」のように「は」と「い」を省略して使うことが多い。"
   },
   {
-    "grammar": "文型：〜てならない",
+    "grammar": "〜てならない",
     "meaning": "\"気持ちが抑えられないほど〜だ / ひどく〜だ\" 感情や感覚を表す言葉と接続することが多い。",
     "english": "cannot help",
     "structure": "V（て形）+ ならない イAくて +  ならない ナAで + ならない",
@@ -1209,7 +1209,7 @@
     "link": "https://nihongokyoshi-net.com/2019/02/20/jlptn2-grammar-tenaranai/"
   },
   {
-    "grammar": "文型：〜てまで / 〜までして",
+    "grammar": "〜てまで / 〜までして",
     "meaning": "〜のような極端な程度まで",
     "english": [],
     "structure": "V（テ形） + まで N + までして",
@@ -1228,7 +1228,7 @@
     "note": "程度が大きく、驚きを表す。"
   },
   {
-    "grammar": "文型：〜てみせる",
+    "grammar": "〜てみせる",
     "meaning": "がんばって〜するつもりだ / 本当に〜するつもりだ",
     "english": [],
     "structure": "V（テ形） + みせる",
@@ -1247,7 +1247,7 @@
     "link": "https://nihongokyoshi-net.com/2019/06/15/jlptn2-grammar-temiseru/"
   },
   {
-    "grammar": "文型：〜というものではない",
+    "grammar": "〜というものではない",
     "meaning": [],
     "english": [],
     "structure": "普通形 + というものではない Na・Nだ  + というものではない",
@@ -1258,7 +1258,7 @@
     "link": "https://nihongokyoshi-net.com/2018/05/08/jlptn2-grammar-toiumonodewanai/"
   },
   {
-    "grammar": "文型：〜といった",
+    "grammar": "〜といった",
     "meaning": "〜のような",
     "english": "like / such as",
     "structure": "N + といった",
@@ -1276,7 +1276,7 @@
     "note": "「～や～といった」の形で使うことが多い。"
   },
   {
-    "grammar": "文型：〜といったら",
+    "grammar": "〜といったら",
     "meaning": "① 〜は 驚きや、感動した気持ちの程度を話題にするときに使う。",
     "english": [],
     "structure": "N + といったら",
@@ -1298,7 +1298,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/30/jlptn2-grammar-toittara/"
   },
   {
-    "grammar": "文型：〜とか（で）",
+    "grammar": "〜とか（で）",
     "meaning": "\"〜そうで\" 伝聞表現。断定した言い方を避けたい時にも使う。",
     "english": "I heard something to the effect that",
     "structure": "V（普通形）+とか イA +とか ナAだ + とか Nだ + とか",
@@ -1315,7 +1315,7 @@
     "link": "https://nihongokyoshi-net.com/2019/01/15/jlptn2-grammar-tokade/"
   },
   {
-    "grammar": "文型：〜どころか",
+    "grammar": "〜どころか",
     "meaning": "①実際に～とは違って・・・だ。（正反対）",
     "english": [],
     "structure": "普通形 + どころか",
@@ -1335,7 +1335,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/28/jlptn2-grammar-dokoroka/"
   },
   {
-    "grammar": "文型：〜ところだった",
+    "grammar": "〜ところだった",
     "meaning": "もう少しで～になる可能性があった。/ ～という結果になったかもしれない。",
     "english": "nearly ended up / almost / was about to happen",
     "structure": "V（辞書形 / ナイ形） + ところだった",
@@ -1355,7 +1355,7 @@
     "link": "https://nihongokyoshi-net.com/2019/01/23/jlptn2-grammar-tokorodatta/"
   },
   {
-    "grammar": "文型：〜どころではない / 〜どころじゃない",
+    "grammar": "〜どころではない / 〜どころじゃない",
     "meaning": "\"～はとてもできない / ～する時間がない\" 「～する余裕がない」、「〜の他にもっと大切なことがある」と強く否定したいときに使う表現。",
     "english": "no way",
     "structure": "V（辞書形）+ どころではない N + どころではない",
@@ -1375,7 +1375,7 @@
     "link": "https://nihongokyoshi-net.com/2019/01/23/jlptn2-grammar-dokorojanai/"
   },
   {
-    "grammar": "文型：〜として〜ない",
+    "grammar": "〜として〜ない",
     "meaning": "全く〜ない",
     "english": [],
     "structure": "1＋助数詞 + として〜ない",
@@ -1393,7 +1393,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/24/jlptn2-grammar-toshite-nai/"
   },
   {
-    "grammar": "文型：〜とともに（相関関係）",
+    "grammar": "〜とともに（相関関係）",
     "meaning": "～すると、それに応じてだんだん ～が変化すると、・・・も一緒に変化する",
     "english": [],
     "structure": "V(辞) + とともに N + とともに",
@@ -1404,7 +1404,7 @@
     "link": "https://nihongokyoshi-net.com/2019/01/23/jlptn2-grammar-totomoni/"
   },
   {
-    "grammar": "文型：〜となると / 〜となれば / 〜となったら",
+    "grammar": "〜となると / 〜となれば / 〜となったら",
     "meaning": "もしそうなったら",
     "english": [],
     "structure": "V（普通形） + となると イA（普通形） + となると ナAだ + となると Nだ + となると",
@@ -1422,7 +1422,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/29/jlptn2-grammar-tonaruto/"
   },
   {
-    "grammar": "文型：〜とは（定義）",
+    "grammar": "〜とは（定義）",
     "meaning": "〜は〜という意味だ。",
     "english": [],
     "structure": "N + とは",
@@ -1441,7 +1441,7 @@
     "note": "カジュアルな表現は「〜って」"
   },
   {
-    "grammar": "文型：〜に越したことはない",
+    "grammar": "〜に越したことはない",
     "meaning": "常識的に考えて〜の方がいい。〜の方が安全だ。",
     "english": "nothing can be better than",
     "structure": "V（普通形）＋ に越したことはない イAい ＋ に越したことはない ナAである ＋ に越したことはない Nである + に越したことはない",
@@ -1457,7 +1457,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/10/jlptn2-grammar-nikoshitakotowanai/"
   },
   {
-    "grammar": "文型：〜にこたえて",
+    "grammar": "〜にこたえて",
     "meaning": "〜を受け入れて  / 〜合うように",
     "english": [],
     "structure": "N +に応えて",
@@ -1476,7 +1476,7 @@
     "link": "https://nihongokyoshi-net.com/2019/06/04/jlptn2-grammar-nikotaete/"
   },
   {
-    "grammar": "文型：〜に際して",
+    "grammar": "〜に際して",
     "meaning": "〜するときに / 〜に先立ち",
     "english": [],
     "structure": "V（辞書形） + に際して N（する動詞） + に際して",
@@ -1494,7 +1494,7 @@
     "note": "①硬い表現 ②これから起こることに対して使う。"
   },
   {
-    "grammar": "文型：〜に限って",
+    "grammar": "〜に限って",
     "meaning": "①〜の場合だけ、絶対に〜ない。 ②〜の場合だけ、特にそうである / 運悪くそうなる。",
     "english": [],
     "structure": "N + に限って",
@@ -1516,7 +1516,7 @@
     "link": "https://nihongokyoshi-net.com/2019/07/04/jlptn2-grammar-nikagitte/"
   },
   {
-    "grammar": "文型：〜に相違ない",
+    "grammar": "〜に相違ない",
     "meaning": "きっと〜だ / 〜に間違いない",
     "english": "without",
     "structure": "V（普通形）＋ に相違ない イA（普通形＋ に相違ない ナA ＋ に相違ない N ＋ に相違ない",
@@ -1536,7 +1536,7 @@
     "note": "「〜に違いない」よりも硬い表現。"
   },
   {
-    "grammar": "文型：〜にて",
+    "grammar": "〜にて",
     "meaning": "〜で",
     "english": [],
     "structure": "N + にて",
@@ -1555,7 +1555,7 @@
     "note": "硬い表現。文章や改まった場面で使われる"
   },
   {
-    "grammar": "文型：〜のみならず",
+    "grammar": "〜のみならず",
     "meaning": "～だけでなく",
     "english": "not only, but",
     "structure": "普通形 + のみならず",
@@ -1573,7 +1573,7 @@
     "link": "https://nihongokyoshi-net.com/2019/02/20/jlptn2-grammar-nominarazu/"
   },
   {
-    "grammar": "文型：〜っぱなし",
+    "grammar": "〜っぱなし",
     "meaning": [],
     "english": "leave on / leave out / leave as is",
     "structure": "V（ます形）ます + っぱなし",
@@ -1599,7 +1599,7 @@
     "note": "マイナスに意味で使われることが多く、不満や呆れた気持ちが含まれる。"
   },
   {
-    "grammar": "文型：〜ぶる",
+    "grammar": "〜ぶる",
     "meaning": "（本当はそうではないのに）〜のように振る舞う",
     "english": [],
     "structure": "イAい + ぶる ナA + ぶる N + ぶる",
@@ -1622,7 +1622,7 @@
     "note": "① 行動・態度などがわざとらしい様子を表す。 ② マイナスの意味で使われる。"
   },
   {
-    "grammar": "文型：〜っぽい",
+    "grammar": "〜っぽい",
     "meaning": "①名詞 / い形容詞 + っぽい：～のように感じる / ～のように見える ②名詞 + っぽい：〜が多いと感じる ③動詞 + っぽい：〜しやすい / よく〜する",
     "english": "seems like / somewhat",
     "structure": "N + っぽい いAい + っぽい （例：やすい + っぽい →　やすっぽい） Vます + っぽい",
@@ -1644,7 +1644,7 @@
     "link": "https://nihongokyoshi-net.com/2018/05/29/jlptn2-grammar-ppoi/"
   },
   {
-    "grammar": "文型：〜ないことには〜ない",
+    "grammar": "〜ないことには〜ない",
     "meaning": "～しなければ～ない",
     "english": "unless",
     "structure": "V（ナイ形） + ないことには～ない イAく + ないことには～ない ナAで + ないことには～ない Nで + ないことには～ない",
@@ -1668,7 +1668,7 @@
     "link": "https://nihongokyoshi-net.com/2019/01/23/jlptn2-grammar-naikotowa-nai/"
   },
   {
-    "grammar": "文型：〜ないことはない / 〜ないこともない",
+    "grammar": "〜ないことはない / 〜ないこともない",
     "meaning": "〜という可能性があるかもしれない / 絶対に〜とは言えない",
     "english": [],
     "structure": "V（ナイ形） + ことはない イAく + ないことはない ナAで + ないことはない Nで +　ないことはない",
@@ -1684,7 +1684,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/17/jlptn2-grammar-naikotowanai/"
   },
   {
-    "grammar": "文型：〜ないで済む / 〜ずに済む",
+    "grammar": "〜ないで済む / 〜ずに済む",
     "meaning": "〜しなくてもいい / 〜なくても問題はない",
     "english": [],
     "structure": "V（ナイ形） + で済む V（ナイ形）ない +ずに済む",
@@ -1710,7 +1710,7 @@
     "note": "心配していたことが起こらず、安心したというニュアンスが含まれる。"
   },
   {
-    "grammar": "文型：〜ないでもない / 〜ないものでもない",
+    "grammar": "〜ないでもない / 〜ないものでもない",
     "meaning": "全く〜ないわけではない / 場合によっては〜する",
     "english": [],
     "structure": "V（ナイ形） + ものでもない イAくない + ものでもない ナAでない + ものでもない Nでない + ものでもない",
@@ -1730,7 +1730,7 @@
     "link": "https://nihongokyoshi-net.com/2019/06/10/jlptn2-grammar-naidemonai/"
   },
   {
-    "grammar": "文型：〜ないとも限らない",
+    "grammar": "〜ないとも限らない",
     "meaning": "もしかしたら〜かもしれない / 絶対にそうだとは言えない",
     "english": [],
     "structure": "V（ナイ形） + とも限らない N + じゃないとも限らない",
@@ -1749,7 +1749,7 @@
     "link": "https://nihongokyoshi-net.com/2019/12/19/jlptn2-grammar-naitomokagiranai/"
   },
   {
-    "grammar": "文型：〜ながら（逆接）",
+    "grammar": "〜ながら（逆接）",
     "meaning": "〜のに / 〜けれども 「〜ながら・・・」の「〜から当然予想されることとは違い、実際は・・・だ」と言いたい時に使う表現。",
     "english": "even while / although",
     "structure": "Vます + ながら イAい + ながら ナA + ながら N + ながら",
@@ -1773,7 +1773,7 @@
     "note": "「ながら」の後ろに「も」をつけて、「ながらも」と言う場合もあるが、意味は同じである。"
   },
   {
-    "grammar": "文型：〜なんて（驚き）",
+    "grammar": "〜なんて（驚き）",
     "meaning": "予想していなかった事実を見たり聞いたりした時の驚きや感慨を表す時に使う表現。 話し言葉で使われる。書き言葉では「〜とは」が使われる。",
     "english": "Disbelief or deep emotion about unexpected fact seen or heard. This expression is used when you talk. In written form, takes “〜とは”",
     "structure": "普通形 + なんて",
@@ -1797,7 +1797,7 @@
     "link": "https://nihongokyoshi-net.com/2018/06/06/jlptn2-grammar-nante/"
   },
   {
-    "grammar": "文型：〜にあたって / 〜にあたり",
+    "grammar": "〜にあたって / 〜にあたり",
     "meaning": "〜するとき",
     "english": [],
     "structure": "V （辞書形）+あたり N + にあたり",
@@ -1815,7 +1815,7 @@
     "note": "硬い表現なので日常会話では使わない。"
   },
   {
-    "grammar": "文型：〜に応じて",
+    "grammar": "〜に応じて",
     "meaning": "・～にあわせて ・前の事柄が変われば、それに合わせて後の事柄も変わる。",
     "english": [],
     "structure": "N + に応じて",
@@ -1836,7 +1836,7 @@
     "link": "https://nihongokyoshi-net.com/2019/04/29/jlptn2-grammar-oujite/"
   },
   {
-    "grammar": "文型：〜に限らず",
+    "grammar": "〜に限らず",
     "meaning": "～だけでなく、・・・ 「・・・」には「～」よりも広い意味の言葉が来る。",
     "english": [],
     "structure": "N + に限らず",
@@ -1852,7 +1852,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/21/jlptn2-grammar-nikagirazu/"
   },
   {
-    "grammar": "文型：〜限り（条件の範囲）",
+    "grammar": "〜限り（条件の範囲）",
     "meaning": "～する間はずっと / ～の状態が続く間はずっと",
     "english": [],
     "structure": "普通形の現在形 + 限り",
@@ -1867,7 +1867,7 @@
     "link": "https://nihongokyoshi-net.com/2019/01/23/jlptn2-grammar-kagiri/"
   },
   {
-    "grammar": "文型：〜に限り",
+    "grammar": "〜に限り",
     "meaning": "～にだけ特別に・・・する。",
     "english": "only for",
     "structure": "N + に限り",
@@ -1884,7 +1884,7 @@
     "link": "https://nihongokyoshi-net.com/2018/11/21/jlptn2-grammar-nikagiri/"
   },
   {
-    "grammar": "文型：〜に加えて",
+    "grammar": "〜に加えて",
     "meaning": "〜だけでなく、さらに",
     "english": "in addition to",
     "structure": "Nに + 加えて",
@@ -1902,7 +1902,7 @@
     "note": "①ある事柄に対して、類似する別の事柄を追加するときに使う。 ②少し硬い表現"
   },
   {
-    "grammar": "文型：〜先立って / 〜に先立ち",
+    "grammar": "〜先立って / 〜に先立ち",
     "meaning": "〜の前の準備として、必要なことをする",
     "english": [],
     "structure": "V（辞書形） + に先立って N + に先立って",
@@ -1920,7 +1920,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/23/jlptn2-grammar-sakidatte/"
   },
   {
-    "grammar": "文型：～にしたら / ～にすれば / ～にしてみたら / ～にしてみれば",
+    "grammar": "～にしたら / ～にすれば / ～にしてみたら / ～にしてみれば",
     "meaning": "～の立場に立って考えると",
     "english": "even for",
     "structure": "N + にしたら /　にすれば / にしてみたら / にしてみれば",
@@ -1931,7 +1931,7 @@
     "link": "https://nihongokyoshi-net.com/2019/01/16/jlptn2-grammar-nishitara/"
   },
   {
-    "grammar": "文型：～にしては",
+    "grammar": "～にしては",
     "meaning": "～にふさわしくない / ～から予想される結果と違って・・・",
     "english": "for considering",
     "structure": "V(普) + にしては N + にしては",
@@ -1944,7 +1944,7 @@
     "link": "https://nihongokyoshi-net.com/2018/11/23/jlptn2-grammar-nishitewa/"
   },
   {
-    "grammar": "文型：〜にすぎない",
+    "grammar": "〜にすぎない",
     "meaning": [],
     "english": "Emphasizes the low level of something in terms of quality or quantity.",
     "structure": [],
@@ -1964,7 +1964,7 @@
     "link": "https://nihongokyoshi-net.com/2018/04/12/jlptn2-grammar-nisuginai/"
   },
   {
-    "grammar": "文型：〜に沿って",
+    "grammar": "〜に沿って",
     "meaning": "〜にしたがって / 〜から離れないように",
     "english": "along",
     "structure": "N + にそって",
@@ -1975,7 +1975,7 @@
     "link": "https://nihongokyoshi-net.com/2018/08/31/jlptn2-grammar-nisotte/"
   },
   {
-    "grammar": "文型：〜につき（理由）",
+    "grammar": "〜につき（理由）",
     "meaning": "〜のため、〜という理由で 看板や掲示物など通知文でよく使われる表現。硬い表現なので日常会話で使うことはほとんどない。",
     "english": "because of / on account of",
     "structure": "N + につき",
@@ -1998,7 +1998,7 @@
     "link": "https://nihongokyoshi-net.com/2018/06/04/jlptn2-grammar-nitsuki/"
   },
   {
-    "grammar": "文型：〜にともなって",
+    "grammar": "〜にともなって",
     "meaning": [],
     "english": "As~, With~ (Used to express one thing changes in response to the change of another thing.)",
     "structure": "V(辞) + にともなって N + にともなって",
@@ -2017,7 +2017,7 @@
     "link": "https://nihongokyoshi-net.com/2018/04/16/jlptn2-grammar-tomonatte/"
   },
   {
-    "grammar": "文型：〜につき（理由）",
+    "grammar": "〜につき（理由）",
     "meaning": "〜のため、〜という理由で 看板や掲示物など通知文でよく使われる表現。硬い表現なので日常会話で使うことはほとんどない。",
     "english": "because of / on account of",
     "structure": "N + につき",
@@ -2040,7 +2040,7 @@
     "link": "https://nihongokyoshi-net.com/2018/06/04/jlptn2-grammar-nitsuki/"
   },
   {
-    "grammar": "文型：〜につけて",
+    "grammar": "〜につけて",
     "meaning": "～すると、いつも同じ気持ちになる。",
     "english": "whenever",
     "structure": "V（辞書形） + につけて",
@@ -2057,7 +2057,7 @@
     "link": "https://nihongokyoshi-net.com/2019/01/23/jlptn2-grammar-nitsukete/"
   },
   {
-    "grammar": "文型：〜にすぎない",
+    "grammar": "〜にすぎない",
     "meaning": [],
     "english": "Emphasizes the low level of something in terms of quality or quantity.",
     "structure": [],
@@ -2077,7 +2077,7 @@
     "link": "https://nihongokyoshi-net.com/2018/04/12/jlptn2-grammar-nisuginai/"
   },
   {
-    "grammar": "文型：〜にともなって",
+    "grammar": "〜にともなって",
     "meaning": [],
     "english": "As~, With~ (Used to express one thing changes in response to the change of another thing.)",
     "structure": "V(辞) + にともなって N + にともなって",
@@ -2096,7 +2096,7 @@
     "link": "https://nihongokyoshi-net.com/2018/04/16/jlptn2-grammar-tomonatte/"
   },
   {
-    "grammar": "文型：〜にほかならない",
+    "grammar": "〜にほかならない",
     "meaning": "〜以外のものではない /  絶対に〜だ  [接続] N + にほかならない ほかならぬ + N",
     "english": [],
     "structure": [],
@@ -2121,7 +2121,7 @@
     "note": "・書き言葉 ・断定したい時の言い方"
   },
   {
-    "grammar": "文型：〜にも関わらず",
+    "grammar": "〜にも関わらず",
     "meaning": "〜のに",
     "english": [],
     "structure": "普通形 + にも関わらず",
@@ -2147,7 +2147,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/17/jlptn2-grammar-nimokakawarazu/"
   },
   {
-    "grammar": "文型：〜に基づいて",
+    "grammar": "〜に基づいて",
     "meaning": "〜を基礎にして / 〜を根拠に",
     "english": "based on",
     "structure": "N + に基づいて",
@@ -2168,7 +2168,7 @@
     "link": "https://nihongokyoshi-net.com/2018/07/02/jlptn2-grammar-motoduite/"
   },
   {
-    "grammar": "文型：〜ぬ",
+    "grammar": "〜ぬ",
     "meaning": "〜ない",
     "english": [],
     "structure": "V（ナイ形）ない+ ぬ ※「する」は「せぬ」となる",
@@ -2192,7 +2192,7 @@
     "note": "古い表現であまり日常生活で使うことはない"
   },
   {
-    "grammar": "文型：〜ぬきにして / 〜ぬきで",
+    "grammar": "〜ぬきにして / 〜ぬきで",
     "meaning": "〜を考慮に入れず / 〜を除いて",
     "english": "without",
     "structure": "N + は抜きにして",
@@ -2217,7 +2217,7 @@
     "link": "https://nihongokyoshi-net.com/2019/06/01/jlptn2-grammar-nukinishite/"
   },
   {
-    "grammar": "文型：〜ぬく",
+    "grammar": "〜ぬく",
     "meaning": "最後まで頑張って〜する。",
     "english": [],
     "structure": "V（ます形）ます + ぬく",
@@ -2239,7 +2239,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/16/jlptn2-grammar-nuku/"
   },
   {
-    "grammar": "文型：〜ことだから",
+    "grammar": "〜ことだから",
     "meaning": "〜なのだからきっと",
     "english": [],
     "structure": "Nの +ことだから",
@@ -2263,7 +2263,7 @@
     "note": "後件は推量や判断が来る。"
   },
   {
-    "grammar": "文型：〜ことだから",
+    "grammar": "〜ことだから",
     "meaning": "〜なのだからきっと",
     "english": [],
     "structure": "Nの +ことだから",
@@ -2287,7 +2287,7 @@
     "note": "後件は推量や判断が来る。"
   },
   {
-    "grammar": "文型：〜のもとで",
+    "grammar": "〜のもとで",
     "meaning": "〜の下で / 〜に頼って",
     "english": "under",
     "structure": "Nの + もとで",
@@ -2306,7 +2306,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/09/jlptn2-grammar-motode/"
   },
   {
-    "grammar": "文型：〜ばかりか",
+    "grammar": "〜ばかりか",
     "meaning": "〜だけでなく",
     "english": [],
     "structure": "V（普通形）+ ばかりか イA（普通形）+ ばかりか ナAな/である + ばかりか Nである + ばかりか",
@@ -2327,7 +2327,7 @@
     "note": "①後件には「〜も」、「〜さえ」、「〜まで」などがよく使われる。 ②後件に意志や命令、勧誘などの表現はほとんど来ない。"
   },
   {
-    "grammar": "文型：〜ばかりか",
+    "grammar": "〜ばかりか",
     "meaning": "〜だけでなく",
     "english": [],
     "structure": "V（普通形）+ ばかりか イA（普通形）+ ばかりか ナAな/である + ばかりか Nである + ばかりか",
@@ -2348,7 +2348,7 @@
     "note": "①後件には「〜も」、「〜さえ」、「〜まで」などがよく使われる。 ②後件に意志や命令、勧誘などの表現はほとんど来ない。"
   },
   {
-    "grammar": "文型：〜ばかりだ",
+    "grammar": "〜ばかりだ",
     "meaning": "「ますます～していく」 物事が悪い方向に変化が進んで行くことを表す。",
     "english": [],
     "structure": "V（辞書形） + ばかりだ",
@@ -2365,7 +2365,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/03/jlptn2-grammar-bakarida/"
   },
   {
-    "grammar": "文型：〜ばかりだ",
+    "grammar": "〜ばかりだ",
     "meaning": "「ますます～していく」 物事が悪い方向に変化が進んで行くことを表す。",
     "english": [],
     "structure": "V（辞書形） + ばかりだ",
@@ -2382,7 +2382,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/03/jlptn2-grammar-bakarida/"
   },
   {
-    "grammar": "文型：〜ばかりに",
+    "grammar": "〜ばかりに",
     "meaning": "～ので / ～が原因で 話し手の後悔や残念な気持ちを表すことが多く、後ろの文には悪い結果が来る。",
     "english": [],
     "structure": "V（普通形）+ ばかりに イA（普通形）+ ばかりに ナAな/である/だった + ばかりに Nである/だった + ばかりに",
@@ -2402,7 +2402,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/21/jlptn2-grammar-bakarini/"
   },
   {
-    "grammar": "文型：〜はともかく（として）",
+    "grammar": "〜はともかく（として）",
     "meaning": "～は今は問題にしないで・・・だ。",
     "english": [],
     "structure": "N + はともかく（として）",
@@ -2421,7 +2421,7 @@
     "link": "https://nihongokyoshi-net.com/2019/02/22/jlptn2-grammar-tomokakutoshite/"
   },
   {
-    "grammar": "文型：〜ばまだしも / 〜ならまだしも",
+    "grammar": "〜ばまだしも / 〜ならまだしも",
     "meaning": "〜なら少しはいいが / 〜はまだ許容範囲であるが",
     "english": [],
     "structure": "Nは + まだしも Nなら + まだしも",
@@ -2439,7 +2439,7 @@
     "link": "https://nihongokyoshi-net.com/2019/06/03/jlptn2-grammar-madashimo/"
   },
   {
-    "grammar": "文型：〜ばまだしも / 〜ならまだしも",
+    "grammar": "〜ばまだしも / 〜ならまだしも",
     "meaning": "〜なら少しはいいが / 〜はまだ許容範囲であるが",
     "english": [],
     "structure": "Nは + まだしも Nなら + まだしも",
@@ -2457,7 +2457,7 @@
     "link": "https://nihongokyoshi-net.com/2019/06/03/jlptn2-grammar-madashimo/"
   },
   {
-    "grammar": "文型：〜はもとより・・・も",
+    "grammar": "〜はもとより・・・も",
     "meaning": "〜はもちろん",
     "english": [],
     "structure": "N + はもとより",
@@ -2475,7 +2475,7 @@
     "note": "・「〜はもちろん」よりも硬い表現"
   },
   {
-    "grammar": "文型：〜反面",
+    "grammar": "〜反面",
     "meaning": "一方で / 一つの面では〜であるが、別の面から見ると",
     "english": "on the other hand",
     "structure": "普通形 + 反面",
@@ -2493,7 +2493,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/21/jlptn2-grammar-hanmen/"
   },
   {
-    "grammar": "文型１：〜まい（否定の意志）",
+    "grammar": "〜まい（否定の意志）",
     "meaning": "～しようと思わない",
     "english": [],
     "structure": "V（普） + まい",
@@ -2515,7 +2515,7 @@
     "link": "https://nihongokyoshi-net.com/2019/02/21/jlptn2-grammar-mai/"
   },
   {
-    "grammar": "文型：〜まま（に）",
+    "grammar": "〜まま（に）",
     "meaning": "〜とおりに / 〜にしたがって",
     "english": [],
     "structure": "V（辞書形 / 〜られる） + （が）まま（に）",
@@ -2531,7 +2531,7 @@
     "link": "https://nihongokyoshi-net.com/2019/06/01/jlptn2-grammar-mamani/"
   },
   {
-    "grammar": "文型：〜まま（に）",
+    "grammar": "〜まま（に）",
     "meaning": "〜とおりに / 〜にしたがって",
     "english": [],
     "structure": "V（辞書形 / 〜られる） + （が）まま（に）",
@@ -2547,7 +2547,7 @@
     "link": "https://nihongokyoshi-net.com/2019/06/01/jlptn2-grammar-mamani/"
   },
   {
-    "grammar": "文型：〜もかまわず",
+    "grammar": "〜もかまわず",
     "meaning": "〜も気にしないで",
     "english": [],
     "structure": "V（普通形） + のもかまわず イA（普通形）+ のもかまわず ナAな / である + もかまわず N  + もかわらず",
@@ -2567,7 +2567,7 @@
     "link": "https://nihongokyoshi-net.com/2019/06/04/jlptn2-grammar-kamawazu/"
   },
   {
-    "grammar": "文型：〜もかまわず",
+    "grammar": "〜もかまわず",
     "meaning": "〜も気にしないで",
     "english": [],
     "structure": "V（普通形） + のもかまわず イA（普通形）+ のもかまわず ナAな / である + もかまわず N  + もかわらず",
@@ -2587,7 +2587,7 @@
     "link": "https://nihongokyoshi-net.com/2019/06/04/jlptn2-grammar-kamawazu/"
   },
   {
-    "grammar": "文型：〜もしない",
+    "grammar": "〜もしない",
     "meaning": "全く〜しない",
     "english": [],
     "structure": "V（ます形）ます + もしない",
@@ -2609,7 +2609,7 @@
     "link": "https://nihongokyoshi-net.com/2019/07/04/jlptn2-grammar-moshinai/"
   },
   {
-    "grammar": "文型：〜もしない",
+    "grammar": "〜もしない",
     "meaning": "全く〜しない",
     "english": [],
     "structure": "V（ます形）ます + もしない",
@@ -2631,7 +2631,7 @@
     "link": "https://nihongokyoshi-net.com/2019/07/04/jlptn2-grammar-moshinai/"
   },
   {
-    "grammar": "文型：〜ものか / 〜ものですか",
+    "grammar": "〜ものか / 〜ものですか",
     "meaning": "二度と〜ない / 決して〜ない",
     "english": [],
     "structure": "V（辞書形）+ ものか イAい + ものか ナAな + ものか Nな + ものか",
@@ -2652,7 +2652,7 @@
     "link": "https://nihongokyoshi-net.com/2019/06/03/jlptn2-grammar-monoka/"
   },
   {
-    "grammar": "文型：〜ものか / 〜ものですか",
+    "grammar": "〜ものか / 〜ものですか",
     "meaning": "二度と〜ない / 決して〜ない",
     "english": [],
     "structure": "V（辞書形）+ ものか イAい + ものか ナAな + ものか Nな + ものか",
@@ -2673,7 +2673,7 @@
     "link": "https://nihongokyoshi-net.com/2019/06/03/jlptn2-grammar-monoka/"
   },
   {
-    "grammar": "文型：〜ものがある",
+    "grammar": "〜ものがある",
     "meaning": "なんとなく〜だと感じられる。",
     "english": [],
     "structure": "V（辞書形） + ものがある イAい + ものがある ナAな + ものがある",
@@ -2691,7 +2691,7 @@
     "note": "「ものがある」の前には感情を表す言葉が来ることが多い"
   },
   {
-    "grammar": "文型：〜ものがある",
+    "grammar": "〜ものがある",
     "meaning": "なんとなく〜だと感じられる。",
     "english": [],
     "structure": "V（辞書形） + ものがある イAい + ものがある ナAな + ものがある",
@@ -2709,7 +2709,7 @@
     "note": "「ものがある」の前には感情を表す言葉が来ることが多い"
   },
   {
-    "grammar": "文型：ものだ（感慨）",
+    "grammar": "ものだ（感慨）",
     "meaning": "ほんとうに～だなぁ",
     "english": "really",
     "structure": "V（普）+　ものだ イAい + ものだ ナAな + ものだ",
@@ -2720,7 +2720,7 @@
     "link": "https://nihongokyoshi-net.com/2019/01/23/jlptn2-grammar-monoda-kangai/"
   },
   {
-    "grammar": "文型：ものだ（感慨）",
+    "grammar": "ものだ（感慨）",
     "meaning": "ほんとうに～だなぁ",
     "english": "really",
     "structure": "V（普）+　ものだ イAい + ものだ ナAな + ものだ",
@@ -2731,7 +2731,7 @@
     "link": "https://nihongokyoshi-net.com/2019/01/23/jlptn2-grammar-monoda-kangai/"
   },
   {
-    "grammar": "文型１：ものだ（当然）",
+    "grammar": "ものだ（当然）",
     "meaning": "本来そうだと思われることを表す。当然〜する。",
     "english": "Normally, in general, should ~, must ~ Used to express something that is considered to be common knowledge.",
     "structure": "V（辞書形 / ナイ形）+ ものだ イA + ものだ ナAな + ものだ",
@@ -2763,7 +2763,7 @@
     "note": "話し言葉では「もんだ」を使うことも多い。 否定形は「〜ものではない」。"
   },
   {
-    "grammar": "文型１：ものだ（当然）",
+    "grammar": "ものだ（当然）",
     "meaning": "本来そうだと思われることを表す。当然〜する。",
     "english": "Normally, in general, should ~, must ~ Used to express something that is considered to be common knowledge.",
     "structure": "V（辞書形 / ナイ形）+ ものだ イA + ものだ ナAな + ものだ",
@@ -2795,7 +2795,7 @@
     "note": "話し言葉では「もんだ」を使うことも多い。 否定形は「〜ものではない」。"
   },
   {
-    "grammar": "文型：〜ものだから",
+    "grammar": "〜ものだから",
     "meaning": "～ので",
     "english": "because",
     "structure": "V（普） + ものだから イA（普） + ものだから ナAな + ものだから Nな + ものだから",
@@ -2810,7 +2810,7 @@
     "note": "「もので」のくだけた形は「もんで」。"
   },
   {
-    "grammar": "文型：〜ものだから",
+    "grammar": "〜ものだから",
     "meaning": "～ので",
     "english": "because",
     "structure": "V（普） + ものだから イA（普） + ものだから ナAな + ものだから Nな + ものだから",
@@ -2825,7 +2825,7 @@
     "note": "「もので」のくだけた形は「もんで」。"
   },
   {
-    "grammar": "文型：～ものなら",
+    "grammar": "～ものなら",
     "meaning": "〜なら",
     "english": [],
     "structure": "V（可能形） + ものなら",
@@ -2845,7 +2845,7 @@
     "note": "・カジュアルな言い方は「〜もんなら」"
   },
   {
-    "grammar": "文型：～ものなら",
+    "grammar": "～ものなら",
     "meaning": "〜なら",
     "english": [],
     "structure": "V（可能形） + ものなら",
@@ -2865,7 +2865,7 @@
     "note": "・カジュアルな言い方は「〜もんなら」"
   },
   {
-    "grammar": "文型：〜ものの",
+    "grammar": "〜ものの",
     "meaning": "だけれども",
     "english": "\"It is true that it is ~ however.\" Indicate that expectations or wishes based on certain established facts mentioned in the first clause differ from reality.",
     "structure": "V（普通形） + ものの イA（普通形） + ものの ナAである + ものの Nである + ものの",
@@ -2889,7 +2889,7 @@
     "link": "https://nihongokyoshi-net.com/2018/04/13/jlptn2-grammar-monono/"
   },
   {
-    "grammar": "文型：〜もの / 〜もん / 〜だもん",
+    "grammar": "〜もの / 〜もん / 〜だもん",
     "meaning": "〜から くだけた話し言葉。子供がよく使う。",
     "english": "because",
     "structure": "V（普） + もん ナAな + んだもん Nな + んだもん",
@@ -2905,7 +2905,7 @@
     "link": "https://nihongokyoshi-net.com/2019/01/22/jlptn2-grammar-mon/"
   },
   {
-    "grammar": "文型：〜やら〜やら",
+    "grammar": "〜やら〜やら",
     "meaning": "〜や〜など",
     "english": "and so on",
     "structure": "V（辞）+ やら イAい + やら N + やら",
@@ -2922,7 +2922,7 @@
     "link": "https://nihongokyoshi-net.com/2019/02/19/jlptn2-grammar-yara-yara/"
   },
   {
-    "grammar": "文型：〜やら〜やら",
+    "grammar": "〜やら〜やら",
     "meaning": "〜や〜など",
     "english": "and so on",
     "structure": "V（辞）+ やら イAい + やら N + やら",
@@ -2939,7 +2939,7 @@
     "link": "https://nihongokyoshi-net.com/2019/02/19/jlptn2-grammar-yara-yara/"
   },
   {
-    "grammar": "文型：〜ようとしている",
+    "grammar": "〜ようとしている",
     "meaning": "もうすぐ〜する / 間もなく〜する",
     "english": [],
     "structure": "V（意向形） + としている",
@@ -2956,7 +2956,7 @@
     "note": "①動詞は瞬間動詞 ②主語に「私」は使えない"
   },
   {
-    "grammar": "文型：〜ようものなら",
+    "grammar": "〜ようものなら",
     "meaning": "もし〜のようなことをしたら",
     "english": [],
     "structure": "V（意向形） + ものなら",
@@ -2974,7 +2974,7 @@
     "link": "https://nihongokyoshi-net.com/2019/07/25/jlptn2-grammar-youmononara/"
   },
   {
-    "grammar": "文型：～を契機に / ～を契機として",
+    "grammar": "～を契機に / ～を契機として",
     "meaning": "〜をいい機会だと考えて / 〜をきっかけにして",
     "english": [],
     "structure": "N + を契機に",
@@ -2991,7 +2991,7 @@
     "note": "・書き言葉 ・文の後ろにはプラスの意味の言葉が来ることが多い。"
   },
   {
-    "grammar": "文型：〜を頼りに / 〜を頼り / 〜を頼りにして",
+    "grammar": "〜を頼りに / 〜を頼り / 〜を頼りにして",
     "meaning": "〜を助けに",
     "english": "to rely on",
     "structure": "Nを + 頼りに Nを + 頼りとして Nを+ 頼りにして",
@@ -3013,7 +3013,7 @@
     "link": "https://nihongokyoshi-net.com/2019/06/06/jlptn2-grammar-tayorini/"
   },
   {
-    "grammar": "文型：〜を問わず",
+    "grammar": "〜を問わず",
     "meaning": "〜に関係なく / 〜問題にしないで",
     "english": "regardless of / irrespective of",
     "structure": "N + を問わず",
@@ -3040,7 +3040,7 @@
     "link": "https://nihongokyoshi-net.com/2019/02/14/jlptn2-grammar-towazu/"
   },
   {
-    "grammar": "文型：〜を除いて / 〜を除き / 〜を除けば",
+    "grammar": "〜を除いて / 〜を除き / 〜を除けば",
     "meaning": "〜を例外として / 〜以外",
     "english": "except",
     "structure": "N + を除いて / を除き / を除けば",
@@ -3059,7 +3059,7 @@
     "link": "https://nihongokyoshi-net.com/2020/03/10/jlptn2-grammar-nozoite/"
   },
   {
-    "grammar": "文型：〜をはじめ",
+    "grammar": "〜をはじめ",
     "meaning": "〜を第一に",
     "english": [],
     "structure": "N + をはじめ",
@@ -3081,7 +3081,7 @@
     "link": "https://nihongokyoshi-net.com/2018/07/09/jlptn2-grammar-hajime/"
   },
   {
-    "grammar": "文型：～をめぐって",
+    "grammar": "～をめぐって",
     "meaning": "〜について",
     "english": [],
     "structure": "N + をめぐって",
@@ -3101,7 +3101,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/15/jlptn2-grammar-megutte/"
   },
   {
-    "grammar": "文型：Nをもとに / もとにして",
+    "grammar": "Nをもとに / もとにして",
     "meaning": "～を素材／基本／基準／参考にして",
     "english": "based on ~",
     "structure": "N + をもとにして",
@@ -3123,7 +3123,7 @@
     "link": "https://nihongokyoshi-net.com/2018/04/14/jlptn2-grammar-motonishite/"
   },
   {
-    "grammar": "文型：〜のだから / 〜んだから",
+    "grammar": "〜のだから / 〜んだから",
     "meaning": "〜なので",
     "english": "since / because",
     "structure": "普通形 + のだから / んだから",
@@ -3140,7 +3140,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/27/jlptn2-grammar-nodakara/"
   },
   {
-    "grammar": "文型：〜わけがない",
+    "grammar": "〜わけがない",
     "meaning": "～は考えられない / 絶対に〜でない 話し手が確信を持って、「〜ではない」と言う時に使う表現。可能性を完全に否定する。",
     "english": "\"Be inconceivable / should not be the case\" An expression used when the speaker says “not” with certainty. It denies the possibility completely.",
     "structure": "V(普通形) + わけがない イA（普通形） + わけがない ナAな/である + わけがない Nの/である + わけがない",
@@ -3173,7 +3173,7 @@
     "note": "・「〜はずがない」と言い換えが可能。 ・「否定形 + わけがない」は二重否定になるので、「必ず〜だ」と、強い確信の込もった推量表現になる。 ・会話では「〜わけない」という表現がよく使われる。"
   },
   {
-    "grammar": "文型：まだ〜ていない",
+    "grammar": "まだ〜ていない",
     "meaning": "動作やイベントが終わっていないことを表す（未完了）。",
     "english": "\"not yet\" Indicates that the action or event has not been completed.",
     "structure": "まだ + V（テ形） + いません",

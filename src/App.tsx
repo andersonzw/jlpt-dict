@@ -2,6 +2,7 @@ import JLPTGrammar from "./routes/JLPTGrammar.tsx";
 import Header from "./routes/Header.tsx";
 import { Route, Routes } from "react-router-dom";
 import About from "./routes/About.tsx";
+import Home from "./routes/Home.tsx";
 function App() {
 
   return (
@@ -9,7 +10,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Header />}>
           <Route path= "/jlpt/:level"  element={<JLPTGrammar />} />
-          <Route index  element={<About/>}/>
+          <Route index  element={<Home/>}/>
+          <Route path ="/about"  element={<About/>}/>
         </Route>
       </Routes>
     </div>

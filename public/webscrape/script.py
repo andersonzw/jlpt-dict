@@ -7,7 +7,7 @@ import json
 url = 'https://nihongokyoshi-net.com/jlpt-grammars/'
 
 targetLinks = {"jlptn1": [], "jlptn2": [],
-               "jlptn3": [], "jlptn4": [], "jlptn5": []}
+               "jlptn3": [], "jlptn4": [], "jlptn5": [], "jlptn0":[]}
 # Send a GET request to the webpage
 response = requests.get(url)
 
@@ -32,6 +32,8 @@ if response.status_code == 200:
                 targetLinks['jlptn4'].append(link['href'])
             elif "jlptn5" in link['href']:
                 targetLinks['jlptn5'].append(link['href'])
+            elif "jlptn0" in link['href']:
+                targetLinks['jlptn0'].append(link['href'])
 
     with open('./target_links.json', 'w') as json_file:
         json.dump(targetLinks, json_file)

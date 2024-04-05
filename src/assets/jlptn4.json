@@ -1,6 +1,6 @@
 [
   {
-    "grammar": "文型：〜間",
+    "grammar": "〜間",
     "meaning": "〜の期間ずっと",
     "english": "while / during",
     "structure": "V（普通形） + 間 イAい + 間 ナAな + 間 Nの + 間",
@@ -27,7 +27,7 @@
     "note": "「間」の後ろには継続性のある動作や状態を表す言葉が来る。"
   },
   {
-    "grammar": "文型：〜間に・・・",
+    "grammar": "〜間に・・・",
     "meaning": "〜の期間に・・・する。 ※ずっと〜するのではない。",
     "english": "・・・ take place, while 〜",
     "structure": "普通形 + 間に",
@@ -58,7 +58,7 @@
     "note": "「間に」の後ろに継続性のある動詞や表現は使えない。"
   },
   {
-    "grammar": "文型：〜終わる",
+    "grammar": "〜終わる",
     "meaning": "動作の終わりを表す。",
     "english": "\"finish doing\" Indicates the end of an action.",
     "structure": "V（ます形）ます + 終わる",
@@ -85,7 +85,7 @@
     "note": "自然現象や生理現象には使うことができない。 例：雨が降り終わる / 赤ん坊が泣き終わる"
   },
   {
-    "grammar": "文型：（疑問詞）〜か",
+    "grammar": "（疑問詞）〜か",
     "meaning": "間接疑問文。 文の中に疑問語（疑問詞）を使った疑問文を埋め込んで使う表現。",
     "english": [],
     "structure": "疑問詞 + V（普通形）か、〜 疑問詞 + イA（普通形）か、〜 疑問詞 + ナA（普通形）だか、〜 　 ※ナAだ 疑問詞 + N（普通形）だか、〜　　※Nだ",
@@ -108,7 +108,7 @@
     "link": "https://nihongokyoshi-net.com/2020/01/28/jlptn4-grammar-ka/"
   },
   {
-    "grammar": "文型：Nがする",
+    "grammar": "Nがする",
     "meaning": "音、声、味、匂い、香り、感じなど感覚を表したいときの言い方。",
     "english": "\"can hear / see / smell etc (noun).\" Used to express the notion that the speaker can perceive a sound, voice, taste, smell, fragrance or feeling.",
     "structure": "N + がします",
@@ -129,7 +129,7 @@
     "link": "https://nihongokyoshi-net.com/2018/04/12/jlptn4-grammar-gasuru/"
   },
   {
-    "grammar": "文型：〜かどうか",
+    "grammar": "〜かどうか",
     "meaning": "間接疑問文。 文の中に疑問詞を使っていない疑問文を埋め込んで使う表現。",
     "english": [],
     "structure": "V（普通形）かどうか、〜 イA（普通形）かどうか、〜 ナA（普通形）だかどうか、〜 　 ※ナAだ N（普通形）だかどうか、〜　　※Nだ",
@@ -150,7 +150,7 @@
     "link": "https://nihongokyoshi-net.com/2020/01/28/jlptn4-grammar-kadouka/"
   },
   {
-    "grammar": "文型：〜かもしれない",
+    "grammar": "〜かもしれない",
     "meaning": "〜の可能性がある",
     "english": "\"maybe / perhaps\" Indicates that there is a possibility. An expression in which the speaker says what he or she guesses. It is an uncertain guess with less basis for judgment than ”〜でしょう / 〜だろう”",
     "structure": "V（普通形） + かもしれない イA（普通形）+かもしれない ナA（普通形）だ + かもしれない N（普通形）だ + かもしれない",
@@ -178,7 +178,7 @@
     "link": "https://nihongokyoshi-net.com/2019/08/18/jlptn4-grammar-kamoshirenai/"
   },
   {
-    "grammar": "文型：〜ことがある / 〜こともある",
+    "grammar": "〜ことがある / 〜こともある",
     "meaning": "いつもではないが、時々〜する",
     "english": "sometimes do",
     "structure": "V（辞書形 / ナイ形）+ ことがある / 〜こともある",
@@ -200,7 +200,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/09/jlptn4-grammar-kotogaaru/"
   },
   {
-    "grammar": "文型：〜ことにする",
+    "grammar": "〜ことにする",
     "meaning": "\"〜すると決める\" 自分の意志で〜する、〜しないと決めたことを言う時に使う。",
     "english": "decide to do Used to say that you have decided to do or not to do something of your own volition.",
     "structure": "V（辞書形 / ナイ形）+ことにする",
@@ -227,7 +227,7 @@
     "note": "・少し硬い表現に「〜こととする」という表現もある。 ・自分の意志に関係なく決まったことを言う場合は「〜ことになる」を使う。"
   },
   {
-    "grammar": "文型：〜ことになる",
+    "grammar": "〜ことになる",
     "meaning": "\"〜することに決まる\"",
     "english": "something has been decided",
     "structure": "V（辞書形）+ことになる V（ナイ形）+ことになる",
@@ -256,7 +256,7 @@
     "note": "・「〜こととなる」という言い方もあるが、「〜ことになる」よりも少し硬い。 ・自分の意志で決めたこと言う場合は「〜ことにする」を使う。"
   },
   {
-    "grammar": "文型：させてください",
+    "grammar": "させてください",
     "meaning": [],
     "english": "\"Please let me do\" An expression used to ask someone , “Please let me do 〜” This is often used with confidence that the other person will allow it.",
     "structure": "V（使役形のて形） + ください",
@@ -278,7 +278,7 @@
     "link": "https://nihongokyoshi-net.com/2018/07/25/jlptn4-grammar-sasetekudasai/"
   },
   {
-    "grammar": "文型：〜しか〜ない",
+    "grammar": "〜しか〜ない",
     "meaning": "「〜だけ」 期待していたよりも程度が低いと感じた時や、量が少ないと感じた時に使う表現。",
     "english": "\"only\" An expression used when you feel that the degree or amount of something is less than you expected.",
     "structure": "Noun + しか Number + counter + しか",
@@ -308,7 +308,7 @@
     "note": "動詞は常に否定の形をとる"
   },
   {
-    "grammar": "文型：〜し〜し",
+    "grammar": "〜し〜し",
     "meaning": "①並立描写 複数の事柄を並べて述べる表現。話し手の「さらに」、「その上」という気持ちが含まれる。人や物を評価するときによく使われる。",
     "english": "and besides / because A and B",
     "structure": "V（普通形）+ し イA（普通形） +　し ナA（普通形） +　し N（普通形） +　し",
@@ -335,7 +335,7 @@
     "link": "https://nihongokyoshi-net.com/2019/08/09/jlptn4-grammar-shi-shi/"
   },
   {
-    "grammar": "文型：〜すぎる",
+    "grammar": "〜すぎる",
     "meaning": "非常に〜だ。 程度が水準を超えていることを表す。",
     "english": "\"too much\" Indicates that the degree exceeds the level.",
     "structure": "V（ます形）ます + すぎる イAい + すぎる ナA + すぎる",
@@ -370,7 +370,7 @@
     "note": "ネガディブな意味で使われることが多い。"
   },
   {
-    "grammar": "文型：（形容詞）する",
+    "grammar": "（形容詞）する",
     "meaning": "対象をある状態に変化させることを表す文型",
     "english": "make it 形容詞",
     "structure": "イAく +　する ナAに +　する",
@@ -393,7 +393,7 @@
     "link": "https://nihongokyoshi-net.com/2020/01/23/jlptn4-grammar-adjective-suru/"
   },
   {
-    "grammar": "文型：〜そうです（直前）",
+    "grammar": "〜そうです（直前）",
     "meaning": "もうすぐ何かが起こると思ったときに言う表現。",
     "english": "It seems like something is about to happen.",
     "structure": "V（ます形）ます + そうです",
@@ -419,7 +419,7 @@
     "link": "https://nihongokyoshi-net.com/2019/08/13/jlptn4-grammar-soudesu-3/"
   },
   {
-    "grammar": "文型：〜そうです（伝聞）",
+    "grammar": "〜そうです（伝聞）",
     "meaning": "見たり、聞いた情報を他の人に伝えるときに使われる表現。",
     "english": "\"I heard\" Expressions used to convey information you have seen or heard from others.",
     "structure": "普通形 + そうです",
@@ -451,7 +451,7 @@
     "link": "https://nihongokyoshi-net.com/2019/02/24/jlptn4-grammar-soudesu/"
   },
   {
-    "grammar": "文型：〜そうです（様態）",
+    "grammar": "〜そうです（様態）",
     "meaning": "〜のように見える 話し手が見て感じたことをいう時に使う。",
     "english": "it looks like",
     "structure": "イA + そうです イA + くなさそうです ナA + そうです ナA + じゃなさそう",
@@ -473,7 +473,7 @@
     "note": "①活用はナ形容詞と同じ。\u001c ②「かわいい」、「きれい」など見てすぐわかることには使えない。"
   },
   {
-    "grammar": "文型：〜出す",
+    "grammar": "〜出す",
     "meaning": "① 動作の開始を表す。 ② 中や隠れたところから外へ移動することを表す。 ③ 存在しなかったものを新たに作ったり出現させることを表す（創出・創造）。",
     "english": [],
     "structure": "V（ます形）ます + 出す",
@@ -500,7 +500,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/01/jlptn4-grammar-dasu/"
   },
   {
-    "grammar": "文型：〜たばかり",
+    "grammar": "〜たばかり",
     "meaning": "ちょっと前に〜が終わった、〜をした。 動作が終わってからの時間が短いことを言いたい時に使う。",
     "english": "\"have just done\"",
     "structure": "V（タ形） + ばかり",
@@ -525,7 +525,7 @@
     "link": "https://nihongokyoshi-net.com/2018/04/12/jlptn4-grammar-tabakari/"
   },
   {
-    "grammar": "文型：〜ために",
+    "grammar": "〜ために",
     "meaning": "行為の目的を言う言い方。",
     "english": "\"in order to / so that / for\" A way of saying the purpose of an action.",
     "structure": "V（辞書形） + ために Nの + ために",
@@ -551,7 +551,7 @@
     "note": "「〜ために」の前は意志動詞が使われる。"
   },
   {
-    "grammar": "文型：Vたらいいですか。",
+    "grammar": "Vたらいいですか。",
     "meaning": "相手に指示を求める時に使う表現。",
     "english": "Used when the speaker seeks instructions from listener",
     "structure": "疑問詞 + V（タ）+ らいいですか。",
@@ -562,7 +562,7 @@
     "link": "https://nihongokyoshi-net.com/2018/06/26/jlptn4-grammar-taraiidesuka/"
   },
   {
-    "grammar": "文型：〜たらどうですか",
+    "grammar": "〜たらどうですか",
     "meaning": "相手にある行動をするように提案する言い方。 「たほうがいい」よりも直接的な提案。",
     "english": "\"Why don't you ~ / how about if you ~\" A way of suggesting that the other person do a certain action. A more direct suggestion than \"～たほうがいい\"",
     "structure": "V（タ形）+ らどうですか。",
@@ -585,7 +585,7 @@
     "note": "カジュアルな表現は「〜たら？」や「〜たらどう？」が使われる。"
   },
   {
-    "grammar": "文型：〜つづける",
+    "grammar": "〜つづける",
     "meaning": "動作や習慣の継続を表す。",
     "english": "\"keep on / continue to do\" Indicates the continuation of an action or habit.",
     "structure": "V（ます形）ます + つづける",
@@ -611,7 +611,7 @@
     "link": "https://nihongokyoshi-net.com/2018/07/10/jlptn4-grammar-tsudukeru/"
   },
   {
-    "grammar": "文型：〜って",
+    "grammar": "〜って",
     "meaning": "人や物の名前をいう時に使う表現。 話し言葉。「〜っていう」とも言える。",
     "english": "named / called",
     "structure": "N + って",
@@ -631,7 +631,7 @@
     "link": "https://nihongokyoshi-net.com/2018/07/12/jlptn4-grammar-tte/"
   },
   {
-    "grammar": "文型：〜つもりだ",
+    "grammar": "〜つもりだ",
     "meaning": "話し手の計画や予定を表す。",
     "english": "\"intend to do\" used to describe what a person is planning to do in the future or what a person is planning not to do.",
     "structure": "V（辞書形 / ナイ形） + つもりだ",
@@ -654,7 +654,7 @@
     "note": "・目上の人に「〜つもりですか」と尋ねるのは失礼なので、使わない。"
   },
   {
-    "grammar": "文型：〜て（理由・原因）",
+    "grammar": "〜て（理由・原因）",
     "meaning": "理由や原因を表す。",
     "english": "because",
     "structure": "V（て形） イAくて ナAで Nで （Nは地震や台風、火事などのよくない単語が来る）",
@@ -681,7 +681,7 @@
     "note": "後ろには感情を表す言葉が来ることが多い。 後ろに意志を表す動詞は来ない。"
   },
   {
-    "grammar": "文型：〜てある",
+    "grammar": "〜てある",
     "meaning": "誰かが何か目的があってその行為を行い、その行為の結果が残っていることを表す文型。",
     "english": "somebody has done something intentionally and that state continues.",
     "structure": "V（て形） + ある",
@@ -704,7 +704,7 @@
     "note": "動詞は他動詞が来る。"
   },
   {
-    "grammar": "文型：（自動詞）ている",
+    "grammar": "（自動詞）ている",
     "meaning": "発話時点より以前に起こったことの結果の状態が継続していることを表す表現。",
     "english": [],
     "structure": "V（自動詞のテ形）+ いる",
@@ -729,7 +729,7 @@
     "link": "https://nihongokyoshi-net.com/2020/02/01/jlptn4-grammar-teiru/"
   },
   {
-    "grammar": "文型：〜ていく",
+    "grammar": "〜ていく",
     "meaning": [],
     "english": [],
     "structure": [],
@@ -751,7 +751,7 @@
     "link": "https://nihongokyoshi-net.com/2020/01/06/jlptn4-grammar-teiku/"
   },
   {
-    "grammar": "文型：〜ておく",
+    "grammar": "〜ておく",
     "meaning": "① 何かの目的のために、前もって～する（準備）。 ② 何もしないで、そのままの状態を維持する（放置・現状維持）。",
     "english": "① do something in advance ② leave something undone",
     "structure": "V（て形） + おく",
@@ -783,7 +783,7 @@
     "note": "動詞は意志動詞のみ使える"
   },
   {
-    "grammar": "文型：〜ていただけませんか",
+    "grammar": "〜ていただけませんか",
     "meaning": "丁寧にお願いする表現",
     "english": "\"please do something for me.\" Used to when you request someone to do something in a polite way.",
     "structure": "V（て形） + いただけませんか",
@@ -807,7 +807,7 @@
     "note": "カジュアルな言い方は「〜てくれない？」"
   },
   {
-    "grammar": "文型：Vてくる（変化・移動）",
+    "grammar": "Vてくる（変化・移動）",
     "meaning": "① 今を基準として、以前から今までの推移、変化を表す。 ② Vの方向が話し手の位置に向かっていることを表す。",
     "english": "① Used to show, based on the present situation, how things have changed from before until now. ② Used to indicate that the direction of V is towards the speaker.",
     "structure": "V（て形） + くる",
@@ -842,7 +842,7 @@
     "link": "https://nihongokyoshi-net.com/2018/09/26/jlptn4-grammar-tekuru-change/"
   },
   {
-    "grammar": "文型：〜てくる",
+    "grammar": "〜てくる",
     "meaning": "一時的に用事で他の場所へ移動し、用事を済ませ戻って来ることを表す。",
     "english": "To leave somewhere for temporary time for trivial purpose.",
     "structure": "Vて + くる",
@@ -863,7 +863,7 @@
     "link": "https://nihongokyoshi-net.com/2018/09/18/jlptn4-grammar-tekuru/"
   },
   {
-    "grammar": "文型：〜てしまう",
+    "grammar": "〜てしまう",
     "meaning": "①完了：ある行為を完全に完了することを表す。 ②後悔：意図せずある行為を行い、残念だ、後悔していると言いたい時に使う。",
     "english": "① the action has been completed. ② do negative action unintentionally. / something regrettable happens.",
     "structure": "V（て形） + しまう",
@@ -889,7 +889,7 @@
     "link": "https://nihongokyoshi-net.com/2020/01/02/jlptn4-grammar-teshimau/"
   },
   {
-    "grammar": "文型：〜でしょう（推量）",
+    "grammar": "〜でしょう（推量）",
     "meaning": [],
     "english": "probably",
     "structure": "V（普通形） + でしょう イA（普通形） + でしょう ナA（普通形）+ でしょう　※ナAな + でしょう N（普通形）+ でしょう　※Nだ + でしょう",
@@ -912,7 +912,7 @@
     "note": "・自分自身のことには使わない ・カジュアルな言い方は「〜だろう」"
   },
   {
-    "grammar": "文型：〜てみる",
+    "grammar": "〜てみる",
     "meaning": "いいかどうかわからないので実際に行動して確かめる",
     "english": "try doing something",
     "structure": "V（て形）+ みる 意志動詞と接続する。",
@@ -932,7 +932,7 @@
     "link": "https://nihongokyoshi-net.com/2019/03/22/jlptn4-grammar-temiru/"
   },
   {
-    "grammar": "文型：〜ても",
+    "grammar": "〜ても",
     "meaning": "逆接の表現",
     "english": "even if",
     "structure": "V（て形） + も イA + くても なA + でも N + でも",
@@ -966,7 +966,7 @@
     "link": "https://nihongokyoshi-net.com/2020/01/08/jlptn4-grammar-temo/"
   },
   {
-    "grammar": "文型：〜と",
+    "grammar": "〜と",
     "meaning": "ある動作を行うと、必ず、別のことがらや作用が続いて起こることを表す。 機械の使い方や道順の説明によく使われる。",
     "english": "whenever A happens, B also happens.",
     "structure": "V（辞書形 / ナイ形）+ と イAい + と ナAだ + と Nだ + と",
@@ -992,7 +992,7 @@
     "note": "・後件に意志を表す文や依頼表現などは使えない。 ・仮定条件には使うことができない。 例：もし１００万円あると、何がしたいですか？"
   },
   {
-    "grammar": "文型：〜ところだ",
+    "grammar": "〜ところだ",
     "meaning": "① ある動作が始まる直前を表す。これから〜する。 ② ある動作が今、まさに行われている最中であることを表す。 ③ ある動作が終わった直後を表す。たった今〜した。",
     "english": [],
     "structure": "① V（辞書形）+ところだ。 ② V（て形）いる + ところだ。 ③ V（た形）+ ところだ。",
@@ -1019,7 +1019,7 @@
     "link": "https://nihongokyoshi-net.com/2020/01/03/jlptn4-grammar-tokoroda/"
   },
   {
-    "grammar": "文型：〜という",
+    "grammar": "〜という",
     "meaning": "聞き手が知らないであろう物・人・場所などの名前を言う時に使う。",
     "english": "…called / …named",
     "structure": "N1 + という + N2",
@@ -1042,7 +1042,7 @@
     "note": "・カジュアルな言い方は「〜っていう」"
   },
   {
-    "grammar": "文型：なかなか〜ない",
+    "grammar": "なかなか〜ない",
     "meaning": "① 簡単には〜できない ② 〜するには時間がかかる",
     "english": "not easily",
     "structure": "なかなか + V（否定形）",
@@ -1064,7 +1064,7 @@
     "link": "https://nihongokyoshi-net.com/2019/07/28/jlptn4-grammar-nakanaka-nai/"
   },
   {
-    "grammar": "文型：〜なさい",
+    "grammar": "〜なさい",
     "meaning": "命令・指示を表す。",
     "english": "do it",
     "structure": "V（ます形）ます + なさい ex. たべる → たべ(ます) + なさい = たべなさい",
@@ -1089,7 +1089,7 @@
     "link": "https://nihongokyoshi-net.com/2020/01/02/jlptn4-grammar-nasai/"
   },
   {
-    "grammar": "文型：〜なら",
+    "grammar": "〜なら",
     "meaning": "① 相手が話題にしたことを取り上げて、それに関してアドバイスしたり、リクエストしたりする時に使われる表現 ② 相手の言ったことを話題に取り上げて述べる表現 ③ 限定や対照を表す。「他は〜ではないが、ある１つのものや事柄に関して言うと〜だ」という意味。",
     "english": [],
     "structure": "① 普通形 + なら ② N + なら ③ N + なら",
@@ -1118,7 +1118,7 @@
     "link": "https://nihongokyoshi-net.com/2020/01/04/jlptn4-grammar-nara/"
   },
   {
-    "grammar": "文型：〜にくい",
+    "grammar": "〜にくい",
     "meaning": "①〜するのが難しい ②なかなか〜しない（性質）",
     "english": "difficult to do",
     "structure": "V（ます形）ます + にくい",
@@ -1145,7 +1145,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/01/jlptn4-grammar-nikui/"
   },
   {
-    "grammar": "文型：〜にする",
+    "grammar": "〜にする",
     "meaning": "色々ある選択肢の中から、１つを選んで決めるときに使う。",
     "english": "\"decide on\" Used to decide on one out of the various options.",
     "structure": "N + にする",
@@ -1162,7 +1162,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/29/jlptn4-grammar-nisuru/"
   },
   {
-    "grammar": "文型：〜ので",
+    "grammar": "〜ので",
     "meaning": "理由・原因を言う時に使う。",
     "english": "because Used to say the reason or cause. \"ので\" sounds more formal than \"から\"",
     "structure": "普通形 + ので",
@@ -1189,7 +1189,7 @@
     "note": "「から」よりも少しフォーマルな文型。 命令文や禁止文などでは「ので」よりも「から」を使うことが多い。"
   },
   {
-    "grammar": "文型１：〜のに（予想外）",
+    "grammar": "〜のに（予想外）",
     "meaning": "〜けれど",
     "english": "\"… despite of the 〜\" Often used to show the speaker’s dissatisfaction, regret or feeling that something is unexpected.",
     "structure": "V（普通形） + のに イAい + のに ナA + のに N +　なのに",
@@ -1234,7 +1234,7 @@
     "link": "https://nihongokyoshi-net.com/2020/01/01/jlptn4-grammar-noni/"
   },
   {
-    "grammar": "文型：〜のは〜だ",
+    "grammar": "〜のは〜だ",
     "meaning": "強調構文。 後件の内容を強く言いたい時に使う表現。この文型を使うことで、文全体の主張が強まる",
     "english": "It is 〜 that 〜. / The reason 〜 is because 〜 (Used to focus on the latter part of the sentence.)",
     "structure": "V(普通形) +　のは N + なのは イA + のは ナAな + のは",
@@ -1255,7 +1255,7 @@
     "link": "https://nihongokyoshi-net.com/2018/04/10/jlptn4-grammar-nowa-desu/"
   },
   {
-    "grammar": "文型：〜ば",
+    "grammar": "〜ば",
     "meaning": "XばY：Xという条件が成立すると、Yが起こることを表す。",
     "english": "\"if X then Y\" If condition X is met, then Y will happen.",
     "structure": "V（ba form） イA + ければ / イA + なければ ナA + ならば / ナA + でなければ N + ならば / N ＋でなければ",
@@ -1281,7 +1281,7 @@
     "note": "① 実現性の高い条件、低い条件、どちらの場合でも使える。 ② 後件には良い結果が来ることが多い。 ③ 少し硬い表現で書き言葉的。 ④ ことわざで使われることが多い。（例：三人よれば、文殊の知恵。）"
   },
   {
-    "grammar": "文型：〜は（対比）",
+    "grammar": "〜は（対比）",
     "meaning": "２つの物や事柄を対比して言う時に助詞「は」が使われる。",
     "english": [],
     "structure": [],
@@ -1300,7 +1300,7 @@
     "link": "https://nihongokyoshi-net.com/2019/09/06/jlptn4-grammar-wa-ga-wa/"
   },
   {
-    "grammar": "文型：〜ばかり",
+    "grammar": "〜ばかり",
     "meaning": "同じ物がたくさんある、同じことを何度もするという意味を表す。 マイナスの意味で使われることが多い。",
     "english": [],
     "structure": "V（て形） + ばかり N + ばかり",
@@ -1329,7 +1329,7 @@
     "link": "https://nihongokyoshi-net.com/2019/11/27/jlptn4-grammar-bakari/"
   },
   {
-    "grammar": "文型：〜はずだ",
+    "grammar": "〜はずだ",
     "meaning": "理由があって、絶対に〜だと思う。",
     "english": "must / be supposed to be the case",
     "structure": "V（普通形）+ はずだ イA（普通形）+ はずだ ナA（普通形） + はずだ　※ ナAな + はずだ / ナAである + はずだ N（普通形）+はずだ　※ Nの + はずだ / Nである + はずだ",
@@ -1357,7 +1357,7 @@
     "note": "過去の計画について述べる時は「〜はずだった」"
   },
   {
-    "grammar": "文型：〜はじめる",
+    "grammar": "〜はじめる",
     "meaning": "動作や現象の開始を表す。",
     "english": "\"start to / begin to\" Indicates the beginning of an action or phenomenon.",
     "structure": "V（ます形）ます + 始める",
@@ -1379,7 +1379,7 @@
     "link": "https://nihongokyoshi-net.com/2019/03/25/jlptn4-grammar-hajimeru/"
   },
   {
-    "grammar": "文型：〜必要がある",
+    "grammar": "〜必要がある",
     "meaning": "〜しなければならない ある目標や目的を達成するためには、〜しなければならないという意味。",
     "english": "\"It is necessary to / need to do\" This sentence pattern is used to indicate that the necessity of doing something.",
     "structure": "V（辞書形）+ 必要がある",
@@ -1399,7 +1399,7 @@
     "link": "https://nihongokyoshi-net.com/2020/02/24/jlptn4-grammar-hitsuyougaaru/"
   },
   {
-    "grammar": "文型：〜ほうがいい",
+    "grammar": "〜ほうがいい",
     "meaning": "〜すること（しないこと）を、相手に助言する表現。 そうしなかったら悪いことが起こると助言や忠告をするときに使う。",
     "english": "\"had better\" Express an advice or recommendation. Used to advise or giving warning that something bad will happen if you don't.",
     "structure": "V（た形） + ほうがいい V（ナイ形） + ほうがいい",
@@ -1433,7 +1433,7 @@
     "link": "https://nihongokyoshi-net.com/2018/04/19/jlptn4-grammar-hougaii/"
   },
   {
-    "grammar": "文型：〜ほど〜ない",
+    "grammar": "〜ほど〜ない",
     "meaning": "\"XはYほど〜ない\"で、XもYも同じぐらい～であるが、比べるとXはYよりは程度が低いことを表す。",
     "english": "X is not as ~ as Y.",
     "structure": "N + ほど〜ない",
@@ -1452,7 +1452,7 @@
     "link": "https://nihongokyoshi-net.com/2019/04/18/jlptn4-grammar-hodo-nai/"
   },
   {
-    "grammar": "文型：〜までに",
+    "grammar": "〜までに",
     "meaning": "その時間や日付が来る前に",
     "english": "“までに” indicates “time limit”. Used when talking about doing something within a given time period.",
     "structure": "V（辞書形）+ までに N（時間 / 日付）+ までに",
@@ -1477,7 +1477,7 @@
     "link": "https://nihongokyoshi-net.com/2019/08/24/jlptn4-grammar-madeni/"
   },
   {
-    "grammar": "文型：〜まま",
+    "grammar": "〜まま",
     "meaning": "同じ状態が変わらずに続くことを表す。",
     "english": "while ~ (Used to show the same situation continues.)",
     "structure": "V（タ形 / ナイ形） + まま イAい + まま ナAな + まま Nの + まま",
@@ -1503,7 +1503,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/24/jlptn4-grammar-mama/"
   },
   {
-    "grammar": "文型：〜みたいだ（推量）",
+    "grammar": "〜みたいだ（推量）",
     "meaning": "\"〜と思う / 〜の感じがする\" 五感を使って話し手が感じたこと、推量したことを言う表現",
     "english": "It seems like",
     "structure": "V（普通形） + みたいだ イA（普通形）+ みたいだ ナA + みたいだ N + みたいだ",
@@ -1527,7 +1527,7 @@
     "note": "「〜ようだ 」よりもカジュアルで、友達や家族、親しい人と話す時に使う。"
   },
   {
-    "grammar": "文型：〜みたいな / みたいに（例示）",
+    "grammar": "〜みたいな / みたいに（例示）",
     "meaning": "具体的な例を挙げる時に使う",
     "english": "Used to explain something by showing an example.",
     "structure": "V（普通形） + みたいな / みたいに N + みたいな / みたいに",
@@ -1553,7 +1553,7 @@
     "link": "https://nihongokyoshi-net.com/2020/07/22/jlptn4-grammar-mitaina/"
   },
   {
-    "grammar": "文型：〜も",
+    "grammar": "〜も",
     "meaning": "数量が多いことを表す。 話し手の驚きの気持ちが含まれる。",
     "english": "\"as many as\" Indicates a large quantity. Contains the speaker's feeling of surprise.",
     "structure": "数字 + 助数詞 + も",
@@ -1576,7 +1576,7 @@
     "link": "https://nihongokyoshi-net.com/2019/08/06/jlptn4-grammar-mo/"
   },
   {
-    "grammar": "文型：〜のは〜だ",
+    "grammar": "〜のは〜だ",
     "meaning": "強調構文。 後件の内容を強く言いたい時に使う表現。この文型を使うことで、文全体の主張が強まる",
     "english": "It is 〜 that 〜. / The reason 〜 is because 〜 (Used to focus on the latter part of the sentence.)",
     "structure": "V(普通形) +　のは N + なのは イA + のは ナAな + のは",
@@ -1597,7 +1597,7 @@
     "link": "https://nihongokyoshi-net.com/2018/04/10/jlptn4-grammar-nowa-desu/"
   },
   {
-    "grammar": "文型：〜やすい",
+    "grammar": "〜やすい",
     "meaning": "〜するのが簡単だ / 簡単に〜という状態になる",
     "english": "easy to do",
     "structure": "V（ます形）ます + やすい",
@@ -1625,7 +1625,7 @@
     "link": "https://nihongokyoshi-net.com/2019/05/02/jlptn4-grammar-yasui/"
   },
   {
-    "grammar": "文型：〜ようだ（推量）",
+    "grammar": "〜ようだ（推量）",
     "meaning": "五感を使って話し手が感じたこと、推量したことを言う表現",
     "english": "It seems like",
     "structure": "V（普通形） + ようです イA（普通形）+ ようです ナA（普通形）+ ようです　※\u001cナAな + ようです N（普通形）+ ようです    ※Nの + ようです",
@@ -1647,7 +1647,7 @@
     "link": "https://nihongokyoshi-net.com/2019/08/13/jlptn4-grammar-youda/"
   },
   {
-    "grammar": "文型：〜ようと思う",
+    "grammar": "〜ようと思う",
     "meaning": "話し手が発話の時点で考えた計画や決心を述べる時に使う表現。",
     "english": "This sentence pattern is used to talk about the speaker’s determinations or plans.",
     "structure": "V（意向形） + と思う",
@@ -1670,7 +1670,7 @@
     "link": "https://nihongokyoshi-net.com/2019/12/31/jlptn4-grammar-youtoomou/"
   },
   {
-    "grammar": "文型：〜ようと思っている",
+    "grammar": "〜ようと思っている",
     "meaning": "話し手の意思や計画を伝える時に使う表現。",
     "english": "Used to talk about the speaker’s determinations or plans.",
     "structure": "V（意向形） + と思っています",
@@ -1696,7 +1696,7 @@
     "note": "「〜ようと思っている」はその前から話し手がずっと考えていたこと。「〜ようと思う」は発話の時点で考えたこと。"
   },
   {
-    "grammar": "文型：〜ような / ように（例示）",
+    "grammar": "〜ような / ように（例示）",
     "meaning": "具体的な例を挙げる時に使う",
     "english": "Used to explain something by showing an example.",
     "structure": "V（普通形） + ような / ように Nの + ような / ように",
@@ -1717,7 +1717,7 @@
     "note": "話し言葉では「〜みたいな」を使う"
   },
   {
-    "grammar": "文型：〜ように（目標・期待）",
+    "grammar": "〜ように（目標・期待）",
     "meaning": "目標を実現させるために〜する",
     "english": "so that / in order to",
     "structure": "V（辞書形） + ように V（ナイ形）+ ように",
@@ -1744,7 +1744,7 @@
     "link": "https://nihongokyoshi-net.com/2018/09/25/jlptn4-grammar-yooni/"
   },
   {
-    "grammar": "文型：〜ようにする",
+    "grammar": "〜ようにする",
     "meaning": "〜ように 努力する/ 頑張って〜する 話し手が意識的に頑張って〜すると決めて、それを述べる時に使う。",
     "english": "to make a conscious effort to do something",
     "structure": "V（辞書形）+ ようにする V（ない形）+ ようにする",
@@ -1761,7 +1761,7 @@
     "link": "https://nihongokyoshi-net.com/2020/01/09/jlptn4-grammar-younisuru/"
   },
   {
-    "grammar": "文型：〜ようになる / 〜なくなる",
+    "grammar": "〜ようになる / 〜なくなる",
     "meaning": "以前は〜じゃないが、今は〜である。 状況や能力の変化を表す。",
     "english": "become such that",
     "structure": "V（辞書形）+ ようになる V（ない形）なくなる",
@@ -1793,7 +1793,7 @@
     "link": "https://nihongokyoshi-net.com/2018/06/23/jlptn4-grammar-youninaru-nakunaru/"
   },
   {
-    "grammar": "文型：〜予定だ",
+    "grammar": "〜予定だ",
     "meaning": "〜するつもりだ",
     "english": "Used to say that an action/plan is scheduled to happen or be done.",
     "structure": "V（辞書形） + 予定だ N + の予定だ",
@@ -1818,7 +1818,7 @@
     "link": "https://nihongokyoshi-net.com/2019/12/30/jlptn4-grammar-yoteida/"
   },
   {
-    "grammar": "文型：〜らしい（推量）",
+    "grammar": "〜らしい（推量）",
     "meaning": "たぶん〜だ / 〜だそうだ 見たり聞いたりした情報から判断して「たぶん〜だ」と述べる推量表現。",
     "english": "It seems that",
     "structure": "V（普通形）＋らしい イA（普通形）＋らしい ナA（普通形）＋らしい　※ナAだ + らしい N（普通形）+ らしい  ※Nだ + らしい",
@@ -1840,7 +1840,7 @@
     "link": "https://nihongokyoshi-net.com/2020/01/04/jlptn4-grammar-rashii2/"
   },
   {
-    "grammar": "文型：Nらしい",
+    "grammar": "Nらしい",
     "meaning": "「そのものの典型的な性質を持っている」ということを表す表現。",
     "english": "Acts just like~ is / typical of ~ / an epitome of",
     "structure": "N + らしい N + らしく",

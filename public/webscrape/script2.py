@@ -88,7 +88,7 @@ def run_scrape():
     for key, urls in urls_dict.items():
         # Loop through each URL in the list of URLs
         for url in urls:
-            if key == "jlptn5":
+            if key == "jlptn0":
                 try:
                     count += 1
                     grammar_list.append(scrape_website(url))
@@ -98,7 +98,7 @@ def run_scrape():
 
     print(f"Finished Scraping ")
 
-    with open('./jlptn5.json', 'w', encoding='utf-8') as json_file:
+    with open('./jlptn0.json', 'w', encoding='utf-8') as json_file:
         json.dump(grammar_list, json_file, ensure_ascii=False)
 
 
