@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { CardData } from "./Card";
+import { CardData } from "../routes/JLPTGrammar";
 import { CiStar } from "react-icons/ci";
 
 type ContentProps = {
@@ -9,7 +9,6 @@ type ContentProps = {
 const Content: React.FC<ContentProps> = ({ card }) => {
   const [visible, setVisible] = useState(false);
   const { grammar, meaning, english, structure, level, sentences } = card;
-  console.log({ english });
   return (
     <div className="flex flex-col w-full mb-8 bg-white relative ">
       {/* Heading */}
@@ -19,7 +18,7 @@ const Content: React.FC<ContentProps> = ({ card }) => {
 
       {/* Main Content */}
       <div className="p-4 relative">
-      <CiStar className="absolute top-2 right-4 h-7 w-7" />
+        <CiStar className="absolute top-2 right-4 h-7 w-7" />
         {structure ? (
           <>
             <p className="font-bold">Structure:</p>
@@ -43,7 +42,6 @@ const Content: React.FC<ContentProps> = ({ card }) => {
             className="bg-blue-200 hover:bg-blue-500 text-black px-4 rounded"
             onClick={() => {
               setVisible((visible) => !visible);
-              console.log(visible);
             }}
           >
             {`${visible ? "Hide " : "Reveal Sentences"}`}
@@ -53,8 +51,10 @@ const Content: React.FC<ContentProps> = ({ card }) => {
         </div>
 
         <div id="sentence-container" className={`${!visible ? "hidden" : ""}`}>
-          {sentences.map((sentence) => (
-            <div className="ml-4 leading-loose">・{sentence}</div>
+          {sentences.map((sentence, i: number) => (
+            <div key={i} className="ml-4 leading-loose">
+              ・{sentence}
+            </div>
           ))}
         </div>
       </div>
