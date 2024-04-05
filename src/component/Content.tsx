@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { CardData } from "../routes/JLPTGrammar";
+import { CardData } from "../utils/types";
 import { CiStar } from "react-icons/ci";
 
 type ContentProps = {
-  key: number;
   card: CardData;
 };
 const Content: React.FC<ContentProps> = ({ card }) => {
@@ -51,7 +50,7 @@ const Content: React.FC<ContentProps> = ({ card }) => {
         </div>
 
         <div id="sentence-container" className={`${!visible ? "hidden" : ""}`}>
-          {sentences.map((sentence, i: number) => (
+          {sentences.map((sentence, i) => (
             <div key={i} className="ml-4 leading-loose">
               ・{sentence}
             </div>

@@ -6,18 +6,8 @@ import n4_data from "../assets/jlptn4.json";
 import n5_data from "../assets/jlptn5.json";
 import LevelSelect from "../component/LevelSelect";
 import { useParams } from "react-router-dom";
+import { CardData } from "../utils/types";
 
-export type CardData = {
-  grammar: string;
-  meaning: string | string[];
-  english: string | string[];
-  structure: string | string[];
-  level: string | string[];
-  notes: string[];
-  sentences: string[];
-  other: string[];
-  link: string;
-};
 let data:CardData[];
 
 const JLPTGrammar = () => {
