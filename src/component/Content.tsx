@@ -5,7 +5,7 @@ import { CiStar } from "react-icons/ci";
 type ContentProps = {
   card: CardData;
 };
-const Content: React.FC<ContentProps> = ({ card }) => {
+const Content: React.FC<ContentProps> = ({ card, search }) => {
   const [visible, setVisible] = useState(false);
   const { grammar, meaning, english, structure, level, sentences } = card;
   return (

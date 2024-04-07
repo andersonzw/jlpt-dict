@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
@@ -21,6 +20,14 @@ a body {
     }
   }
 
+  #search-bar {
+    width: 75%;
+    margin: 0 auto 1rem auto;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+  }
 
-
+  #search-bar:focus-visible {
+    outline: 1px solid #bfdbfe;
+  }
 }
