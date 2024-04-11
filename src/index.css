@@ -30,4 +30,11 @@ a body {
   #search-bar:focus-visible {
     outline: 1px solid #bfdbfe;
   }
+  .level-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+  }
+  .level-btn.selected  { 
+    border: 1px solid rgb(157, 196, 255);
+  }
 }

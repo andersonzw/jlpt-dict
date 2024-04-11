@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { CardData } from "../utils/types";
+import { CardData } from "../../../utils/types";
 import { CiStar } from "react-icons/ci";
 
 type ContentProps = {
   card: CardData;
 };
-const Content: React.FC<ContentProps> = ({ card, search }) => {
+const Content: React.FC<ContentProps> = ({ card }) => {
   const [visible, setVisible] = useState(false);
   const { grammar, meaning, english, structure, level, sentences } = card;
   return (
