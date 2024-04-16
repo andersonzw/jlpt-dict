@@ -1,10 +1,13 @@
 import { Outlet, useNavigate } from "react-router-dom";
-import { uploadData } from "../utils/firebase/upload.ts";
+import { selectBookmarks } from "../utils/slices/bookmarkReducer.ts";
+import { useAppSelector } from "../utils/store.ts";
 const Header = () => {
   const nav = useNavigate();
+  const bookmarks = useAppSelector(selectBookmarks);
+  console.log(bookmarks);
   return (
     <>
-      <div className="flex flex-row items-center justify-between p-3 h-auto bg-white sticky top-0 mb-8 border border-b-2 z-50">
+      <div className="flex flex-row items-center justify-between p-3 h-auto bg-gray-100 sticky top-0 mb-8 border-opacity-20 border-b-[1px] z-50 bg-[url('/mi-min-pkpqoBp11Jc-unsplash.png')]">
         <div className="text-xl cursor-pointer" onClick={() => nav("/")}>
           JLPT Dictionary
         </div>
@@ -12,15 +15,17 @@ const Header = () => {
           <a href="/about" className="text-sm">
             About
           </a>
-          <a href="/" className="text-sm">
-            More Resources
+          <a href="/jlpt/n5" className="text-sm">
+            Search
+          </a>
+          <a href="/bookmarks" className="text-sm">
+            Bookmarks
           </a>
           <a href="" className="text-sm ">
             Sign In
           </a>
         </div>
       </div>
-      <button onClick={() => uploadData()}> upload</button>
       <Outlet />
     </>
   );

@@ -18,8 +18,7 @@ const GrammarList: React.FC<ContentProps> = ({ data, level, search }) => {
     if (text) {
       if (text[0] == "〜") {
         text = text.substring(1);
-        console.log(text);
-      } else console.log(text);
+      } else
       setSearchParam(text);
       nav(`jlpt/${level.toLowerCase()}`);
     }
@@ -27,7 +26,7 @@ const GrammarList: React.FC<ContentProps> = ({ data, level, search }) => {
   return (
     <ul className="w-1/2 h-auto p-4">
       <h1
-        className="text-2xl mb-4 bg-gray-300 px-4 py-1 cursor-pointer"
+        className="text-2xl mb-4 bg-red-300 px-4 py-1 cursor-pointer"
         onClick={() => {
           nav(`jlpt/${level.toLowerCase()}`);
           setSearchParam("");

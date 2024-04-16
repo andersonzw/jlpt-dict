@@ -1,4 +1,4 @@
-import Content from "./components/Content";
+import Content from "./components/GrammarCard";
 import n1_data from "../../assets/jlptn1.json";
 import n2_data from "../../assets/jlptn2.json";
 import n3_data from "../../assets/jlptn3.json";
@@ -17,7 +17,6 @@ const JLPTGrammar = () => {
   const { searchParam, setSearchParam } = useContext(SearchContext);
   // Only runs during page change
   useEffect(() => {
-    console.log("fire");
     switch (level) {
       case "n1":
         setData(n1_data);
@@ -49,19 +48,32 @@ const JLPTGrammar = () => {
   );
   return (
     <div className="flex flex-col innerWidth p-1">
-      <input
-        autoComplete="off"
-        value={search}
-        id="search-bar"
-        onChange={(e) => {
-          setSearch(e.target.value);
-          setSearchParam(e.target.value);
-        }}
-      />
-      <LevelSelect selected = {level}/>
+      <div className="flex relative">
+        {/* Search Bar */}
+        <input
+          autoComplete="off"
+          value={search}
+          id="search-bar"
+          onChange={(e) => {
+            setSearch(e.target.value);
+            setSearchParam(e.target.value);
+          }}
+          placeholder="検索"
+        />
+        <div
+          className="absolute top-0.5 right-36 z-20 text-2xl opacity-65 cursor-pointer"
+          onClick={() => {
+            setSearch("");
+            setSearchParam("");
+          }}
+        >
+          x
+        </div>
+      </div>
+      <LevelSelect selected={level} />
 
       {filteredData.map((card: CardData, i: number) => {
-        return <Content key={i} card={card} />;
+        return <Content key={i} card={card} param = {level}/>;
       })}
     </div>
   );

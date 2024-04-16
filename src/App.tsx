@@ -4,15 +4,17 @@ import { Route, Routes } from "react-router-dom";
 import About from "./routes/About.tsx";
 import Home from "./routes/Directory/Directory.tsx";
 import { SearchProvider } from "./utils/context/SearchContext.tsx";
+import Bookmarks from "./routes/Bookmarks/Bookmarks.tsx";
 function App() {
   return (
-    <div className="bg-slate-50">
+    <div className="">
       <SearchProvider>
         <Routes>
           <Route path="/" element={<Header />}>
             <Route path="/jlpt/:level" element={<JLPTGrammar />} />
             <Route index element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path ="/bookmarks" element={<Bookmarks/>}/>
           </Route>
         </Routes>
       </SearchProvider>
