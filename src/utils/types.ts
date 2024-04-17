@@ -3,7 +3,7 @@ export type CardData = {
     meaning: string | string[];
     english: string | string[];
     structure: string | string[];
-    level: string | string[];
+    level: string;
     notes: string[];
     sentences: string[];
     other: string[];

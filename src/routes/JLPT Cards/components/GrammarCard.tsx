@@ -2,8 +2,12 @@ import React, { useEffect, useState } from "react";
 import { CardData } from "../../../utils/types";
 import { CiStar } from "react-icons/ci";
 
-import { addToBookmarks } from "../../../utils/slices/bookmarkReducer.ts";
-import { useAppDispatch } from "../../../utils/store.ts";
+import {
+  addToBookmarks,
+  removeFromBookmarks,
+  selectBookmarks,
+} from "../../../utils/slices/bookmarkReducer.ts";
+import { useAppDispatch, useAppSelector } from "../../../utils/store.ts";
 
 type ContentProps = {
   card: CardData;
@@ -11,11 +15,26 @@ type ContentProps = {
 };
 const Content: React.FC<ContentProps> = ({ card, param }) => {
   const [visible, setVisible] = useState(false);
+  const [alreadyBookmarked, setAlreadyBookmarked] = useState(false);
   const { grammar, meaning, english, structure, level, sentences } = card;
   const dispatch = useAppDispatch();
+  const fullBookmarks = useAppSelector(selectBookmarks);
+
   useEffect(() => {
     setVisible(false);
+    setAlreadyBookmarked(false);
   }, [param]);
+
+  useEffect(() => {
+    if (param) {
+      const bookmarks = fullBookmarks[param.toUpperCase()];
+      bookmarks.forEach((ele) => {
+        if (ele.grammar === grammar) {
+          setAlreadyBookmarked(true);
+        }
+      });
+    }
+  }, [param, fullBookmarks, grammar]);
 
   const handleAddClick = () => {
     const bookmarkObject = {
@@ -29,8 +48,13 @@ const Content: React.FC<ContentProps> = ({ card, param }) => {
       link: "",
       other: [],
     };
-
-    dispatch(addToBookmarks(bookmarkObject));
+    // return if already bookmarked
+    if (alreadyBookmarked) {
+      dispatch(removeFromBookmarks(bookmarkObject));
+      setAlreadyBookmarked(false);
+    } else {
+      dispatch(addToBookmarks(bookmarkObject));
+    }
   };
 
   return (
@@ -45,7 +69,9 @@ const Content: React.FC<ContentProps> = ({ card, param }) => {
         {/* Bookmark Icon */}
         <CiStar
           onClick={() => handleAddClick()}
-          className="absolute top-2 right-4 h-7 w-7 cursor-pointer"
+          className={`absolute top-2 right-4 h-7 w-7 cursor-pointer select-none ${
+            alreadyBookmarked ? "bg-cyan-400" : ""
+          }`}
         />
         {structure ? (
           <>

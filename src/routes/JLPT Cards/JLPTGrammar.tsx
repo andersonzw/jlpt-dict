@@ -10,11 +10,13 @@ import { CardData } from "../../utils/types";
 import { useContext, useEffect, useState } from "react";
 import { SearchContext } from "../../utils/context/SearchContext";
 
+
 const JLPTGrammar = () => {
   const { level } = useParams();
   const [search, setSearch] = useState("");
   const [data, setData] = useState<CardData[]>([]);
   const { searchParam, setSearchParam } = useContext(SearchContext);
+
   // Only runs during page change
   useEffect(() => {
     switch (level) {
