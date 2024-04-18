@@ -14,10 +14,11 @@ const GrammarList: React.FC<ContentProps> = ({ data, level, search }) => {
   const { setSearchParam } = useContext(SearchContext);
 
   const handleClick = (e: React.MouseEvent<HTMLElement>) => {
-    let text = e.currentTarget.textContent;
+    const text = e.currentTarget.textContent;
     if (text) {
       if (text[0] == "〜") {
-        text = text.substring(1);
+        setSearchParam(text.substring(1))
+        console.log(text.substring(1));
       } else
       setSearchParam(text);
       nav(`jlpt/${level.toLowerCase()}`);
@@ -25,6 +26,7 @@ const GrammarList: React.FC<ContentProps> = ({ data, level, search }) => {
   };
   return (
     <ul className="w-1/2 h-auto p-4">
+      {/* Title */}
       <h1
         className="text-2xl mb-4 bg-red-300 px-4 py-1 cursor-pointer"
         onClick={() => {
@@ -34,6 +36,7 @@ const GrammarList: React.FC<ContentProps> = ({ data, level, search }) => {
       >
         JLPT {level}
       </h1>
+      {/* Grammar list */}
       {filteredData.map((ele, i) => {
         return (
           <li key={i} className="leading-loose ">

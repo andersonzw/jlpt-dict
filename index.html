@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,5 +9,22 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script src="https://cdn.jsdelivr.net/npm/kuromoji/dist/kuromoji.js"></script>
+    <script>
+      // Initialize kuromoji with the browser's path configuration
+      kuromoji
+        .builder({ dicPath: "https://cdn.jsdelivr.net/npm/kuromoji/dict/" })
+        .build(function (err, tokenizer) {
+          if (err) {
+            throw err;
+          }
+          var text = "今日は良い日です";
+          var tokens = tokenizer.tokenize(text);
+          var hiragana = tokens
+            .map((token) => token.reading || token.surface_form)
+            .join("");
+          console.log(hiragana);
+        });
+    </script>
   </body>
 </html>

@@ -10,13 +10,11 @@ import { CardData } from "../../utils/types";
 import { useContext, useEffect, useState } from "react";
 import { SearchContext } from "../../utils/context/SearchContext";
 
-
 const JLPTGrammar = () => {
   const { level } = useParams();
   const [search, setSearch] = useState("");
   const [data, setData] = useState<CardData[]>([]);
   const { searchParam, setSearchParam } = useContext(SearchContext);
-
   // Only runs during page change
   useEffect(() => {
     switch (level) {
@@ -44,17 +42,17 @@ const JLPTGrammar = () => {
   useEffect(() => {
     setSearch(searchParam);
   }, [searchParam]);
-
   const filteredData = data.filter(
     (ele) => ele.grammar.includes(search) || ele.structure.includes(search)
   );
+
   return (
     <div className="flex flex-col innerWidth p-1">
       <div className="flex relative">
         {/* Search Bar */}
         <input
           autoComplete="off"
-          value={search}
+          value={searchParam}
           id="search-bar"
           onChange={(e) => {
             setSearch(e.target.value);
@@ -75,8 +73,10 @@ const JLPTGrammar = () => {
       <LevelSelect selected={level} />
 
       {filteredData.map((card: CardData, i: number) => {
-        return <Content key={i} card={card} param = {level}/>;
+        return <Content key={i} card={card} param={level} />;
       })}
+      {/* No search results */}
+      {filteredData.length === 0 && <div className="pt-[clamp(200px,40%,300px)] text-center">No grammar matched</div>}
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React from 'react'
 
 const SignIn = () => {
   return (
-    <div>Under construction</div>
+    <div>Login page/signup page to be implemented...</div>
   )
 }
 

@@ -57,6 +57,12 @@ const Content: React.FC<ContentProps> = ({ card, param }) => {
     }
   };
 
+  const findJapneseChar = (text: string) => {
+    const regex = /[\u3040-\u309F\u30A0-\u30FF\u4E00-\u9FAF]/;
+    const match = text.match(regex);
+    return match ? match[0] : null;
+  };
+
   return (
     <div className="flex flex-col w-full mb-8 bg-white relative ">
       {/* Heading */}
@@ -66,13 +72,20 @@ const Content: React.FC<ContentProps> = ({ card, param }) => {
 
       {/* Main Content */}
       <div className="p-4 relative">
-        {/* Bookmark Icon */}
-        <CiStar
-          onClick={() => handleAddClick()}
-          className={`absolute top-2 right-4 h-7 w-7 cursor-pointer select-none ${
-            alreadyBookmarked ? "bg-cyan-400" : ""
-          }`}
-        />
+        {/* Subheading */}
+        <div className="flex justify-between">
+          {/* First Character */}
+          <div className="text-xl mb-4">[{findJapneseChar(grammar)}]</div>
+          {/* Bookmark Icon */}
+          <CiStar
+            onClick={() => handleAddClick()}
+            className={`h-7 w-7 cursor-pointer select-none ${
+              alreadyBookmarked ? "text-theme-red-500" : ""
+            }`}
+          />
+        </div>
+
+        {/* Structure */}
         {structure ? (
           <>
             <p className="font-bold">Structure:</p>

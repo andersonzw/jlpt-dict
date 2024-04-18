@@ -5,6 +5,7 @@ import About from "./routes/About.tsx";
 import Home from "./routes/Directory/Directory.tsx";
 import { SearchProvider } from "./utils/context/SearchContext.tsx";
 import Bookmarks from "./routes/Bookmarks/Bookmarks.tsx";
+import SignIn from "./routes/SignIn.tsx";
 function App() {
   return (
     <div className="">
@@ -15,6 +16,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path ="/bookmarks" element={<Bookmarks/>}/>
+            <Route path ="/sign-in" element={<SignIn/>}/>
           </Route>
         </Routes>
       </SearchProvider>
