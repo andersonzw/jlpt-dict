@@ -19,6 +19,7 @@ const Content: React.FC<ContentProps> = ({ card, param }) => {
   const { grammar, meaning, english, structure, level, sentences } = card;
   const dispatch = useAppDispatch();
   const fullBookmarks = useAppSelector(selectBookmarks);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
     setVisible(false);
@@ -37,6 +38,7 @@ const Content: React.FC<ContentProps> = ({ card, param }) => {
   }, [param, fullBookmarks, grammar]);
 
   const handleAddClick = () => {
+    setIsAnimating(true); // Trigger animation
     const bookmarkObject = {
       grammar: grammar,
       meaning: meaning,
@@ -55,6 +57,7 @@ const Content: React.FC<ContentProps> = ({ card, param }) => {
     } else {
       dispatch(addToBookmarks(bookmarkObject));
     }
+    setTimeout(() => setIsAnimating(false), 100);
   };
 
   const findJapneseChar = (text: string) => {
@@ -73,16 +76,24 @@ const Content: React.FC<ContentProps> = ({ card, param }) => {
       {/* Main Content */}
       <div className="p-4 relative">
         {/* Subheading */}
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center h-auto pb-4 mb-4 border-b-[1px]">
           {/* First Character */}
-          <div className="text-xl mb-4">[{findJapneseChar(grammar)}]</div>
+          <div className="text-xl ">[{findJapneseChar(grammar)}]</div>
           {/* Bookmark Icon */}
-          <CiStar
-            onClick={() => handleAddClick()}
-            className={`h-7 w-7 cursor-pointer select-none ${
-              alreadyBookmarked ? "text-theme-red-500" : ""
-            }`}
-          />
+          <div className="group relative h-[28px] hover:bg-theme-red-100 hover:rounded-full">
+            <CiStar
+              onClick={() => handleAddClick()}
+              className={`relative h-7 w-7 cursor-pointer select-none ${
+                alreadyBookmarked ? "text-theme-red-500" : "text-gray-400"
+              }
+              transition ease-linear duration-100 transform ${
+                isAnimating ? "scale-150" : "scale-100"
+              }`}
+            />
+            <span className="absolute right-0 top-[2.5rem] whitespace-nowrap px-2 py-1 text-xs text-white bg-theme-red-200 rounded-md hidden  group-hover:block transition-opacity duration-300 ease-in-out">
+              {alreadyBookmarked ? "Remove from Bookmark" : "Bookmark"}
+            </span>
+          </div>
         </div>
 
         {/* Structure */}

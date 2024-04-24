@@ -1,16 +1,12 @@
-import { useContext } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
-import { SearchContext } from "../utils/context/SearchContext";
 const Header = () => {
   const nav = useNavigate();
-  const {searchParam} = useContext(SearchContext)
   return (
     <>
       <div className="flex flex-row items-center justify-between p-3 h-auto bg-gray-100 sticky top-0 mb-8 border-opacity-20 border-b-[1px] z-50 bg-[url('/mi-min-pkpqoBp11Jc-unsplash.png')]">
         <div className="text-xl cursor-pointer" onClick={() => nav("/")}>
           JLPT Dictionary
         </div>
-        <div className="">{searchParam}</div>
         <div className="flex flex-row items-center justify-center gap-4">
           <a href="/about" className="text-sm">
             About

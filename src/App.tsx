@@ -5,7 +5,8 @@ import About from "./routes/About.tsx";
 import Home from "./routes/Directory/Directory.tsx";
 import { SearchProvider } from "./utils/context/SearchContext.tsx";
 import Bookmarks from "./routes/Bookmarks/Bookmarks.tsx";
-import SignIn from "./routes/SignIn.tsx";
+import SignIn from "./routes/Auth/SignIn.tsx";
+
 function App() {
   return (
     <div className="">

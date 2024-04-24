@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { CardData } from "../../../utils/types";
 import { SearchContext } from "../../../utils/context/SearchContext";
+import { MdReadMore } from "react-icons/md";
 
 type ContentProps = {
   data: CardData[];
@@ -17,10 +18,9 @@ const GrammarList: React.FC<ContentProps> = ({ data, level, search }) => {
     const text = e.currentTarget.textContent;
     if (text) {
       if (text[0] == "〜") {
-        setSearchParam(text.substring(1))
+        setSearchParam(text.substring(1));
         console.log(text.substring(1));
-      } else
-      setSearchParam(text);
+      } else setSearchParam(text);
       nav(`jlpt/${level.toLowerCase()}`);
     }
   };
@@ -28,13 +28,16 @@ const GrammarList: React.FC<ContentProps> = ({ data, level, search }) => {
     <ul className="w-1/2 h-auto p-4">
       {/* Title */}
       <h1
-        className="text-2xl mb-4 bg-red-300 px-4 py-1 cursor-pointer"
+        className="text-xl mb-4 bg-red-300 px-4 py-2 cursor-pointer flex justify-between items-center"
         onClick={() => {
           nav(`jlpt/${level.toLowerCase()}`);
           setSearchParam("");
         }}
       >
         JLPT {level}
+        <span>
+          <MdReadMore />
+        </span>
       </h1>
       {/* Grammar list */}
       {filteredData.map((ele, i) => {
