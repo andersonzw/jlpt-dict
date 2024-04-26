@@ -1,32 +1,33 @@
 import { FormEvent, useState } from "react";
-import { signInUser } from "../../utils/firebase/firebase-config";
+import { signUpUser } from "../../utils/firebase/firebase-config";
 import { useNavigate } from "react-router-dom";
 import { HiLockClosed, HiOutlineMail } from "react-icons/hi";
-
-const SignIn = () => {
+const SignUp = () => {
   const nav = useNavigate();
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      await signInUser(form.email, form.password);
+      await signUpUser(form.email, form.password);
       nav("/");
     } catch (error) {
       alert(error);
     }
   };
+
   const [form, setForm] = useState({
     email: "",
     password: "",
   });
+
   return (
     <div className="flex-col mx-auto text-center max-w-[400px] mt-[8rem]">
-      <h1 className="text-2xl font-bold mb-10">Log in to JLPT Dict</h1>
+      <h1 className="text-2xl font-bold mb-10">Sign up with email</h1>
       <form
         className="flex flex-col gap-3   "
         action="submit"
         onSubmit={handleSubmit}
       >
-        <div className="flex w-full border border-gray-400 px-2 py-1 rounded-lg hover:border-theme-red-300 active:outline-theme-red-400 ">
+       <div className="flex w-full border border-gray-400 px-2 py-1 rounded-lg hover:border-theme-red-300 active:outline-theme-red-400 ">
           <HiOutlineMail className="size-6 text-gray-400" />
           <input
             className="grow focus:outline-none pl-2"
@@ -34,8 +35,8 @@ const SignIn = () => {
             name="email"
             id="email"
             placeholder="Email"
-            value={form.email}
             required
+            value={form.email}
             onChange={(e) => setForm({ ...form, email: e.currentTarget.value })}
           />
         </div>
@@ -55,22 +56,21 @@ const SignIn = () => {
             }
           />
         </div>
-
         <button
           type="submit"
           className="bg-[rgb(255,119,119)] text-white rounded-lg py-1 mt-4"
         >
-          Log in
+          Sign Up
         </button>
       </form>
       <p className="block mt-4 text-sm">
-        Don't have an account?{" "}
-        <a href="/signup" className="cursor-pointer underline">
-          Sign up
+        Already have an account?{" "}
+        <a href="/signin" className="underline  cursor-pointer">
+          Sign in
         </a>
       </p>
     </div>
   );
 };
 
-export default SignIn;
+export default SignUp;

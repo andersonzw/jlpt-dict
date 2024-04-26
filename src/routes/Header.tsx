@@ -1,6 +1,16 @@
-import { Outlet, useNavigate } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
+import { useAppSelector } from "../utils/store";
+import {
+  selectCurrentUser,
+} from "../utils/slices/userReducer";
+import { signOutUser } from "../utils/firebase/firebase-config";
 const Header = () => {
   const nav = useNavigate();
+  const currentUser = useAppSelector(selectCurrentUser);
+  const handleSignOut = async () => {
+    await signOutUser();
+    nav("/");
+  };
   return (
     <>
       <div className="flex flex-row items-center justify-between p-3 h-auto bg-gray-100 sticky top-0 mb-8 border-opacity-20 border-b-[1px] z-50 bg-[url('/mi-min-pkpqoBp11Jc-unsplash.png')]">
@@ -8,18 +18,24 @@ const Header = () => {
           JLPT Dictionary
         </div>
         <div className="flex flex-row items-center justify-center gap-4">
-          <a href="/about" className="text-sm">
+          <Link to="/about" className="text-sm">
             About
-          </a>
-          <a href="/jlpt/n5" className="text-sm">
+          </Link>
+          <Link to="/jlpt/n5" className="text-sm">
             Search
-          </a>
-          <a href="/bookmarks" className="text-sm">
+          </Link>
+          <Link to="/bookmarks" className="text-sm">
             Bookmarks
-          </a>
-          <a href="/sign-in" className="text-sm ">
-            Sign In
-          </a>
+          </Link>
+          {!currentUser?.email ? (
+            <Link to="/signin" className="text-sm ">
+              Sign In
+            </Link>
+          ) : (
+            <p onClick={() => handleSignOut()} className="text-sm">
+              Sign Out
+            </p>
+          )}
         </div>
       </div>
       <Outlet />

@@ -45,7 +45,6 @@ const JLPTGrammar = () => {
   const filteredData = data.filter(
     (ele) => ele.grammar.includes(search) || ele.structure.includes(search)
   );
-  console.log(filteredData.length);
 
   return (
     <div className="flex flex-col innerWidth p-1">

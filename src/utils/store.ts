@@ -12,6 +12,7 @@ import {
   REGISTER,
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
+import { userReducer } from "./slices/userReducer";
 
 // ...
 
@@ -22,6 +23,7 @@ const persistConfig = {
 
 const rootReducer = combineReducers({
   bookmark: bookmarkReducer,
+  user: userReducer,
 });
 const persistedReducer = persistReducer(persistConfig, rootReducer);
 
