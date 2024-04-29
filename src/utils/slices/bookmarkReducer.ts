@@ -1,12 +1,8 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import { RootState } from "../store";
-import { CardData } from "../types";
+import { CardData, bookmarkState } from "../types";
 
-export type bookmarkState = {
-  bookmarkList: {
-    [key: string]: CardData[];
-  };
-};
+
 
 const INITIAL_STATE: bookmarkState = {
   bookmarkList: { N1: [], N2: [], N3: [], N4: [], N5: [], N0: [] },

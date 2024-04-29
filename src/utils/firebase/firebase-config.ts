@@ -37,5 +37,6 @@ export const signInUser = async (email: string, password: string) => {
 };
 
 export const signOutUser = async () => {
-  await signOut(auth);
-};
+  await signOut(auth)
+
+}
