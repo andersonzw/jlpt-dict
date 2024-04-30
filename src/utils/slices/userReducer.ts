@@ -1,24 +1,26 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import { RootState } from "../store";
-import { User } from "firebase/auth";
 
 export type userState = {
-  currentUser: User | null;
+  currentUser: {
+    uid: string | null;
+    email: string | null;
+  };
 };
 
 const INITIAL_STATE: userState = {
-  currentUser: null,
+  currentUser: { uid: null, email: null },
 };
 
 export const userSlice = createSlice({
   name: "user",
   initialState: INITIAL_STATE,
   reducers: {
-    signInUserStore: (state, action: PayloadAction<User | null>) => {
+    signInUserStore: (state, action: PayloadAction<{ uid: string|null, email: string|null }>) => {
       state.currentUser = action.payload;
-    },
+  },
     signOutUserStore: (state) => {
-      state.currentUser = null;
+      state.currentUser = { uid: null, email: null };
     },
   },
 });

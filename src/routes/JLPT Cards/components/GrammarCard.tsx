@@ -61,7 +61,7 @@ const Content: React.FC<ContentProps> = ({ card, param }) => {
       dispatch(addToBookmarks(bookmarkObject));
     }
 
-    await uploadBookmarksToFirebase(currentUser?.uid, {
+    await uploadBookmarksToFirebase(currentUser.uid, {
       bookmarkList: fullBookmarks,
     });
     console.log("bookmarked uplaoded");

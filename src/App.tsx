@@ -10,25 +10,24 @@ import SignUp from "./routes/Auth/SignUp.tsx";
 import { useEffect } from "react";
 import { User, onAuthStateChanged } from "firebase/auth";
 import { auth } from "./utils/firebase/firebase-config.ts";
-import { useAppDispatch, useAppSelector } from "./utils/store.ts";
+import { useAppDispatch } from "./utils/store.ts";
 import {
-  selectCurrentUser,
   signInUserStore,
+  signOutUserStore,
 } from "./utils/slices/userReducer.ts";
 
 function App() {
   const dispatch = useAppDispatch();
-  const currentUser = useAppSelector(selectCurrentUser);
   useEffect(() => {
     const listen = onAuthStateChanged(auth, (user: User | null) => {
       if (user) {
-        dispatch(signInUserStore(user));
+        dispatch(signInUserStore({ uid: user.uid, email: user.email }));
       } else {
-        dispatch(signInUserStore(null))
+        dispatch(signOutUserStore());
       }
     });
-    return listen;
-  }, [currentUser, dispatch]);
+    return () => listen();
+  }, [dispatch]);
 
   return (
     <div className="">

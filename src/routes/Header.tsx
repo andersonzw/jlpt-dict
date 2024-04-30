@@ -20,7 +20,7 @@ const Header = () => {
         <div className="text-xl cursor-pointer" onClick={() => nav("/")}>
           JLPT Dictionary
         </div>
-        <button onClick={()=>fetchBookmarksFromFirebase(currentUser?.uid)}>fetch</button>
+        <button onClick={()=>fetchBookmarksFromFirebase(currentUser.uid)}>fetch</button>
         <div className="flex flex-row items-center justify-center gap-4">
           <Link to="/about" className="text-sm">
             About
