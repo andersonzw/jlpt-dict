@@ -10,8 +10,12 @@ export type CardData = {
   link: string;
 };
 
-export type bookmarkState = {
+export type BookmarkState = {
   bookmarkList: {
     [key: string]: CardData[];
   };
 };
+
+export type BookmarkCollection = {
+  [key:string] : CardData[]
+}

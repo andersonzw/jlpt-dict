@@ -8,8 +8,6 @@ import {
   selectBookmarks,
 } from "../../../utils/slices/bookmarkReducer.ts";
 import { useAppDispatch, useAppSelector } from "../../../utils/store.ts";
-import { uploadBookmarksToFirebase } from "../../../utils/functions.ts";
-import { selectCurrentUser } from "../../../utils/slices/userReducer.ts";
 
 type ContentProps = {
   card: CardData;
@@ -22,8 +20,8 @@ const Content: React.FC<ContentProps> = ({ card, param }) => {
   const dispatch = useAppDispatch();
   const fullBookmarks = useAppSelector(selectBookmarks);
   const [isAnimating, setIsAnimating] = useState(false);
-  const currentUser = useAppSelector(selectCurrentUser);
 
+  
   useEffect(() => {
     setVisible(false);
     setAlreadyBookmarked(false);
@@ -61,10 +59,7 @@ const Content: React.FC<ContentProps> = ({ card, param }) => {
       dispatch(addToBookmarks(bookmarkObject));
     }
 
-    await uploadBookmarksToFirebase(currentUser.uid, {
-      bookmarkList: fullBookmarks,
-    });
-    console.log("bookmarked uplaoded");
+
 
     setTimeout(() => setIsAnimating(false), 100);
   };

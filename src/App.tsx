@@ -18,6 +18,7 @@ import {
 
 function App() {
   const dispatch = useAppDispatch();
+
   useEffect(() => {
     const listen = onAuthStateChanged(auth, (user: User | null) => {
       if (user) {

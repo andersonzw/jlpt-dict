@@ -2,13 +2,27 @@ import { FormEvent, useState } from "react";
 import { signInUser } from "../../utils/firebase/firebase-config";
 import { useNavigate } from "react-router-dom";
 import { HiLockClosed, HiOutlineMail } from "react-icons/hi";
+import { useAppDispatch } from "../../utils/store";
+import {
+  clearBookmarks,
+  syncBookmarks,
+} from "../../utils/slices/bookmarkReducer";
+import { fetchBookmarksFromFirebase } from "../../utils/functions";
 
 const SignIn = () => {
   const nav = useNavigate();
+  const dispatch = useAppDispatch();
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      await signInUser(form.email, form.password);
+      const userCredential = await signInUser(form.email, form.password);
+      // reset bookmark states
+      dispatch(clearBookmarks());
+      const fetchedBookmarks = await fetchBookmarksFromFirebase(
+        userCredential.user.uid
+      );
+      console.log(fetchedBookmarks);
+      dispatch(syncBookmarks(fetchedBookmarks));
       nav("/");
     } catch (error) {
       alert(error);

@@ -9,12 +9,18 @@ import { useParams } from "react-router-dom";
 import { CardData } from "../../utils/types";
 import { useContext, useEffect, useState } from "react";
 import { SearchContext } from "../../utils/context/SearchContext";
+import { uploadBookmarksToFirebase } from "../../utils/functions";
+import { useAppSelector } from "../../utils/store";
+import { selectCurrentUser } from "../../utils/slices/userReducer";
+import { selectBookmarks } from "../../utils/slices/bookmarkReducer";
 
 const JLPTGrammar = () => {
   const { level } = useParams();
   const [search, setSearch] = useState("");
   const [data, setData] = useState<CardData[]>([]);
   const { searchParam, setSearchParam } = useContext(SearchContext);
+  const currentUser = useAppSelector(selectCurrentUser)
+  const bookmarks = useAppSelector(selectBookmarks)
   // Only runs during page change
   useEffect(() => {
     switch (level) {
@@ -46,6 +52,17 @@ const JLPTGrammar = () => {
     (ele) => ele.grammar.includes(search) || ele.structure.includes(search)
   );
 
+  // Update user's firebase bookmark everytime bookmark is changed
+  useEffect(() => {
+    console.log("fired");
+    const uploadToFirebase = async () => {
+      await uploadBookmarksToFirebase(currentUser.uid, {
+        bookmarkList: bookmarks,
+      });
+    };
+    uploadToFirebase();
+  }, [bookmarks]);
+
   return (
     <div className="flex flex-col innerWidth p-1">
       <div className="flex relative">
@@ -76,7 +93,11 @@ const JLPTGrammar = () => {
         return <Content key={i} card={card} param={level} />;
       })}
       {/* No search results */}
-      {filteredData.length === 0 && <div className="pt-[clamp(200px,40%,300px)] text-center">No grammar matched</div>}
+      {filteredData.length === 0 && (
+        <div className="pt-[clamp(200px,40%,300px)] text-center">
+          No grammar matched
+        </div>
+      )}
     </div>
   );
 };

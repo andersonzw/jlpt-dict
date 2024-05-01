@@ -1,10 +1,8 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import { RootState } from "../store";
-import { CardData, bookmarkState } from "../types";
+import { CardData, BookmarkState, BookmarkCollection } from "../types";
 
-
-
-const INITIAL_STATE: bookmarkState = {
+const INITIAL_STATE: BookmarkState = {
   bookmarkList: { N1: [], N2: [], N3: [], N4: [], N5: [], N0: [] },
 };
 
@@ -25,10 +23,17 @@ export const bookmarkSlice = createSlice({
         (ele) => ele.grammar !== action.payload.grammar
       );
     },
+    clearBookmarks: (state) => {
+      state.bookmarkList = { N1: [], N2: [], N3: [], N4: [], N5: [], N0: [] };
+    },
+    syncBookmarks: (state, action:PayloadAction<BookmarkCollection>) =>{
+      state.bookmarkList = action.payload
+
+    }
   },
 });
 
 export const bookmarkReducer = bookmarkSlice.reducer;
-export const { addToBookmarks, removeFromBookmarks } = bookmarkSlice.actions;
+export const { addToBookmarks, removeFromBookmarks, clearBookmarks,syncBookmarks } = bookmarkSlice.actions;
 export const selectBookmarks = (state: RootState) =>
   state.bookmark.bookmarkList;

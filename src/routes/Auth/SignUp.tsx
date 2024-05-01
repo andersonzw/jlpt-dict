@@ -2,12 +2,16 @@ import { FormEvent, useState } from "react";
 import { signUpUser } from "../../utils/firebase/firebase-config";
 import { useNavigate } from "react-router-dom";
 import { HiLockClosed, HiOutlineMail } from "react-icons/hi";
+import { useAppDispatch } from "../../utils/store";
+import { clearBookmarks } from "../../utils/slices/bookmarkReducer";
 const SignUp = () => {
   const nav = useNavigate();
+  const dispatch = useAppDispatch();
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
       await signUpUser(form.email, form.password);
+      dispatch(clearBookmarks());
       nav("/");
     } catch (error) {
       alert(error);
@@ -27,7 +31,7 @@ const SignUp = () => {
         action="submit"
         onSubmit={handleSubmit}
       >
-       <div className="flex w-full border border-gray-400 px-2 py-1 rounded-lg hover:border-theme-red-300 active:outline-theme-red-400 ">
+        <div className="flex w-full border border-gray-400 px-2 py-1 rounded-lg hover:border-theme-red-300 active:outline-theme-red-400 ">
           <HiOutlineMail className="size-6 text-gray-400" />
           <input
             className="grow focus:outline-none pl-2"
