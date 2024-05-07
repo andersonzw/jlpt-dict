@@ -8,25 +8,42 @@ import {
   syncBookmarks,
 } from "../../utils/slices/bookmarkReducer";
 import { fetchBookmarksFromFirebase } from "../../utils/functions";
+import { BookmarkCollection } from "../../utils/types";
+import { FirebaseError } from "firebase/app";
 
 const SignIn = () => {
   const nav = useNavigate();
   const dispatch = useAppDispatch();
+  const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setErrorMessage("");
+    setLoading(true);
     try {
       const userCredential = await signInUser(form.email, form.password);
       // reset bookmark states
       dispatch(clearBookmarks());
-      const fetchedBookmarks = await fetchBookmarksFromFirebase(
-        userCredential.user.uid
-      );
+      const fetchedBookmarks: BookmarkCollection =
+        await fetchBookmarksFromFirebase(userCredential.user.uid);
       console.log(fetchedBookmarks);
-      dispatch(syncBookmarks(fetchedBookmarks));
+
+      if (!fetchedBookmarks == undefined) {
+        dispatch(syncBookmarks(fetchedBookmarks));
+      }
       nav("/");
     } catch (error) {
-      alert(error);
+      if (
+        error instanceof FirebaseError &&
+        error.code === "auth/invalid-credential"
+      ) {
+        setErrorMessage("Invalid email or password.");
+      } else {
+        setErrorMessage("Unable to login. Try again.");
+      }
     }
+    setLoading(false);
   };
   const [form, setForm] = useState({
     email: "",
@@ -40,6 +57,8 @@ const SignIn = () => {
         action="submit"
         onSubmit={handleSubmit}
       >
+        <p className="text-red-500 text-sm italic">{errorMessage}</p>
+
         <div className="flex w-full border border-gray-400 px-2 py-1 rounded-lg hover:border-theme-red-300 active:outline-theme-red-400 ">
           <HiOutlineMail className="size-6 text-gray-400" />
           <input
@@ -72,9 +91,15 @@ const SignIn = () => {
 
         <button
           type="submit"
-          className="bg-[rgb(255,119,119)] text-white rounded-lg py-1 mt-4"
+          className={`bg-[rgb(255,119,119)] text-white rounded-lg py-1 mt-4 active:translate-y-1 active:shadow-md ${loading}`}
         >
-          Log in
+          {loading ? (
+            <span>
+              <i className="fa fa-spinner fa-spin"></i>
+            </span>
+          ) : (
+            <span>Log in</span>
+          )}
         </button>
       </form>
       <p className="block mt-4 text-sm">

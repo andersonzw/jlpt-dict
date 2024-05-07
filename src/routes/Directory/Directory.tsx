@@ -6,6 +6,7 @@ import jlptn5 from "../../assets/jlptn5.json";
 import jlptn0 from "../../assets/jlptn0.json";
 import GrammarList from "./components/GrammarList";
 import { useState } from "react";
+
 const Home = () => {
   const [search, setSearch] = useState("");
   return (
@@ -19,8 +20,10 @@ const Home = () => {
           placeholder="検索"
           onChange={(e) => setSearch(e.target.value)}
         />
-        <div className="absolute top-0.5 right-36 z-20 text-2xl opacity-65 cursor-pointer"
-        onClick={()=>setSearch('')}>
+        <div
+          className="absolute top-0.5 right-36 z-20 text-2xl opacity-65 cursor-pointer"
+          onClick={() => setSearch("")}
+        >
           x
         </div>
       </div>

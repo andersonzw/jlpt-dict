@@ -2,8 +2,7 @@ import { Link, Outlet, useNavigate } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../utils/store";
 import { selectCurrentUser } from "../utils/slices/userReducer";
 import { signOutUser } from "../utils/firebase/firebase-config";
-import { fetchBookmarksFromFirebase } from "../utils/functions";
-import { clearBookmarks, syncBookmarks } from "../utils/slices/bookmarkReducer";
+import { clearBookmarks } from "../utils/slices/bookmarkReducer";
 const Header = () => {
   const nav = useNavigate();
   const dispatch = useAppDispatch();
@@ -11,7 +10,7 @@ const Header = () => {
   const handleSignOut = async () => {
     await signOutUser();
     dispatch(clearBookmarks());
-    window.location.href = '/';
+    window.location.href = "/";
   };
 
   return (
@@ -20,19 +19,7 @@ const Header = () => {
         <div className="text-xl cursor-pointer" onClick={() => nav("/")}>
           JLPT Dictionary
         </div>
-        <button
-          onClick={async () => {
-            const a = await fetchBookmarksFromFirebase(currentUser.uid);
-            console.log(a)
-            dispatch(syncBookmarks(a));
-          }}
-        >
-          fetch
-        </button>
         <div className="flex flex-row items-center justify-center gap-4">
-          <Link to="/about" className="text-sm">
-            About
-          </Link>
           <Link to="/jlpt/n5" className="text-sm">
             Search
           </Link>

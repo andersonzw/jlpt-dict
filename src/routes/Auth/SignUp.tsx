@@ -4,18 +4,38 @@ import { useNavigate } from "react-router-dom";
 import { HiLockClosed, HiOutlineMail } from "react-icons/hi";
 import { useAppDispatch } from "../../utils/store";
 import { clearBookmarks } from "../../utils/slices/bookmarkReducer";
+import { FirebaseError } from "firebase/app";
 const SignUp = () => {
   const nav = useNavigate();
   const dispatch = useAppDispatch();
+  const [errorMessage, setErrorMessage] = useState("");
+  const [loading, setLoading] = useState(false);
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setErrorMessage("");
+    setLoading(true);
+
     try {
       await signUpUser(form.email, form.password);
       dispatch(clearBookmarks());
       nav("/");
     } catch (error) {
-      alert(error);
+      if (
+        error instanceof FirebaseError &&
+        error.code === "auth/email-already-in-use"
+      ) {
+        setErrorMessage("Email already in use.");
+      } else if (
+        error instanceof FirebaseError &&
+        error.code === "auth/weak-password"
+      ) {
+        setErrorMessage("Password should be at least 6 characters.");
+      } else {
+        setErrorMessage("Unable to sign up. Try again.");
+      }
     }
+    setLoading(false);
   };
 
   const [form, setForm] = useState({
@@ -31,6 +51,7 @@ const SignUp = () => {
         action="submit"
         onSubmit={handleSubmit}
       >
+        <p className="text-red-500 text-sm italic">{errorMessage}</p>
         <div className="flex w-full border border-gray-400 px-2 py-1 rounded-lg hover:border-theme-red-300 active:outline-theme-red-400 ">
           <HiOutlineMail className="size-6 text-gray-400" />
           <input
@@ -44,7 +65,6 @@ const SignUp = () => {
             onChange={(e) => setForm({ ...form, email: e.currentTarget.value })}
           />
         </div>
-
         <div className="flex w-full border border-gray-400 px-2 py-1 rounded-lg hover:border-theme-red-300 focus:outline-theme-red-400 ">
           <HiLockClosed className="size-6 text-gray-400" />
           <input
@@ -62,9 +82,15 @@ const SignUp = () => {
         </div>
         <button
           type="submit"
-          className="bg-[rgb(255,119,119)] text-white rounded-lg py-1 mt-4"
+          className={`bg-[rgb(255,119,119)] text-white rounded-lg py-1 mt-4 active:translate-y-1 active:shadow-md ${loading}`}
         >
-          Sign Up
+          {loading ? (
+            <span>
+              <i className="fa fa-spinner fa-spin"></i>
+            </span>
+          ) : (
+            <span>Sign up</span>
+          )}
         </button>
       </form>
       <p className="block mt-4 text-sm">

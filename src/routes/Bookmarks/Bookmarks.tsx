@@ -1,5 +1,5 @@
-import { persistor, useAppSelector } from "../../utils/store";
-import { selectBookmarks } from "../../utils/slices/bookmarkReducer";
+import {useAppDispatch, useAppSelector } from "../../utils/store";
+import { clearBookmarks, selectBookmarks } from "../../utils/slices/bookmarkReducer";
 import Content from "../JLPT Cards/components/GrammarCard";
 import { CardData } from "../../utils/types";
 import { useEffect, useState } from "react";
@@ -7,12 +7,11 @@ import { selectCurrentUser } from "../../utils/slices/userReducer";
 import { fetchBookmarksFromFirebase, uploadBookmarksToFirebase } from "../../utils/functions";
 
 const Bookmarks = () => {
-  const handleReset = async () => {
-    await persistor.purge(); // Clears the persisted store
-    window.location.reload(); // Optional: reload the page to reinitialize the state
+  const handleClearBookmarks = async () => {
+    dispatch(clearBookmarks())
   };
   const currentUser = useAppSelector(selectCurrentUser);
-
+  const dispatch = useAppDispatch()
   const localBookmarks = useAppSelector(selectBookmarks);
   const [empty, setEmpty] = useState(true);
 
@@ -34,7 +33,7 @@ const Bookmarks = () => {
 
 
 
-  // Update user's firebase bookmark everytime bookmark is changed
+  // Update user's firebase bookmark everytime local bookmark is changed
   useEffect(() => {
     console.log("fired");
     const uploadToFirebase = async () => {
@@ -68,7 +67,7 @@ const Bookmarks = () => {
     <div className="flex flex-col innerWidth p-1">
       <p className="text-sm italic text-end">
         {currentUser.uid ? (
-          <span>Currently Synced</span>
+          <span>Currently Synced: {currentUser.email}</span>
         ) : (
           <span>*Sign in to sync bookmark across devices</span>
         )}
@@ -76,9 +75,9 @@ const Bookmarks = () => {
       {["N1", "N2", "N3", "N4", "N5"].map((level) => renderLevel(level))}
       <button
         className="bg-red-400 text-white px-4 py-2 rounded w-50 mx-auto"
-        onClick={handleReset}
+        onClick={handleClearBookmarks}
       >
-        Delete Bookmarks
+        Clear Bookmarks
       </button>
     </div>
   );
