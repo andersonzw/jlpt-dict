@@ -25,13 +25,11 @@ const SignIn = () => {
       const userCredential = await signInUser(form.email, form.password);
       // reset bookmark states
       dispatch(clearBookmarks());
+
+      // fetch and sync bookmark to local bookmark upon signing in
       const fetchedBookmarks: BookmarkCollection =
         await fetchBookmarksFromFirebase(userCredential.user.uid);
-      console.log(fetchedBookmarks);
-
-      if (!fetchedBookmarks == undefined) {
-        dispatch(syncBookmarks(fetchedBookmarks));
-      }
+      dispatch(syncBookmarks(fetchedBookmarks));
       nav("/");
     } catch (error) {
       if (

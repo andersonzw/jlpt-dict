@@ -2,14 +2,13 @@ import { FormEvent, useState } from "react";
 import { signUpUser } from "../../utils/firebase/firebase-config";
 import { useNavigate } from "react-router-dom";
 import { HiLockClosed, HiOutlineMail } from "react-icons/hi";
-import { useAppDispatch } from "../../utils/store";
-import { clearBookmarks } from "../../utils/slices/bookmarkReducer";
 import { FirebaseError } from "firebase/app";
+import { uploadBookmarksToFirebase } from "../../utils/functions";
 const SignUp = () => {
   const nav = useNavigate();
-  const dispatch = useAppDispatch();
   const [errorMessage, setErrorMessage] = useState("");
   const [loading, setLoading] = useState(false);
+  const localBookmarks = useAppSelector(selectBookmarks)
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -17,8 +16,13 @@ const SignUp = () => {
     setLoading(true);
 
     try {
-      await signUpUser(form.email, form.password);
-      dispatch(clearBookmarks());
+      const userCredentials = await signUpUser(form.email, form.password);
+
+      // upload the current locally stored bookmarks to database
+      await uploadBookmarksToFirebase(userCredentials.user.uid, {
+        bookmarkList: localBookmarks,
+      } )
+
       nav("/");
     } catch (error) {
       if (

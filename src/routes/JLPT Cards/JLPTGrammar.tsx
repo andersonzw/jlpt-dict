@@ -54,7 +54,6 @@ const JLPTGrammar = () => {
 
   // Update user's firebase bookmark everytime bookmark is changed
   useEffect(() => {
-    console.log("fired");
     const uploadToFirebase = async () => {
       await uploadBookmarksToFirebase(currentUser.uid, {
         bookmarkList: bookmarks,

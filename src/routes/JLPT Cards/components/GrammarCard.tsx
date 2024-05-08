@@ -18,10 +18,9 @@ const Content: React.FC<ContentProps> = ({ card, param }) => {
   const [alreadyBookmarked, setAlreadyBookmarked] = useState(false);
   const { grammar, meaning, english, structure, level, sentences } = card;
   const dispatch = useAppDispatch();
-  const fullBookmarks = useAppSelector(selectBookmarks);
+  const localBookmarks = useAppSelector(selectBookmarks);
   const [isAnimating, setIsAnimating] = useState(false);
 
-  
   useEffect(() => {
     setVisible(false);
     setAlreadyBookmarked(false);
@@ -29,14 +28,14 @@ const Content: React.FC<ContentProps> = ({ card, param }) => {
 
   useEffect(() => {
     if (param) {
-      const bookmarks = fullBookmarks[param.toUpperCase()];
+      const bookmarks = localBookmarks[param.toUpperCase()];
       bookmarks.forEach((ele) => {
         if (ele.grammar === grammar) {
           setAlreadyBookmarked(true);
         }
       });
     }
-  }, [param, fullBookmarks, grammar]);
+  }, [param, localBookmarks, grammar]);
 
   const handleAddClick = async () => {
     setIsAnimating(true); // Trigger animation
@@ -58,8 +57,6 @@ const Content: React.FC<ContentProps> = ({ card, param }) => {
     } else {
       dispatch(addToBookmarks(bookmarkObject));
     }
-
-
 
     setTimeout(() => setIsAnimating(false), 100);
   };

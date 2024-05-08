@@ -1,17 +1,23 @@
-import {useAppDispatch, useAppSelector } from "../../utils/store";
-import { clearBookmarks, selectBookmarks } from "../../utils/slices/bookmarkReducer";
+import { useAppDispatch, useAppSelector } from "../../utils/store";
+import {
+  clearBookmarks,
+  selectBookmarks,
+} from "../../utils/slices/bookmarkReducer";
 import Content from "../JLPT Cards/components/GrammarCard";
 import { CardData } from "../../utils/types";
 import { useEffect, useState } from "react";
 import { selectCurrentUser } from "../../utils/slices/userReducer";
-import { fetchBookmarksFromFirebase, uploadBookmarksToFirebase } from "../../utils/functions";
+import {
+  fetchBookmarksFromFirebase,
+  uploadBookmarksToFirebase,
+} from "../../utils/functions";
 
 const Bookmarks = () => {
   const handleClearBookmarks = async () => {
-    dispatch(clearBookmarks())
+    dispatch(clearBookmarks());
   };
   const currentUser = useAppSelector(selectCurrentUser);
-  const dispatch = useAppDispatch()
+  const dispatch = useAppDispatch();
   const localBookmarks = useAppSelector(selectBookmarks);
   const [empty, setEmpty] = useState(true);
 
@@ -19,7 +25,7 @@ const Bookmarks = () => {
   // Use local bookmarks as default
   const [bookmarks, setBookmarks] = useState(localBookmarks);
 
-  // If signed in, fetch from firebase storage, dispatch to 
+  // If signed in, fetch from firebase storage, dispatch to
   // Refetch everytime bookmark store is updated
   useEffect(() => {
     const fetchData = async () => {
@@ -28,20 +34,21 @@ const Bookmarks = () => {
         setBookmarks(result);
       }
     };
-    fetchData();
-  }, [localBookmarks]);
-
-
-
-  // Update user's firebase bookmark everytime local bookmark is changed
-  useEffect(() => {
-    console.log("fired");
+    // Update user's firebase bookmark everytime local bookmark is changed
     const uploadToFirebase = async () => {
       await uploadBookmarksToFirebase(currentUser.uid, {
         bookmarkList: localBookmarks,
       });
     };
+
+    fetchData();
     uploadToFirebase();
+
+  }, [localBookmarks]);
+
+  
+  useEffect(() => {
+
   }, [localBookmarks]);
 
   // See if bookmark list is empty
@@ -54,14 +61,24 @@ const Bookmarks = () => {
     }
   }, [bookmarks]);
 
-
   const renderLevel = (level: string) =>
     bookmarks[level].map((card: CardData, i: number) => (
       <Content key={i} card={card} param={level.toLowerCase()} />
     ));
 
   if (empty) {
-    return <div className="text-center">Empty Bookmark</div>;
+    return (
+      <div className="text-center">
+        <p className="text-sm italic mb-16">
+          {currentUser.uid ? (
+            <span>Currently Synced: {currentUser.email}</span>
+          ) : (
+            <span>*Sign in to sync bookmark across devices</span>
+          )}
+        </p>
+        Empty Bookmark
+      </div>
+    );
   }
   return (
     <div className="flex flex-col innerWidth p-1">

@@ -10,9 +10,9 @@ export const uploadBookmarksToFirebase = async (
   try {
     const docRef = doc(db, `users/${userId}`);
     await setDoc(docRef, bookmarkToUpload);
-    console.log("bookmarked updated");
+    console.log("Bookmark uploaded to firebase", bookmarkToUpload);
   } catch (error) {
-    console.log(error);
+    console.error(error);
   }
 };
 
@@ -21,17 +21,15 @@ export const fetchBookmarksFromFirebase = async (userId: string | null) => {
   try {
     const docRef = doc(db, `users/${userId}`);
     const docSnap = await getDoc(docRef);
-    console.log("fetching...");
     if (docSnap.exists()) {
       const docData = docSnap.data();
       const fetchedBookmarkList = docData.bookmarkList;
-      console.log("succesfully fetched");
       return fetchedBookmarkList;
     } else {
       console.log("does not exist");
     }
   } catch (error) {
-    console.log("error from fetching", error);
+    console.error("error from fetching", error);
   }
 };
 export type DataObjectType = {
