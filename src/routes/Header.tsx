@@ -15,9 +15,9 @@ const Header = () => {
 
   return (
     <>
-      <div className="flex flex-row items-center justify-between p-3 h-auto bg-gray-100 sticky top-0 mb-8 border-opacity-20 border-b-[1px] z-50 bg-[url('/mi-min-pkpqoBp11Jc-unsplash.png')]">
-        <div className="text-xl cursor-pointer" onClick={() => nav("/")}>
-          JLPT Dictionary
+      <div className="flex flex-row items-center justify-between p-3 h-auto  sticky top-0 mb-8 border-opacity-20 border-b-[1px] z-50 bg-white bg-opacity-90">
+        <div className="text-xl cursor-pointer  " onClick={() => nav("/")}>
+          <img className="object-cover h-[50px]" src="public/header-logo.png" alt="" />
         </div>
         <div className="flex flex-row items-center justify-center gap-4">
           <Link to="/jlpt/n5" className="text-sm">
