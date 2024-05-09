@@ -12,20 +12,19 @@ const Home = () => {
   return (
     // N1
     <div className="innerWidth flex flex-col">
-      <div className="flex relative">
+      <div className="m-auto w-11/12 relative sm:w-5/6">
         <input
-          className=" m-auto relative"
+          className="w-full border border-[#00000023] py-2 px-4 rounded-xl focus:outline-red-200"
           value={search}
-          id="search-bar"
           placeholder="検索"
           onChange={(e) => setSearch(e.target.value)}
         />
-        <div
-          className="absolute top-0.5 right-36 z-20 text-2xl opacity-65 cursor-pointer"
+        <button
+          className="clear button text-2xl opacity-65 cursor-pointer absolute right-[15px] top-[1px]"
           onClick={() => setSearch("")}
         >
           x
-        </div>
+        </button>
       </div>
 
       <div className="flex flex-row flex-wrap w-full">

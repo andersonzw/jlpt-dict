@@ -102,7 +102,7 @@ const SignIn = () => {
       </form>
       <p className="block mt-4 text-sm">
         Don't have an account?{" "}
-        <a href="/signup" className="cursor-pointer underline">
+        <a href="/signup" className="cursor-pointer underline text-theme-red-500">
           Sign up
         </a>
       </p>

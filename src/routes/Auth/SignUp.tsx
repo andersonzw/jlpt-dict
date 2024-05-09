@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { HiLockClosed, HiOutlineMail } from "react-icons/hi";
 import { FirebaseError } from "firebase/app";
 import { uploadBookmarksToFirebase } from "../../utils/functions";
+import { useAppSelector } from "../../utils/store";
+import { selectBookmarks } from "../../utils/slices/bookmarkReducer";
 const SignUp = () => {
   const nav = useNavigate();
   const [errorMessage, setErrorMessage] = useState("");
@@ -99,7 +101,7 @@ const SignUp = () => {
       </form>
       <p className="block mt-4 text-sm">
         Already have an account?{" "}
-        <a href="/signin" className="underline  cursor-pointer">
+        <a href="/signin" className="underline  cursor-pointer text-theme-red-500">
           Sign in
         </a>
       </p>

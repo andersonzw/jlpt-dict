@@ -98,20 +98,23 @@ const Content: React.FC<ContentProps> = ({ card, param }) => {
         </div>
 
         {/* Structure */}
-        {structure ? (
+        {structure[0] ? (
           <>
             <p className="font-bold">Structure:</p>
-            <p className="ml-2">・{structure}</p>
+            <p className="ml-4 mb-4">・{structure}</p>
           </>
         ) : null}
 
-        <p className="font-bold">Meaning:</p>
-        <p className="ml-2">・{meaning}</p>
-
-        {english.length !== 0 ? (
+        {meaning[0] ? (
+          <>
+            <p className="font-bold">Meaning:</p>
+            <p className="ml-4 mb-4">・{meaning}</p>
+          </>
+        ) : null}
+        {english[0] ? (
           <>
             <p className="font-bold">English:</p>
-            <p className="ml-2">・{english}</p>
+            <p className="ml-4 mb-4">・{english}</p>
           </>
         ) : null}
 

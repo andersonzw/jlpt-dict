@@ -1,9 +1,10 @@
-import { Link, Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../utils/store";
 import { selectCurrentUser } from "../utils/slices/userReducer";
 import { signOutUser } from "../utils/firebase/firebase-config";
 import { clearBookmarks } from "../utils/slices/bookmarkReducer";
-const Header = () => {
+import React from "react";
+const Header = React.memo(() => {
   const nav = useNavigate();
   const dispatch = useAppDispatch();
   const currentUser = useAppSelector(selectCurrentUser);
@@ -12,26 +13,34 @@ const Header = () => {
     dispatch(clearBookmarks());
     window.location.href = "/";
   };
-
   return (
     <>
-      <div className="flex flex-row items-center justify-between p-3 h-auto  sticky top-0 mb-8 border-opacity-20 border-b-[1px] z-50 bg-white bg-opacity-90">
-        <div className="text-xl cursor-pointer  " onClick={() => nav("/")}>
-          <img className="object-cover h-[50px]" src="public/header-logo.png" alt="" />
+      <div className="flex flex-row items-center justify-between px-3 h-auto  sticky top-0 mb-8 border-opacity-20 border-b-[1px] z-50 bg-white bg-opacity-90">
+        <div className="text-xl cursor-pointer " onClick={() => nav("/")}>
+          <img className="object-cover h-[60px]" src="/logo2.png" alt="" />
         </div>
         <div className="flex flex-row items-center justify-center gap-4">
-          <Link to="/jlpt/n5" className="text-sm">
+          <a
+            href="/jlpt/n5"
+            className="text-sm py-2 px-2 rounded-lg hover:bg-[#b4b4b4] hover:bg-opacity-10"
+          >
             Search
-          </Link>
-          <Link to="/bookmarks" className="text-sm">
+          </a>
+          <a
+            href="/bookmarks"
+            className="text-sm py-2 px-2 rounded-lg hover:bg-[#b4b4b4] hover:bg-opacity-10"
+          >
             Bookmarks
-          </Link>
+          </a>
           {!currentUser?.email ? (
-            <Link to="/signin" className="text-sm ">
+            <a
+              href="/signin"
+              className="text-sm py-2 px-2 rounded-lg hover:bg-[#b4b4b4] hover:bg-opacity-10"
+            >
               Sign In
-            </Link>
+            </a>
           ) : (
-            <p onClick={() => handleSignOut()} className="text-sm">
+            <p onClick={() => handleSignOut()} className="text-sm py-2 px-2 rounded-lg hover:bg-[#b4b4b4] hover:bg-opacity-10">
               Sign Out
             </p>
           )}
@@ -40,6 +49,6 @@ const Header = () => {
       <Outlet />
     </>
   );
-};
+});
 
 export default Header;

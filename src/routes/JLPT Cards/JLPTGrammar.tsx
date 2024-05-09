@@ -64,27 +64,27 @@ const JLPTGrammar = () => {
 
   return (
     <div className="flex flex-col innerWidth p-1">
-      <div className="flex relative">
+      <div className="mx-auto mb-5  w-11/12 relative sm:w-5/6">
         {/* Search Bar */}
         <input
           autoComplete="off"
           value={searchParam}
-          id="search-bar"
+          className="w-full border border-[#00000023] py-2 px-4 rounded-xl focus:outline-red-200"
           onChange={(e) => {
             setSearch(e.target.value);
             setSearchParam(e.target.value);
           }}
           placeholder="検索"
         />
-        <div
-          className="absolute top-0.5 right-36 z-20 text-2xl opacity-65 cursor-pointer"
+        <button
+          className="clear button text-2xl opacity-65 cursor-pointer absolute right-[15px] top-[1px]"
           onClick={() => {
             setSearch("");
             setSearchParam("");
           }}
         >
           x
-        </div>
+        </button>
       </div>
       <LevelSelect selected={level} />
 

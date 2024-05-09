@@ -4,6 +4,7 @@
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #313131
 }
 :root * {
   box-sizing: border-box;
@@ -20,21 +21,16 @@ a body {
     }
   }
 
-  #search-bar {
-    width: 75%;
-    margin: 0 auto 1rem auto;
-    padding: 0.5rem 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.137);
-  }
-
-  #search-bar:focus-visible {
-    outline: 1px solid #bfdbfe;
-  }
   .level-btn {
     padding: 0.5rem 1rem;
     border-radius: 10px;
+    border: 1px solid rgba(92, 92, 92, 0.171)
   }
-  .level-btn.selected  { 
+  .level-btn.selected {
     border: 1px solid rgb(255, 169, 169);
+  }
+
+  .jp-font {
+    font-family:  Inter;
   }
 }

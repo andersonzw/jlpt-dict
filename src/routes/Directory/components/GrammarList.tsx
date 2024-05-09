@@ -47,7 +47,7 @@ const GrammarList: React.FC<ContentProps> = ({ data, level, search }) => {
           <li key={i} className="leading-loose ">
             ・
             <span
-              className="cursor-pointer hover:text-theme-red-400"
+              className="cursor-pointer hover:text-theme-red-400 jp-font"
               data-level={level}
               onClick={(e) => handleClick(e)}
             >
