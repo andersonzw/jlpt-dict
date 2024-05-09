@@ -16,7 +16,7 @@ const Header = React.memo(() => {
     <>
       <div className="flex flex-row items-center justify-between px-3 h-auto  sticky top-0 mb-8 border-opacity-20 border-b-[1px] z-50 bg-white bg-opacity-90">
         <div className="text-xl cursor-pointer " onClick={() => nav("/")}>
-          <img className="object-cover h-[60px]" src="/logo2.png" alt="" />
+          <img className="object-cover h-[60px]" src="/logo2.webp" alt="" />
         </div>
         <div className="flex flex-row items-center justify-center gap-4">
           <a
