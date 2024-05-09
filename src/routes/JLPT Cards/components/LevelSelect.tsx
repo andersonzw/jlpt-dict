@@ -7,7 +7,7 @@ type LevelSelectProps = {
 const LevelSelect: React.FC<LevelSelectProps> = ({ selected }) => {
   const nav = useNavigate();
   return (
-    <div className="flex flex-row justify-evenly mb-4">
+    <div className="flex flex-row justify-evenly mb-8">
       <button
         className={`level-btn ${selected === "n1" ? "selected" : null}`}
         onClick={() => nav("/jlpt/n1")}

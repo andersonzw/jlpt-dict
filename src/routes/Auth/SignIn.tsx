@@ -49,7 +49,13 @@ const SignIn = () => {
   });
   return (
     <div className="flex-col mx-auto text-center max-w-[400px] mt-[8rem]">
-      <h1 className="text-2xl font-bold mb-10">Log in to JLPT Dict</h1>
+      <img
+        className="object-cover w-[280px] mx-auto rounded-xl mb-10"
+        src="public/header-logo.png"
+        alt=""
+      />
+      <h1 className="text-2xl font-bold mb-5">Log in </h1>
+
       <form
         className="flex flex-col gap-3   "
         action="submit"
@@ -89,7 +95,7 @@ const SignIn = () => {
 
         <button
           type="submit"
-          className={`bg-[rgb(255,119,119)] text-white rounded-lg py-1 mt-4 active:translate-y-1 active:shadow-md ${loading}`}
+          className={`bg-[rgb(255,119,119)] text-white rounded-lg py-1 mt-4 active:shadow-md ${loading}`}
         >
           {loading ? (
             <span>
@@ -102,7 +108,10 @@ const SignIn = () => {
       </form>
       <p className="block mt-4 text-sm">
         Don't have an account?{" "}
-        <a href="/signup" className="cursor-pointer underline text-theme-red-500">
+        <a
+          href="/signup"
+          className="cursor-pointer underline text-theme-red-500"
+        >
           Sign up
         </a>
       </p>

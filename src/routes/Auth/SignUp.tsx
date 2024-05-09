@@ -10,7 +10,7 @@ const SignUp = () => {
   const nav = useNavigate();
   const [errorMessage, setErrorMessage] = useState("");
   const [loading, setLoading] = useState(false);
-  const localBookmarks = useAppSelector(selectBookmarks)
+  const localBookmarks = useAppSelector(selectBookmarks);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -23,7 +23,7 @@ const SignUp = () => {
       // upload the current locally stored bookmarks to database
       await uploadBookmarksToFirebase(userCredentials.user.uid, {
         bookmarkList: localBookmarks,
-      } )
+      });
 
       nav("/");
     } catch (error) {
@@ -51,7 +51,12 @@ const SignUp = () => {
 
   return (
     <div className="flex-col mx-auto text-center max-w-[400px] mt-[8rem]">
-      <h1 className="text-2xl font-bold mb-10">Sign up with email</h1>
+      <img
+        className="object-cover w-[280px] mx-auto rounded-xl mb-10"
+        src="public/header-logo.png"
+        alt=""
+      />
+      <h1 className="text-2xl font-bold mb-5">Sign up with email </h1>
       <form
         className="flex flex-col gap-3   "
         action="submit"
@@ -88,7 +93,7 @@ const SignUp = () => {
         </div>
         <button
           type="submit"
-          className={`bg-[rgb(255,119,119)] text-white rounded-lg py-1 mt-4 active:translate-y-1 active:shadow-md ${loading}`}
+          className={`bg-[rgb(255,119,119)] text-white rounded-lg py-1 mt-4 active:shadow-md ${loading}`}
         >
           {loading ? (
             <span>
@@ -101,7 +106,10 @@ const SignUp = () => {
       </form>
       <p className="block mt-4 text-sm">
         Already have an account?{" "}
-        <a href="/signin" className="underline  cursor-pointer text-theme-red-500">
+        <a
+          href="/signin"
+          className="underline  cursor-pointer text-theme-red-500"
+        >
           Sign in
         </a>
       </p>

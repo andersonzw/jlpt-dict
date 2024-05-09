@@ -120,16 +120,19 @@ const Content: React.FC<ContentProps> = ({ card, param }) => {
 
         {/* Footer */}
         <div className="flex flex-row justify-between mt-4">
+          {/* Sentence */}
           <button
-            className="bg-red-100 hover:bg-red-300 text-black px-4 rounded"
-            // Sentence visibility
+            className={`bg-red-100 hover:bg-red-300 text-black px-4 rounded ${
+              sentences[0] == undefined && "invisible"
+            }`}
             onClick={() => {
               setVisible((visible) => !visible);
             }}
           >
             {`${visible ? "Hide " : "Reveal Sentences"}`}
           </button>
-          {/* <button className=""> Generate Sentences</button> */}
+
+          {/* JLPT */}
           <div className="border px-4 rounded"> JLPT: {level}</div>
         </div>
 

@@ -30,7 +30,7 @@ const GrammarList: React.FC<ContentProps> = ({ data, level, search }) => {
     <ul className="w-1/2 h-auto p-4">
       {/* Title */}
       <a href={`jlpt/${level.toLowerCase()}`}
-        className="text-xl mb-4 bg-red-300 px-4 py-2 cursor-pointer flex justify-between items-center"
+        className="text-xl mb-4 bg-red-200 px-4 py-2 cursor-pointer flex justify-between items-center"
         onClick={() => {
           
           setSearchParam("");
