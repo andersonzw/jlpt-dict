@@ -53,7 +53,7 @@ const SignUp = () => {
     <div className="flex-col mx-auto text-center max-w-[400px] mt-[8rem]">
       <img
         className="object-cover w-[280px] mx-auto rounded-xl mb-10"
-        src="public/header-logo.png"
+        src="/header-logo.png"
         alt=""
       />
       <h1 className="text-2xl font-bold mb-5">Sign up with email </h1>

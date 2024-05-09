@@ -11,7 +11,6 @@ const Header = React.memo(() => {
   const handleSignOut = async () => {
     await signOutUser();
     dispatch(clearBookmarks());
-    window.location.href = "/";
   };
   return (
     <>
@@ -40,9 +39,13 @@ const Header = React.memo(() => {
               Sign In
             </a>
           ) : (
-            <p onClick={() => handleSignOut()} className="text-sm py-2 px-2 rounded-lg hover:bg-[#b4b4b4] hover:bg-opacity-10">
+            <a
+              href="/"
+              onClick={() => handleSignOut()}
+              className="text-sm py-2 px-2 rounded-lg hover:bg-[#b4b4b4] hover:bg-opacity-10"
+            >
               Sign Out
-            </p>
+            </a>
           )}
         </div>
       </div>
