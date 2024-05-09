@@ -14,13 +14,20 @@ import { useAppSelector } from "../../utils/store";
 import { selectCurrentUser } from "../../utils/slices/userReducer";
 import { selectBookmarks } from "../../utils/slices/bookmarkReducer";
 
+const INITIAL_LOAD = 10; // Number of items to load initially
+const BATCH_SIZE = 10; // Number of items to load on each fetch
+
 const JLPTGrammar = () => {
   const { level } = useParams();
   const [search, setSearch] = useState("");
   const [data, setData] = useState<CardData[]>([]);
   const { searchParam, setSearchParam } = useContext(SearchContext);
-  const currentUser = useAppSelector(selectCurrentUser)
-  const bookmarks = useAppSelector(selectBookmarks)
+  const currentUser = useAppSelector(selectCurrentUser);
+  const bookmarks = useAppSelector(selectBookmarks);
+
+  const [displayedItems, setDisplayedItems] = useState<CardData[]>([]);
+  const [itemOffset, setItemOffset] = useState(INITIAL_LOAD);
+
   // Only runs during page change
   useEffect(() => {
     switch (level) {
@@ -48,9 +55,6 @@ const JLPTGrammar = () => {
   useEffect(() => {
     setSearch(searchParam);
   }, [searchParam]);
-  const filteredData = data.filter(
-    (ele) => ele.grammar.includes(search) || ele.structure.includes(search)
-  );
 
   // Update user's firebase bookmark everytime bookmark is changed
   useEffect(() => {
@@ -61,6 +65,45 @@ const JLPTGrammar = () => {
     };
     uploadToFirebase();
   }, [bookmarks]);
+
+  // infinite scrolling setup
+  useEffect(() => {
+    setDisplayedItems(
+      data
+        .filter(
+          (ele) =>
+            ele.grammar.includes(search) || ele.structure.includes(search)
+        )
+        .slice(0, INITIAL_LOAD)
+    );
+    setItemOffset(INITIAL_LOAD);
+  }, [data, search]);
+
+  // prepare next batch of items
+  const loadMoreItems = () => {
+    const currentData = data.filter(
+      (ele) => ele.grammar.includes(search) || ele.structure.includes(search)
+    );
+    const moreItems = currentData.slice(itemOffset, itemOffset + BATCH_SIZE);
+    setDisplayedItems((prevItems) => [...prevItems, ...moreItems]);
+    setItemOffset((prevOffset) => prevOffset + BATCH_SIZE);
+  };
+
+  // Handle scroll to load more items
+  useEffect(() => {
+    const handleScroll = () => {
+      if (
+        window.innerHeight + document.documentElement.scrollTop !==
+        document.documentElement.offsetHeight
+      ) {
+        return;
+      }
+      loadMoreItems();
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [data, search]);
 
   return (
     <div className="flex flex-col innerWidth p-1">
@@ -88,11 +131,10 @@ const JLPTGrammar = () => {
       </div>
       <LevelSelect selected={level} />
 
-      {filteredData.map((card: CardData, i: number) => {
-        return <Content key={i} card={card} param={level} />;
-      })}
-      {/* No search results */}
-      {filteredData.length === 0 && (
+      {displayedItems.map((card, i) => (
+        <Content key={i} card={card} param={level} />
+      ))}
+      {displayedItems.length === 0 && (
         <div className="pt-[clamp(200px,40%,300px)] text-center">
           No grammar matched
         </div>
