@@ -28,9 +28,15 @@ a body {
   }
   .level-btn.selected {
     border: 1px solid rgb(255, 169, 169);
+    background-color: rgba(255, 169, 169, 0.103);
   }
+  .level-btn:hover {
+    background-color: rgba(255, 169, 169, 0.103);
+  }
+
 
   .jp-font {
     font-family:  Inter;
   }
+
 }

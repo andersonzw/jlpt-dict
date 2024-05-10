@@ -27,6 +27,7 @@ const SignUp = () => {
 
       nav("/");
     } catch (error) {
+      console.log(error);
       if (
         error instanceof FirebaseError &&
         error.code === "auth/email-already-in-use"
@@ -37,7 +38,14 @@ const SignUp = () => {
         error.code === "auth/weak-password"
       ) {
         setErrorMessage("Password should be at least 6 characters.");
-      } else {
+      } else if (
+        error instanceof FirebaseError &&
+        error.code === "auth/invalid-email"
+      ){
+        setErrorMessage("Invalid email address.")
+      }
+      
+      else {
         setErrorMessage("Unable to sign up. Try again.");
       }
     }

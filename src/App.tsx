@@ -1,5 +1,5 @@
 import JLPTGrammar from "./routes/JLPT Cards/JLPTGrammar.tsx";
-import Header from "./routes/Header.tsx";
+import Header from "./routes/Header/Header.tsx";
 import { Route, Routes } from "react-router-dom";
 import Home from "./routes/Directory/Directory.tsx";
 import { SearchProvider } from "./utils/context/SearchContext.tsx";
@@ -14,6 +14,7 @@ import {
   signInUserStore,
   signOutUserStore,
 } from "./utils/slices/userReducer.ts";
+import { MenuNavProvider } from "./utils/context/MenuNavContext.tsx";
 
 function App() {
   const dispatch = useAppDispatch();
@@ -32,15 +33,17 @@ function App() {
   return (
     <div className="">
       <SearchProvider>
-        <Routes>
-          <Route path="/" element={<Header />}>
-            <Route path="/jlpt/:level" element={<JLPTGrammar />} />
-            <Route index element={<Home />} />
-            <Route path="/bookmarks" element={<Bookmarks />} />
-            <Route path="/signin" element={<SignIn />} />
-            <Route path="/signup" element={<SignUp />} />
-          </Route>
-        </Routes>
+        <MenuNavProvider>
+          <Routes>
+            <Route path="/" element={<Header />}>
+              <Route path="/jlpt/:level" element={<JLPTGrammar />} />
+              <Route index element={<Home />} />
+              <Route path="/bookmarks" element={<Bookmarks />} />
+              <Route path="/signin" element={<SignIn />} />
+              <Route path="/signup" element={<SignUp />} />
+            </Route>
+          </Routes>
+        </MenuNavProvider>
       </SearchProvider>
     </div>
   );

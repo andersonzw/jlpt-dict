@@ -54,7 +54,7 @@ const SignIn = () => {
         src="/header-logo.webp"
         alt=""
       />
-      <h1 className="text-2xl font-bold mb-5">Log in </h1>
+      <h1 className="text-2xl font-bold mb-5">Log in with email </h1>
 
       <form
         className="flex flex-col gap-3   "
