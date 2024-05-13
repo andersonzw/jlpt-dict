@@ -49,8 +49,9 @@ const SignIn = () => {
   });
   return (
     <div className="flex-col mx-auto text-center max-w-[400px] mt-[8rem]">
+      {/* Logo */}
       <img
-        className="object-cover w-[280px] mx-auto rounded-xl mb-10"
+        className="object-cover w-[200px] sm:w-[280px] mx-auto rounded-xl sm:mb-10 mb-5"
         src="/header-logo.webp"
         alt=""
       />
@@ -63,7 +64,7 @@ const SignIn = () => {
       >
         <p className="text-red-500 text-sm italic">{errorMessage}</p>
 
-        <div className="flex w-full border border-gray-400 px-2 py-1 rounded-lg hover:border-theme-red-300 active:outline-theme-red-400 ">
+        <div className="flex m-auto w-3/4 sm:w-full border border-gray-400 px-2 py-1 rounded-lg hover:border-theme-red-300 active:outline-theme-red-400 ">
           <HiOutlineMail className="size-6 text-gray-400" />
           <input
             className="grow focus:outline-none pl-2"
@@ -77,7 +78,7 @@ const SignIn = () => {
           />
         </div>
 
-        <div className="flex w-full border border-gray-400 px-2 py-1 rounded-lg hover:border-theme-red-300 focus:outline-theme-red-400 ">
+        <div className="flex m-auto w-3/4 sm:w-full border border-gray-400 px-2 py-1 rounded-lg hover:border-theme-red-300 focus:outline-theme-red-400 ">
           <HiLockClosed className="size-6 text-gray-400" />
           <input
             className="grow focus:outline-none pl-2"
@@ -95,7 +96,7 @@ const SignIn = () => {
 
         <button
           type="submit"
-          className={`bg-[rgb(255,119,119)] text-white rounded-lg py-1 mt-4 active:shadow-md ${loading}`}
+          className={`m-auto w-3/4 sm:w-full bg-[rgb(255,119,119)] text-white rounded-lg py-1 mt-4 active:shadow-md ${loading}`}
         >
           {loading ? (
             <span>
