@@ -10,7 +10,6 @@ export const uploadBookmarksToFirebase = async (
   try {
     const docRef = doc(db, `users/${userId}`);
     await setDoc(docRef, bookmarkToUpload);
-    console.log("Bookmark uploaded to firebase", bookmarkToUpload);
   } catch (error) {
     console.error(error);
   }
@@ -74,7 +73,7 @@ export const fetchGrammarDataFromFirebase = async () => {
 
       dataObject[collectionName] = data;
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
   }
   return dataObject;

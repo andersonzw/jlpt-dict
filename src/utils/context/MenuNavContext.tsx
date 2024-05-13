@@ -22,7 +22,6 @@ export const MenuNavProvider: React.FC<MenuNavProviderProps> = ({
   const [openMenuNav, setOpenMenuNav] = useState(false);
   const openMenu = () => {
     setOpenMenuNav(true);
-    console.log(openMenuNav);
   };
   const closeMenu = () => {
     setOpenMenuNav(false);

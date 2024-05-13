@@ -7,7 +7,7 @@ import n5_data from "../../assets/jlptn5.json";
 import LevelSelect from "./components/LevelSelect";
 import { useParams } from "react-router-dom";
 import { CardData } from "../../utils/types";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { SearchContext } from "../../utils/context/SearchContext";
 import { uploadBookmarksToFirebase } from "../../utils/functions";
 import { useAppSelector } from "../../utils/store";
@@ -15,7 +15,7 @@ import { selectCurrentUser } from "../../utils/slices/userReducer";
 import { selectBookmarks } from "../../utils/slices/bookmarkReducer";
 
 const INITIAL_LOAD = 10; // Number of items to load initially
-const BATCH_SIZE = 10; // Number of items to load on each fetch
+const BATCH_SIZE = 20; // Number of items to load on each fetch
 
 const JLPTGrammar = () => {
   const { level } = useParams();
@@ -24,11 +24,13 @@ const JLPTGrammar = () => {
   const { searchParam, setSearchParam } = useContext(SearchContext);
   const currentUser = useAppSelector(selectCurrentUser);
   const bookmarks = useAppSelector(selectBookmarks);
+  // infinite scrolling
 
+  const [isLoading, setIsLoading] = useState(false);
   const [displayedItems, setDisplayedItems] = useState<CardData[]>([]);
   const [itemOffset, setItemOffset] = useState(INITIAL_LOAD);
 
-  // Only runs during page change
+  // switch between data sets
   useEffect(() => {
     switch (level) {
       case "n1":
@@ -67,6 +69,14 @@ const JLPTGrammar = () => {
   }, [bookmarks]);
 
   // infinite scrolling setup
+
+  // track current offset using useRef
+  const itemOffsetRef = useRef(INITIAL_LOAD);
+
+  useEffect(() => {
+    itemOffsetRef.current = itemOffset;
+  }, [itemOffset]);
+
   useEffect(() => {
     setDisplayedItems(
       data
@@ -77,37 +87,52 @@ const JLPTGrammar = () => {
         .slice(0, INITIAL_LOAD)
     );
     setItemOffset(INITIAL_LOAD);
-  }, [data, search]);
+  }, [data, search, level]);
 
   // prepare next batch of items
   const loadMoreItems = () => {
+    if (isLoading) return;
+    setIsLoading(true);
+
     const currentData = data.filter(
       (ele) => ele.grammar.includes(search) || ele.structure.includes(search)
     );
-    const moreItems = currentData.slice(itemOffset, itemOffset + BATCH_SIZE);
-    setDisplayedItems((prevItems) => [...prevItems, ...moreItems]);
-    setItemOffset((prevOffset) => prevOffset + BATCH_SIZE);
-  };
+    // incrementally add more data
+    const moreItems = currentData.slice(
+      itemOffsetRef.current,
+      itemOffsetRef.current + BATCH_SIZE
+    );
 
-  // Handle scroll to load more items
+    setDisplayedItems((prevItems) => [...prevItems, ...moreItems]);
+    setItemOffset((prevOffset) => {
+      const newOffset = prevOffset + BATCH_SIZE;
+
+      itemOffsetRef.current = newOffset; // update ref manually
+
+      setIsLoading(false);
+      return newOffset;
+    });
+  };
+  // handle scroll to load more items
   useEffect(() => {
     const handleScroll = () => {
+      // when scroll to bottom of page call loadMoreItems()
       if (
-        window.innerHeight + document.documentElement.scrollTop !==
-        document.documentElement.offsetHeight
+        window.innerHeight + document.documentElement.scrollTop <
+        document.documentElement.offsetHeight * 0.90
       ) {
         return;
       }
       loadMoreItems();
     };
-
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll); //cleanup function 
   }, [data, search]);
 
   return (
-    <div className="flex flex-col innerWidth p-1">
-      <div className="mx-auto mb-5  w-11/12 relative sm:w-5/6">
+    <div className="flex flex-col innerWidth relative ">
+      <div className="fixed z-50">{isLoading && 'LOADING'}</div>
+      <div className="mx-auto mb-5 w-11/12 relative sm:w-5/6">
         {/* Search Bar */}
         <input
           autoComplete="off"

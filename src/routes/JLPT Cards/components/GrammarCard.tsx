@@ -68,23 +68,23 @@ const Content: React.FC<ContentProps> = ({ card, param }) => {
   };
 
   return (
-    <div className="flex flex-col w-full mb-8 bg-white relative ">
+    <div className="flex flex-col w-full mb-8 bg-white relative px-4 ">
       {/* Heading */}
       <div className="inline-block  text-center bg-red-200 font-bold py-1">
         {grammar}
       </div>
 
       {/* Main Content */}
-      <div className="p-4 relative">
+      <div className="sm:p-4 py-4 px-2 relative">
         {/* Subheading */}
-        <div className="flex justify-between items-center h-auto pb-4 mb-4 border-b-[1px]">
+        <div className="flex justify-between items-center h-auto sm:pb-4 pb-2 mb-4 border-b-[1px]">
           {/* First Character */}
           <div className="text-xl ">[{findJapneseChar(grammar)}]</div>
           {/* Bookmark Icon */}
           <div className="group relative h-[28px] hover:bg-theme-red-100 hover:rounded-full">
             <CiStar
               onClick={() => handleAddClick()}
-              className={`relative h-7 w-7 cursor-pointer select-none ${
+              className={`relative h-7 w-7 cursor-pointer select-none hover:text-theme-red-400 ${
                 alreadyBookmarked ? "text-theme-red-500" : "text-gray-400"
               }
               transition ease-linear duration-100 transform ${

@@ -1,4 +1,4 @@
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../utils/store";
 import { selectCurrentUser } from "../../utils/slices/userReducer";
 import { signOutUser } from "../../utils/firebase/firebase-config";
@@ -10,7 +10,6 @@ import MenuNavigator from "./MenuNavigator";
 import { MenuNavContext } from "../../utils/context/MenuNavContext";
 
 const Header = React.memo(() => {
-  const nav = useNavigate();
   const dispatch = useAppDispatch();
   const currentUser = useAppSelector(selectCurrentUser);
   const { setOpenMenuNav } = useContext(MenuNavContext);
@@ -42,15 +41,15 @@ const Header = React.memo(() => {
   return (
     <div className="relative">
       <div className="flex flex-row items-center justify-between px-3 h-auto  sticky top-0 mb-8 border-opacity-20 border-b-[1px] z-50 bg-white bg-opacity-90">
-        <div className="text-xl cursor-pointer " onClick={() => nav("/")}>
+        <a className="text-xl cursor-pointer " href="/">
           <img className="object-cover h-[60px]" src="/logo2.webp" alt="" />
-        </div>
+        </a>
         {/* Right header icons */}
         <div className="flex flex-row items-center justify-center sm:hidden">
           <SignInButton />
           <HiMenu
             className="blcok cursor-pointer text-primary-black h-[24px] w-[24px] ml-2"
-            onClick={() => setOpenMenuNav(prevState => !prevState)}
+            onClick={() => setOpenMenuNav((prevState) => !prevState)}
           />
         </div>
 

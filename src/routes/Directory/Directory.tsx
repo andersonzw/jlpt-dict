@@ -27,7 +27,7 @@ const Home = () => {
         </button>
       </div>
 
-      <div className="flex flex-row flex-wrap w-full">
+      <div className="grid grid-cols-2 w-full px-4 py-4 gap-2 sm:gap-8 sm:px-8">
         <GrammarList data={jlptn1} level={"N1"} search={search} />
         <GrammarList data={jlptn2} level={"N2"} search={search} />
         <GrammarList data={jlptn3} level={"N3"} search={search} />

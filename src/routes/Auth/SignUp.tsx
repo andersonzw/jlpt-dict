@@ -27,7 +27,7 @@ const SignUp = () => {
 
       nav("/");
     } catch (error) {
-      console.log(error);
+      console.error(error);
       if (
         error instanceof FirebaseError &&
         error.code === "auth/email-already-in-use"

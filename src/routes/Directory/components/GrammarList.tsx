@@ -27,10 +27,10 @@ const GrammarList: React.FC<ContentProps> = ({ data, level, search }) => {
     }
   };
   return (
-    <ul className="w-1/2 h-auto p-4">
+    <ul className="w-full h-auto">
       {/* Title */}
       <a href={`jlpt/${level.toLowerCase()}`}
-        className="text-xl mb-4 bg-red-200 px-4 py-2 cursor-pointer flex justify-between items-center"
+        className="sm:text-xl  text-lg mb-4 bg-red-200 px-4 sm:py-2 py-1 cursor-pointer flex justify-between items-center"
         onClick={() => {
           
           setSearchParam("");
@@ -44,8 +44,8 @@ const GrammarList: React.FC<ContentProps> = ({ data, level, search }) => {
       {/* Grammar list */}
       {filteredData.map((ele, i) => {
         return (
-          <li key={i} className="leading-loose ">
-            ・
+          <li key={i} className="leading-loose before:content-['\2022'] before:pr-3 ml-[0.3rem] sm:ml-1 ">
+           
             <span
               className="cursor-pointer hover:text-theme-red-400 jp-font"
               data-level={level}
