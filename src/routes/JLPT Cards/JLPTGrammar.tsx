@@ -13,6 +13,8 @@ import { uploadBookmarksToFirebase } from "../../utils/functions";
 import { useAppSelector } from "../../utils/store";
 import { selectCurrentUser } from "../../utils/slices/userReducer";
 import { selectBookmarks } from "../../utils/slices/bookmarkReducer";
+import ArrowUp from "../../component/ArrowUp";
+// import BookmarkPopup from "../../component/BookmarkPopup";
 
 const INITIAL_LOAD = 10; // Number of items to load initially
 const BATCH_SIZE = 20; // Number of items to load on each fetch
@@ -119,7 +121,7 @@ const JLPTGrammar = () => {
       // when scroll to bottom of page call loadMoreItems()
       if (
         window.innerHeight + document.documentElement.scrollTop <
-        document.documentElement.offsetHeight * 0.90
+        document.documentElement.offsetHeight * 0.95
       ) {
         return;
       }
@@ -129,8 +131,18 @@ const JLPTGrammar = () => {
     return () => window.removeEventListener("scroll", handleScroll); //cleanup function 
   }, [data, search]);
 
+  // const [bmIsVisible, setBmIsVisible]  = useState(true)
+  // const startAnimation = () => {
+  //   setBmIsVisible(true)
+  //    setTimeout(() => {
+  //     setBmIsVisible(false);
+  //   }, 1200);
+  // }
   return (
     <div className="flex flex-col innerWidth relative ">
+      <ArrowUp/>
+      {/* <BookmarkPopup isVisible = {bmIsVisible}/>
+      <button onClick={()=>startAnimation()}>asd</button> */}
       <div className="fixed z-50">{isLoading && 'LOADING'}</div>
       <div className="mx-auto mb-5 w-11/12 relative sm:w-5/6">
         {/* Search Bar */}

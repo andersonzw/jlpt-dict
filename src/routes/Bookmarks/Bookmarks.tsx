@@ -90,12 +90,13 @@ const Bookmarks = () => {
         )}
       </p>
       {["N1", "N2", "N3", "N4", "N5"].map((level) => renderLevel(level))}
-      <button
+      <a
         className="bg-red-400 text-white px-4 py-2 rounded w-50 mx-auto"
         onClick={handleClearBookmarks}
+        href="/bookmarks"
       >
         Clear Bookmarks
-      </button>
+      </a>
     </div>
   );
 };

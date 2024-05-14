@@ -70,7 +70,7 @@ const Content: React.FC<ContentProps> = ({ card, param }) => {
   return (
     <div className="flex flex-col w-full mb-8 bg-white relative px-4 ">
       {/* Heading */}
-      <div className="inline-block  text-center bg-red-200 font-bold py-1">
+      <div className="inline-block  text-center bg-red-200 font-bold py-1 jp-font">
         {grammar}
       </div>
 
@@ -79,7 +79,7 @@ const Content: React.FC<ContentProps> = ({ card, param }) => {
         {/* Subheading */}
         <div className="flex justify-between items-center h-auto sm:pb-4 pb-2 mb-4 border-b-[1px]">
           {/* First Character */}
-          <div className="text-xl ">[{findJapneseChar(grammar)}]</div>
+          <div className="text-xl jp-font">[{findJapneseChar(grammar)}]</div>
           {/* Bookmark Icon */}
           <div className="group relative h-[28px] hover:bg-theme-red-100 hover:rounded-full">
             <CiStar
@@ -101,14 +101,14 @@ const Content: React.FC<ContentProps> = ({ card, param }) => {
         {structure[0] ? (
           <>
             <p className="font-bold">Structure:</p>
-            <p className="ml-4 mb-4">・{structure}</p>
+            <p className="ml-4 mb-4 jp-font" >・{structure}</p>
           </>
         ) : null}
 
         {meaning[0] ? (
           <>
             <p className="font-bold">Meaning:</p>
-            <p className="ml-4 mb-4">・{meaning}</p>
+            <p className="ml-4 mb-4 jp-font">・{meaning}</p>
           </>
         ) : null}
         {english[0] ? (
@@ -119,10 +119,10 @@ const Content: React.FC<ContentProps> = ({ card, param }) => {
         ) : null}
 
         {/* Footer */}
-        <div className="flex flex-row justify-between mt-4">
+        <div className="flex flex-row justify-between mt-7">
           {/* Sentence */}
           <button
-            className={`bg-red-100 hover:bg-red-300 text-black px-4 rounded ${
+            className={`bg-red-100 hover:bg-red-300 text-black px-4 rounded text-sm ${
               sentences[0] == undefined && "invisible"
             }`}
             onClick={() => {
@@ -141,7 +141,7 @@ const Content: React.FC<ContentProps> = ({ card, param }) => {
           className={`${!visible ? "hidden" : ""} mt-4 py-2 border-t-[1px]`}
         >
           {sentences.map((sentence, i) => (
-            <div key={i} className="ml-4 leading-loose">
+            <div key={i} className="ml-4 leading-loose jp-font">
               ・{sentence}
             </div>
           ))}

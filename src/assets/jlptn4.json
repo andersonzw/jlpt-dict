@@ -108,6 +108,29 @@
     "link": "https://nihongokyoshi-net.com/2020/01/28/jlptn4-grammar-ka/"
   },
   {
+    "grammar": "〜から",
+    "meaning": "理由・原因を言う時に使う。",
+    "english": "\"because\" Used to say the reason or cause.",
+    "structure": "文１ + から + 文２",
+    "level": "N4",
+    "notes": [],
+    "sentences": [
+      "今日は息子の誕生日ですから、早く帰ります。",
+      "日本の会社で働きたいですから、日本語を勉強しています。",
+      "明日はテストがあるから、遊べません。",
+      "コーヒーを飲んだから、今は全然眠くないです。",
+      "昨日、彼女のプレゼントを買ったから、もうお金がありません。",
+      "この問題は難しいですから、私にはわかりません。",
+      "牛乳がありませんから、コンビニへ買いに行きます。",
+      "野菜が嫌いですから、食べたくないです。",
+      "映画が好きですから、よくパソコンで見ています。",
+      "この本、面白いから、ぜひ読んでみて。",
+      "A：どうして昨日、来なかったの？ B：ごめん、忙しかったから。"
+    ],
+    "other": [],
+    "link": "https://nihongokyoshi-net.com/2020/06/10/jlptn5-grammar-kara/"
+  },
+  {
     "grammar": "Nがする",
     "meaning": "音、声、味、匂い、香り、感じなど感覚を表したいときの言い方。",
     "english": "\"can hear / see / smell etc (noun).\" Used to express the notion that the speaker can perceive a sound, voice, taste, smell, fragrance or feeling.",

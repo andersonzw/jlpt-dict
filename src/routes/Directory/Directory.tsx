@@ -6,12 +6,13 @@ import jlptn5 from "../../assets/jlptn5.json";
 import jlptn0 from "../../assets/jlptn0.json";
 import GrammarList from "./components/GrammarList";
 import { useState } from "react";
+import ArrowUp from "../../component/ArrowUp";
 
 const Home = () => {
   const [search, setSearch] = useState("");
   return (
-    // N1
-    <div className="innerWidth flex flex-col">
+    <div className="innerWidth flex flex-col relative">
+      <ArrowUp/>
       <div className="m-auto w-11/12 relative sm:w-5/6">
         <input
           className="w-full border border-[#00000023] py-2 px-4 rounded-xl focus:outline-red-200"
