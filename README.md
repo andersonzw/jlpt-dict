@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+# JLPT-DICT
+![header-logo](https://github.com/andersonzw/jlpt-dict/assets/84068667/bd6b41da-22ba-49f9-ada6-e5c53715305b)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+This is a open-source repository of most grammar points that are tested in the bi-annual Japanese Language Proficiency Test. Functionalities includes search, filter, bookmarks and syncing across devices.
 
-Currently, two official plugins are available:
+## Key Features
+- User authentication (Login/Signup)
+- Infinite scrolling
+- Search functionality with filters
+- Bookmarks with sync function
+- Responsive design for all devices
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- React: Frontend library for building user interfaces
+- Redux: State management
+- Tailwind.css: CSS framework
+- Firebase: Backend server
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Prerequisites
+- npm (Node Package Manager)
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
+```bash
+git clone git@github.com:andersonzw/nihongokyoshi-webscrape-py.git
+cd nihongokyoshi-webscrape-py
+npm install
+npm start
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
