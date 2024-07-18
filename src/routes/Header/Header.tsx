@@ -1,23 +1,23 @@
-import { Outlet } from "react-router-dom";
-import { useAppDispatch, useAppSelector } from "../../utils/store";
-import { selectCurrentUser } from "../../utils/slices/userReducer";
-import { signOutUser } from "../../utils/firebase/firebase-config";
-import { clearBookmarks } from "../../utils/slices/bookmarkReducer";
-import { HiMenu } from "react-icons/hi";
+import { Outlet } from "react-router-dom"
+import { useAppDispatch, useAppSelector } from "../../utils/store"
+import { selectCurrentUser } from "../../utils/slices/userReducer"
+import { signOutUser } from "../../utils/firebase/firebase-config"
+import { clearBookmarks } from "../../utils/slices/bookmarkReducer"
+import { HiMenu } from "react-icons/hi"
 
-import React, { useContext } from "react";
-import MenuNavigator from "./MenuNavigator";
-import { MenuNavContext } from "../../utils/context/MenuNavContext";
+import React, { useContext } from "react"
+import MenuNavigator from "./MenuNavigator"
+import { MenuNavContext } from "../../utils/context/MenuNavContext"
 
 const Header = React.memo(() => {
-  const dispatch = useAppDispatch();
-  const currentUser = useAppSelector(selectCurrentUser);
-  const { setOpenMenuNav } = useContext(MenuNavContext);
+  const dispatch = useAppDispatch()
+  const currentUser = useAppSelector(selectCurrentUser)
+  const { setOpenMenuNav } = useContext(MenuNavContext)
 
   const handleSignOut = async () => {
-    await signOutUser();
-    dispatch(clearBookmarks());
-  };
+    await signOutUser()
+    dispatch(clearBookmarks())
+  }
 
   const SignInButton = () => {
     return !currentUser?.email ? (
@@ -35,8 +35,8 @@ const Header = React.memo(() => {
       >
         Sign Out
       </a>
-    );
-  };
+    )
+  }
 
   return (
     <div className="relative">
@@ -58,13 +58,19 @@ const Header = React.memo(() => {
             href="/jlpt/n5"
             className="text-sm py-2 px-2 rounded-lg hover:bg-[#b4b4b4] hover:bg-opacity-10"
           >
-            Search
+            Grammar
           </a>
           <a
             href="/bookmarks"
             className="text-sm py-2 px-2 rounded-lg hover:bg-[#b4b4b4] hover:bg-opacity-10"
           >
             Bookmarks
+          </a>
+          <a
+            href="/test"
+            className="text-sm py-2 px-2 rounded-lg hover:bg-[#b4b4b4] hover:bg-opacity-10"
+          >
+            Test
           </a>
           <SignInButton />
         </div>
@@ -73,7 +79,7 @@ const Header = React.memo(() => {
       {/* header mobile for mobile */}
       <MenuNavigator />
     </div>
-  );
-});
+  )
+})
 
-export default Header;
+export default Header
